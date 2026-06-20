@@ -2,9 +2,7 @@ name: Update World Cup data
 
 on:
   schedule:
-    # Two API requests per run keeps the updater within the provider's
-    # typical 100-request daily free allowance.
-    - cron: "*/30 * * * *"
+    - cron: "*/15 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -27,8 +25,6 @@ jobs:
           node-version: 22
 
       - name: Fetch fixtures and standings
-        env:
-          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
         run: node scripts/update-data.mjs
 
       - name: Publish changed data

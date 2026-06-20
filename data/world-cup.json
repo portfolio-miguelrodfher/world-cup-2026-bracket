@@ -2,31 +2,5934 @@
   "meta": {
     "competition": "FIFA World Cup",
     "season": 2026,
-    "mode": "preview",
-    "provider": "API-Football",
-    "updatedAt": null
+    "mode": "live",
+    "provider": "ESPN",
+    "updatedAt": "2026-06-20T14:17:13.269Z"
   },
   "groups": [
-    { "name": "Group A", "teams": [] },
-    { "name": "Group B", "teams": [] },
-    { "name": "Group C", "teams": [] },
-    { "name": "Group D", "teams": [] },
-    { "name": "Group E", "teams": [] },
-    { "name": "Group F", "teams": [] },
-    { "name": "Group G", "teams": [] },
-    { "name": "Group H", "teams": [] },
-    { "name": "Group I", "teams": [] },
-    { "name": "Group J", "teams": [] },
-    { "name": "Group K", "teams": [] },
-    { "name": "Group L", "teams": [] }
+    {
+      "name": "Group A",
+      "teams": [
+        {
+          "id": "203",
+          "name": "Mexico",
+          "code": "MEX",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
+          "winner": false,
+          "rank": 1,
+          "points": 6,
+          "goalsDiff": 3,
+          "played": 2,
+          "won": 2,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 3,
+          "goalsAgainst": 0,
+          "description": "Advance to Round of 32"
+        },
+        {
+          "id": "451",
+          "name": "South Korea",
+          "code": "KOR",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/kors.png",
+          "winner": false,
+          "rank": 2,
+          "points": 3,
+          "goalsDiff": 0,
+          "played": 2,
+          "won": 1,
+          "drawn": 0,
+          "lost": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
+          "description": "Advance to Round of 32"
+        },
+        {
+          "id": "450",
+          "name": "Czechia",
+          "code": "CZE",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
+          "winner": false,
+          "rank": 3,
+          "points": 1,
+          "goalsDiff": -1,
+          "played": 2,
+          "won": 0,
+          "drawn": 1,
+          "lost": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 3,
+          "description": "Best 8 advance"
+        },
+        {
+          "id": "467",
+          "name": "South Africa",
+          "code": "RSA",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rsa.png",
+          "winner": false,
+          "rank": 4,
+          "points": 1,
+          "goalsDiff": -2,
+          "played": 2,
+          "won": 0,
+          "drawn": 1,
+          "lost": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 3,
+          "description": "Eliminated"
+        }
+      ]
+    },
+    {
+      "name": "Group B",
+      "teams": [
+        {
+          "id": "206",
+          "name": "Canada",
+          "code": "CAN",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
+          "winner": false,
+          "rank": 1,
+          "points": 4,
+          "goalsDiff": 6,
+          "played": 2,
+          "won": 1,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 7,
+          "goalsAgainst": 1,
+          "description": "Advance to Round of 32"
+        },
+        {
+          "id": "475",
+          "name": "Switzerland",
+          "code": "SUI",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+          "winner": false,
+          "rank": 2,
+          "points": 4,
+          "goalsDiff": 3,
+          "played": 2,
+          "won": 1,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 5,
+          "goalsAgainst": 2,
+          "description": "Advance to Round of 32"
+        },
+        {
+          "id": "452",
+          "name": "Bosnia-Herzegovina",
+          "code": "BIH",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bih.png",
+          "winner": false,
+          "rank": 3,
+          "points": 1,
+          "goalsDiff": -3,
+          "played": 2,
+          "won": 0,
+          "drawn": 1,
+          "lost": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 5,
+          "description": "Best 8 advance"
+        },
+        {
+          "id": "4398",
+          "name": "Qatar",
+          "code": "QAT",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/qat.png",
+          "winner": false,
+          "rank": 4,
+          "points": 1,
+          "goalsDiff": -6,
+          "played": 2,
+          "won": 0,
+          "drawn": 1,
+          "lost": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 7,
+          "description": "Eliminated"
+        }
+      ]
+    },
+    {
+      "name": "Group C",
+      "teams": [
+        {
+          "id": "205",
+          "name": "Brazil",
+          "code": "BRA",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
+          "winner": false,
+          "rank": 1,
+          "points": 4,
+          "goalsDiff": 3,
+          "played": 2,
+          "won": 1,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 4,
+          "goalsAgainst": 1,
+          "description": "Advance to Round of 32"
+        },
+        {
+          "id": "2869",
+          "name": "Morocco",
+          "code": "MAR",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
+          "winner": false,
+          "rank": 2,
+          "points": 4,
+          "goalsDiff": 1,
+          "played": 2,
+          "won": 1,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 2,
+          "goalsAgainst": 1,
+          "description": "Advance to Round of 32"
+        },
+        {
+          "id": "580",
+          "name": "Scotland",
+          "code": "SCO",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sco.png",
+          "winner": false,
+          "rank": 3,
+          "points": 3,
+          "goalsDiff": 0,
+          "played": 2,
+          "won": 1,
+          "drawn": 0,
+          "lost": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
+          "description": "Best 8 advance"
+        },
+        {
+          "id": "2654",
+          "name": "Haiti",
+          "code": "HAI",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/hai.png",
+          "winner": false,
+          "rank": 4,
+          "points": 0,
+          "goalsDiff": -4,
+          "played": 2,
+          "won": 0,
+          "drawn": 0,
+          "lost": 2,
+          "goalsFor": 0,
+          "goalsAgainst": 4,
+          "description": "Eliminated"
+        }
+      ]
+    },
+    {
+      "name": "Group D",
+      "teams": [
+        {
+          "id": "660",
+          "name": "United States",
+          "code": "USA",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+          "winner": false,
+          "rank": 1,
+          "points": 6,
+          "goalsDiff": 5,
+          "played": 2,
+          "won": 2,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 6,
+          "goalsAgainst": 1,
+          "description": "Advance to Round of 32"
+        },
+        {
+          "id": "628",
+          "name": "Australia",
+          "code": "AUS",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
+          "winner": false,
+          "rank": 2,
+          "points": 3,
+          "goalsDiff": 0,
+          "played": 2,
+          "won": 1,
+          "drawn": 0,
+          "lost": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
+          "description": "Advance to Round of 32"
+        },
+        {
+          "id": "210",
+          "name": "Paraguay",
+          "code": "PAR",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
+          "winner": false,
+          "rank": 3,
+          "points": 3,
+          "goalsDiff": -2,
+          "played": 2,
+          "won": 1,
+          "drawn": 0,
+          "lost": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 4,
+          "description": "Best 8 advance"
+        },
+        {
+          "id": "465",
+          "name": "Türkiye",
+          "code": "TUR",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tur.png",
+          "winner": false,
+          "rank": 4,
+          "points": 0,
+          "goalsDiff": -3,
+          "played": 2,
+          "won": 0,
+          "drawn": 0,
+          "lost": 2,
+          "goalsFor": 0,
+          "goalsAgainst": 3,
+          "description": "Eliminated"
+        }
+      ]
+    },
+    {
+      "name": "Group E",
+      "teams": [
+        {
+          "id": "481",
+          "name": "Germany",
+          "code": "GER",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
+          "winner": false,
+          "rank": 1,
+          "points": 3,
+          "goalsDiff": 6,
+          "played": 1,
+          "won": 1,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 7,
+          "goalsAgainst": 1,
+          "description": "Advance to Round of 32"
+        },
+        {
+          "id": "4789",
+          "name": "Ivory Coast",
+          "code": "CIV",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/civ.png",
+          "winner": false,
+          "rank": 2,
+          "points": 3,
+          "goalsDiff": 1,
+          "played": 1,
+          "won": 1,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 0,
+          "description": "Advance to Round of 32"
+        },
+        {
+          "id": "209",
+          "name": "Ecuador",
+          "code": "ECU",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ecu.png",
+          "winner": false,
+          "rank": 3,
+          "points": 0,
+          "goalsDiff": -1,
+          "played": 1,
+          "won": 0,
+          "drawn": 0,
+          "lost": 1,
+          "goalsFor": 0,
+          "goalsAgainst": 1,
+          "description": "Best 8 advance"
+        },
+        {
+          "id": "11678",
+          "name": "Curaçao",
+          "code": "CUW",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11678.png",
+          "winner": false,
+          "rank": 4,
+          "points": 0,
+          "goalsDiff": -6,
+          "played": 1,
+          "won": 0,
+          "drawn": 0,
+          "lost": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 7,
+          "description": "Eliminated"
+        }
+      ]
+    },
+    {
+      "name": "Group F",
+      "teams": [
+        {
+          "id": "466",
+          "name": "Sweden",
+          "code": "SWE",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/swe.png",
+          "winner": false,
+          "rank": 1,
+          "points": 3,
+          "goalsDiff": 4,
+          "played": 1,
+          "won": 1,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 5,
+          "goalsAgainst": 1,
+          "description": "Advance to Round of 32"
+        },
+        {
+          "id": "627",
+          "name": "Japan",
+          "code": "JPN",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
+          "winner": false,
+          "rank": 2,
+          "points": 1,
+          "goalsDiff": 0,
+          "played": 1,
+          "won": 0,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
+          "description": "Advance to Round of 32"
+        },
+        {
+          "id": "449",
+          "name": "Netherlands",
+          "code": "NED",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
+          "winner": false,
+          "rank": 3,
+          "points": 1,
+          "goalsDiff": 0,
+          "played": 1,
+          "won": 0,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
+          "description": "Best 8 advance"
+        },
+        {
+          "id": "659",
+          "name": "Tunisia",
+          "code": "TUN",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tun.png",
+          "winner": false,
+          "rank": 4,
+          "points": 0,
+          "goalsDiff": -4,
+          "played": 1,
+          "won": 0,
+          "drawn": 0,
+          "lost": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 5,
+          "description": "Eliminated"
+        }
+      ]
+    },
+    {
+      "name": "Group G",
+      "teams": [
+        {
+          "id": "2666",
+          "name": "New Zealand",
+          "code": "NZL",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nzl.png",
+          "winner": false,
+          "rank": 1,
+          "points": 1,
+          "goalsDiff": 0,
+          "played": 1,
+          "won": 0,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
+          "description": "Advance to Round of 32"
+        },
+        {
+          "id": "469",
+          "name": "Iran",
+          "code": "IRN",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
+          "winner": false,
+          "rank": 2,
+          "points": 1,
+          "goalsDiff": 0,
+          "played": 1,
+          "won": 0,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
+          "description": "Advance to Round of 32"
+        },
+        {
+          "id": "459",
+          "name": "Belgium",
+          "code": "BEL",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
+          "winner": false,
+          "rank": 3,
+          "points": 1,
+          "goalsDiff": 0,
+          "played": 1,
+          "won": 0,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
+          "description": "Best 8 advance"
+        },
+        {
+          "id": "2620",
+          "name": "Egypt",
+          "code": "EGY",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
+          "winner": false,
+          "rank": 4,
+          "points": 1,
+          "goalsDiff": 0,
+          "played": 1,
+          "won": 0,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
+          "description": "Eliminated"
+        }
+      ]
+    },
+    {
+      "name": "Group H",
+      "teams": [
+        {
+          "id": "212",
+          "name": "Uruguay",
+          "code": "URU",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uru.png",
+          "winner": false,
+          "rank": 1,
+          "points": 1,
+          "goalsDiff": 0,
+          "played": 1,
+          "won": 0,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
+          "description": "Advance to Round of 32"
+        },
+        {
+          "id": "655",
+          "name": "Saudi Arabia",
+          "code": "KSA",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ksa.png",
+          "winner": false,
+          "rank": 2,
+          "points": 1,
+          "goalsDiff": 0,
+          "played": 1,
+          "won": 0,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
+          "description": "Advance to Round of 32"
+        },
+        {
+          "id": "164",
+          "name": "Spain",
+          "code": "ESP",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+          "winner": false,
+          "rank": 3,
+          "points": 1,
+          "goalsDiff": 0,
+          "played": 1,
+          "won": 0,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "description": "Best 8 advance"
+        },
+        {
+          "id": "2597",
+          "name": "Cape Verde",
+          "code": "CPV",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cpv.png",
+          "winner": false,
+          "rank": 4,
+          "points": 1,
+          "goalsDiff": 0,
+          "played": 1,
+          "won": 0,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "description": "Eliminated"
+        }
+      ]
+    },
+    {
+      "name": "Group I",
+      "teams": [
+        {
+          "id": "464",
+          "name": "Norway",
+          "code": "NOR",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
+          "winner": false,
+          "rank": 1,
+          "points": 3,
+          "goalsDiff": 3,
+          "played": 1,
+          "won": 1,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 4,
+          "goalsAgainst": 1,
+          "description": "Advance to Round of 32"
+        },
+        {
+          "id": "478",
+          "name": "France",
+          "code": "FRA",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
+          "winner": false,
+          "rank": 2,
+          "points": 3,
+          "goalsDiff": 2,
+          "played": 1,
+          "won": 1,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 3,
+          "goalsAgainst": 1,
+          "description": "Advance to Round of 32"
+        },
+        {
+          "id": "654",
+          "name": "Senegal",
+          "code": "SEN",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
+          "winner": false,
+          "rank": 3,
+          "points": 0,
+          "goalsDiff": -2,
+          "played": 1,
+          "won": 0,
+          "drawn": 0,
+          "lost": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 3,
+          "description": "Best 8 advance"
+        },
+        {
+          "id": "4375",
+          "name": "Iraq",
+          "code": "IRQ",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irq.png",
+          "winner": false,
+          "rank": 4,
+          "points": 0,
+          "goalsDiff": -3,
+          "played": 1,
+          "won": 0,
+          "drawn": 0,
+          "lost": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 4,
+          "description": "Eliminated"
+        }
+      ]
+    },
+    {
+      "name": "Group J",
+      "teams": [
+        {
+          "id": "202",
+          "name": "Argentina",
+          "code": "ARG",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+          "winner": false,
+          "rank": 1,
+          "points": 3,
+          "goalsDiff": 3,
+          "played": 1,
+          "won": 1,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 3,
+          "goalsAgainst": 0,
+          "description": "Advance to Round of 32"
+        },
+        {
+          "id": "474",
+          "name": "Austria",
+          "code": "AUT",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aut.png",
+          "winner": false,
+          "rank": 2,
+          "points": 3,
+          "goalsDiff": 2,
+          "played": 1,
+          "won": 1,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 3,
+          "goalsAgainst": 1,
+          "description": "Advance to Round of 32"
+        },
+        {
+          "id": "2917",
+          "name": "Jordan",
+          "code": "JOR",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/jor.png",
+          "winner": false,
+          "rank": 3,
+          "points": 0,
+          "goalsDiff": -2,
+          "played": 1,
+          "won": 0,
+          "drawn": 0,
+          "lost": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 3,
+          "description": "Best 8 advance"
+        },
+        {
+          "id": "624",
+          "name": "Algeria",
+          "code": "ALG",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
+          "winner": false,
+          "rank": 4,
+          "points": 0,
+          "goalsDiff": -3,
+          "played": 1,
+          "won": 0,
+          "drawn": 0,
+          "lost": 1,
+          "goalsFor": 0,
+          "goalsAgainst": 3,
+          "description": "Eliminated"
+        }
+      ]
+    },
+    {
+      "name": "Group K",
+      "teams": [
+        {
+          "id": "208",
+          "name": "Colombia",
+          "code": "COL",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
+          "winner": false,
+          "rank": 1,
+          "points": 3,
+          "goalsDiff": 2,
+          "played": 1,
+          "won": 1,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 3,
+          "goalsAgainst": 1,
+          "description": "Advance to Round of 32"
+        },
+        {
+          "id": "2850",
+          "name": "Congo DR",
+          "code": "COD",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
+          "winner": false,
+          "rank": 2,
+          "points": 1,
+          "goalsDiff": 0,
+          "played": 1,
+          "won": 0,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
+          "description": "Advance to Round of 32"
+        },
+        {
+          "id": "482",
+          "name": "Portugal",
+          "code": "POR",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
+          "winner": false,
+          "rank": 3,
+          "points": 1,
+          "goalsDiff": 0,
+          "played": 1,
+          "won": 0,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
+          "description": "Best 8 advance"
+        },
+        {
+          "id": "2570",
+          "name": "Uzbekistan",
+          "code": "UZB",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uzb.png",
+          "winner": false,
+          "rank": 4,
+          "points": 0,
+          "goalsDiff": -2,
+          "played": 1,
+          "won": 0,
+          "drawn": 0,
+          "lost": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 3,
+          "description": "Eliminated"
+        }
+      ]
+    },
+    {
+      "name": "Group L",
+      "teams": [
+        {
+          "id": "448",
+          "name": "England",
+          "code": "ENG",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+          "winner": false,
+          "rank": 1,
+          "points": 3,
+          "goalsDiff": 2,
+          "played": 1,
+          "won": 1,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 4,
+          "goalsAgainst": 2,
+          "description": "Advance to Round of 32"
+        },
+        {
+          "id": "4469",
+          "name": "Ghana",
+          "code": "GHA",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/gha.png",
+          "winner": false,
+          "rank": 2,
+          "points": 3,
+          "goalsDiff": 1,
+          "played": 1,
+          "won": 1,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 0,
+          "description": "Advance to Round of 32"
+        },
+        {
+          "id": "2659",
+          "name": "Panama",
+          "code": "PAN",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/pan.png",
+          "winner": false,
+          "rank": 3,
+          "points": 0,
+          "goalsDiff": -1,
+          "played": 1,
+          "won": 0,
+          "drawn": 0,
+          "lost": 1,
+          "goalsFor": 0,
+          "goalsAgainst": 1,
+          "description": "Best 8 advance"
+        },
+        {
+          "id": "477",
+          "name": "Croatia",
+          "code": "CRO",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
+          "winner": false,
+          "rank": 4,
+          "points": 0,
+          "goalsDiff": -2,
+          "played": 1,
+          "won": 0,
+          "drawn": 0,
+          "lost": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 4,
+          "description": "Eliminated"
+        }
+      ]
+    }
   ],
-  "matches": [],
+  "matches": [
+    {
+      "id": "760415",
+      "number": 1,
+      "round": "Group stage",
+      "kickoff": "2026-06-11T19:00Z",
+      "venue": {
+        "name": "Estadio Banorte",
+        "city": "Mexico City"
+      },
+      "status": {
+        "short": "FT",
+        "long": "Full Time",
+        "elapsed": null
+      },
+      "home": {
+        "id": "203",
+        "name": "Mexico",
+        "code": "MEX",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
+        "winner": true
+      },
+      "away": {
+        "id": "467",
+        "name": "South Africa",
+        "code": "RSA",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rsa.png",
+        "winner": false
+      },
+      "goals": {
+        "home": 2,
+        "away": 0
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760414",
+      "number": 2,
+      "round": "Group stage",
+      "kickoff": "2026-06-12T02:00Z",
+      "venue": {
+        "name": "Estadio Akron",
+        "city": "Guadalajara"
+      },
+      "status": {
+        "short": "FT",
+        "long": "Full Time",
+        "elapsed": null
+      },
+      "home": {
+        "id": "451",
+        "name": "South Korea",
+        "code": "KOR",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/kors.png",
+        "winner": true
+      },
+      "away": {
+        "id": "450",
+        "name": "Czechia",
+        "code": "CZE",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
+        "winner": false
+      },
+      "goals": {
+        "home": 2,
+        "away": 1
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760416",
+      "number": 3,
+      "round": "Group stage",
+      "kickoff": "2026-06-12T19:00Z",
+      "venue": {
+        "name": "BMO Field",
+        "city": "Toronto"
+      },
+      "status": {
+        "short": "FT",
+        "long": "Full Time",
+        "elapsed": null
+      },
+      "home": {
+        "id": "206",
+        "name": "Canada",
+        "code": "CAN",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
+        "winner": false
+      },
+      "away": {
+        "id": "452",
+        "name": "Bosnia-Herzegovina",
+        "code": "BIH",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bih.png",
+        "winner": false
+      },
+      "goals": {
+        "home": 1,
+        "away": 1
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760417",
+      "number": 4,
+      "round": "Group stage",
+      "kickoff": "2026-06-13T01:00Z",
+      "venue": {
+        "name": "SoFi Stadium",
+        "city": "Inglewood, California"
+      },
+      "status": {
+        "short": "FT",
+        "long": "Full Time",
+        "elapsed": null
+      },
+      "home": {
+        "id": "660",
+        "name": "United States",
+        "code": "USA",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+        "winner": true
+      },
+      "away": {
+        "id": "210",
+        "name": "Paraguay",
+        "code": "PAR",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
+        "winner": false
+      },
+      "goals": {
+        "home": 4,
+        "away": 1
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760420",
+      "number": 5,
+      "round": "Group stage",
+      "kickoff": "2026-06-13T19:00Z",
+      "venue": {
+        "name": "Levi's Stadium",
+        "city": "Santa Clara, California"
+      },
+      "status": {
+        "short": "FT",
+        "long": "Full Time",
+        "elapsed": null
+      },
+      "home": {
+        "id": "4398",
+        "name": "Qatar",
+        "code": "QAT",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/qat.png",
+        "winner": false
+      },
+      "away": {
+        "id": "475",
+        "name": "Switzerland",
+        "code": "SUI",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+        "winner": false
+      },
+      "goals": {
+        "home": 1,
+        "away": 1
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760419",
+      "number": 6,
+      "round": "Group stage",
+      "kickoff": "2026-06-13T22:00Z",
+      "venue": {
+        "name": "MetLife Stadium",
+        "city": "East Rutherford, New Jersey"
+      },
+      "status": {
+        "short": "FT",
+        "long": "Full Time",
+        "elapsed": null
+      },
+      "home": {
+        "id": "205",
+        "name": "Brazil",
+        "code": "BRA",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
+        "winner": false
+      },
+      "away": {
+        "id": "2869",
+        "name": "Morocco",
+        "code": "MAR",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
+        "winner": false
+      },
+      "goals": {
+        "home": 1,
+        "away": 1
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760418",
+      "number": 7,
+      "round": "Group stage",
+      "kickoff": "2026-06-14T01:00Z",
+      "venue": {
+        "name": "Gillette Stadium",
+        "city": "Foxborough, Massachusetts"
+      },
+      "status": {
+        "short": "FT",
+        "long": "Full Time",
+        "elapsed": null
+      },
+      "home": {
+        "id": "2654",
+        "name": "Haiti",
+        "code": "HAI",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/hai.png",
+        "winner": false
+      },
+      "away": {
+        "id": "580",
+        "name": "Scotland",
+        "code": "SCO",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sco.png",
+        "winner": true
+      },
+      "goals": {
+        "home": 0,
+        "away": 1
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760421",
+      "number": 8,
+      "round": "Group stage",
+      "kickoff": "2026-06-14T04:00Z",
+      "venue": {
+        "name": "BC Place",
+        "city": "Vancouver"
+      },
+      "status": {
+        "short": "FT",
+        "long": "Full Time",
+        "elapsed": null
+      },
+      "home": {
+        "id": "628",
+        "name": "Australia",
+        "code": "AUS",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
+        "winner": true
+      },
+      "away": {
+        "id": "465",
+        "name": "Türkiye",
+        "code": "TUR",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tur.png",
+        "winner": false
+      },
+      "goals": {
+        "home": 2,
+        "away": 0
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760422",
+      "number": 9,
+      "round": "Group stage",
+      "kickoff": "2026-06-14T17:00Z",
+      "venue": {
+        "name": "NRG Stadium",
+        "city": "Houston, Texas"
+      },
+      "status": {
+        "short": "FT",
+        "long": "Full Time",
+        "elapsed": null
+      },
+      "home": {
+        "id": "481",
+        "name": "Germany",
+        "code": "GER",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
+        "winner": true
+      },
+      "away": {
+        "id": "11678",
+        "name": "Curaçao",
+        "code": "CUW",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11678.png",
+        "winner": false
+      },
+      "goals": {
+        "home": 7,
+        "away": 1
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760425",
+      "number": 10,
+      "round": "Group stage",
+      "kickoff": "2026-06-14T20:00Z",
+      "venue": {
+        "name": "AT&T Stadium",
+        "city": "Arlington, Texas"
+      },
+      "status": {
+        "short": "FT",
+        "long": "Full Time",
+        "elapsed": null
+      },
+      "home": {
+        "id": "449",
+        "name": "Netherlands",
+        "code": "NED",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
+        "winner": false
+      },
+      "away": {
+        "id": "627",
+        "name": "Japan",
+        "code": "JPN",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
+        "winner": false
+      },
+      "goals": {
+        "home": 2,
+        "away": 2
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760423",
+      "number": 11,
+      "round": "Group stage",
+      "kickoff": "2026-06-14T23:00Z",
+      "venue": {
+        "name": "Lincoln Financial Field",
+        "city": "Philadelphia, Pennsylvania"
+      },
+      "status": {
+        "short": "FT",
+        "long": "Full Time",
+        "elapsed": null
+      },
+      "home": {
+        "id": "4789",
+        "name": "Ivory Coast",
+        "code": "CIV",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/civ.png",
+        "winner": true
+      },
+      "away": {
+        "id": "209",
+        "name": "Ecuador",
+        "code": "ECU",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ecu.png",
+        "winner": false
+      },
+      "goals": {
+        "home": 1,
+        "away": 0
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760424",
+      "number": 12,
+      "round": "Group stage",
+      "kickoff": "2026-06-15T02:00Z",
+      "venue": {
+        "name": "Estadio BBVA",
+        "city": "Guadalupe"
+      },
+      "status": {
+        "short": "FT",
+        "long": "Full Time",
+        "elapsed": null
+      },
+      "home": {
+        "id": "466",
+        "name": "Sweden",
+        "code": "SWE",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/swe.png",
+        "winner": true
+      },
+      "away": {
+        "id": "659",
+        "name": "Tunisia",
+        "code": "TUN",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tun.png",
+        "winner": false
+      },
+      "goals": {
+        "home": 5,
+        "away": 1
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760428",
+      "number": 13,
+      "round": "Group stage",
+      "kickoff": "2026-06-15T16:00Z",
+      "venue": {
+        "name": "Mercedes-Benz Stadium",
+        "city": "Atlanta, Georgia"
+      },
+      "status": {
+        "short": "FT",
+        "long": "Full Time",
+        "elapsed": null
+      },
+      "home": {
+        "id": "164",
+        "name": "Spain",
+        "code": "ESP",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+        "winner": false
+      },
+      "away": {
+        "id": "2597",
+        "name": "Cape Verde",
+        "code": "CPV",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cpv.png",
+        "winner": false
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760426",
+      "number": 14,
+      "round": "Group stage",
+      "kickoff": "2026-06-15T19:00Z",
+      "venue": {
+        "name": "Lumen Field",
+        "city": "Seattle, Washington"
+      },
+      "status": {
+        "short": "FT",
+        "long": "Full Time",
+        "elapsed": null
+      },
+      "home": {
+        "id": "459",
+        "name": "Belgium",
+        "code": "BEL",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
+        "winner": false
+      },
+      "away": {
+        "id": "2620",
+        "name": "Egypt",
+        "code": "EGY",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
+        "winner": false
+      },
+      "goals": {
+        "home": 1,
+        "away": 1
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760429",
+      "number": 15,
+      "round": "Group stage",
+      "kickoff": "2026-06-15T22:00Z",
+      "venue": {
+        "name": "Hard Rock Stadium",
+        "city": "Miami Gardens, Florida"
+      },
+      "status": {
+        "short": "FT",
+        "long": "Full Time",
+        "elapsed": null
+      },
+      "home": {
+        "id": "655",
+        "name": "Saudi Arabia",
+        "code": "KSA",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ksa.png",
+        "winner": false
+      },
+      "away": {
+        "id": "212",
+        "name": "Uruguay",
+        "code": "URU",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uru.png",
+        "winner": false
+      },
+      "goals": {
+        "home": 1,
+        "away": 1
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760427",
+      "number": 16,
+      "round": "Group stage",
+      "kickoff": "2026-06-16T01:00Z",
+      "venue": {
+        "name": "SoFi Stadium",
+        "city": "Inglewood, California"
+      },
+      "status": {
+        "short": "FT",
+        "long": "Full Time",
+        "elapsed": null
+      },
+      "home": {
+        "id": "469",
+        "name": "Iran",
+        "code": "IRN",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
+        "winner": false
+      },
+      "away": {
+        "id": "2666",
+        "name": "New Zealand",
+        "code": "NZL",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nzl.png",
+        "winner": false
+      },
+      "goals": {
+        "home": 2,
+        "away": 2
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760432",
+      "number": 17,
+      "round": "Group stage",
+      "kickoff": "2026-06-16T19:00Z",
+      "venue": {
+        "name": "MetLife Stadium",
+        "city": "East Rutherford, New Jersey"
+      },
+      "status": {
+        "short": "FT",
+        "long": "Full Time",
+        "elapsed": null
+      },
+      "home": {
+        "id": "478",
+        "name": "France",
+        "code": "FRA",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
+        "winner": true
+      },
+      "away": {
+        "id": "654",
+        "name": "Senegal",
+        "code": "SEN",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
+        "winner": false
+      },
+      "goals": {
+        "home": 3,
+        "away": 1
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760430",
+      "number": 18,
+      "round": "Group stage",
+      "kickoff": "2026-06-16T22:00Z",
+      "venue": {
+        "name": "Gillette Stadium",
+        "city": "Foxborough, Massachusetts"
+      },
+      "status": {
+        "short": "FT",
+        "long": "Full Time",
+        "elapsed": null
+      },
+      "home": {
+        "id": "4375",
+        "name": "Iraq",
+        "code": "IRQ",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irq.png",
+        "winner": false
+      },
+      "away": {
+        "id": "464",
+        "name": "Norway",
+        "code": "NOR",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
+        "winner": true
+      },
+      "goals": {
+        "home": 1,
+        "away": 4
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760433",
+      "number": 19,
+      "round": "Group stage",
+      "kickoff": "2026-06-17T01:00Z",
+      "venue": {
+        "name": "GEHA Field at Arrowhead Stadium",
+        "city": "Kansas City, Missouri"
+      },
+      "status": {
+        "short": "FT",
+        "long": "Full Time",
+        "elapsed": null
+      },
+      "home": {
+        "id": "202",
+        "name": "Argentina",
+        "code": "ARG",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+        "winner": true
+      },
+      "away": {
+        "id": "624",
+        "name": "Algeria",
+        "code": "ALG",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
+        "winner": false
+      },
+      "goals": {
+        "home": 3,
+        "away": 0
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760431",
+      "number": 20,
+      "round": "Group stage",
+      "kickoff": "2026-06-17T04:00Z",
+      "venue": {
+        "name": "Levi's Stadium",
+        "city": "Santa Clara, California"
+      },
+      "status": {
+        "short": "FT",
+        "long": "Full Time",
+        "elapsed": null
+      },
+      "home": {
+        "id": "474",
+        "name": "Austria",
+        "code": "AUT",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aut.png",
+        "winner": true
+      },
+      "away": {
+        "id": "2917",
+        "name": "Jordan",
+        "code": "JOR",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/jor.png",
+        "winner": false
+      },
+      "goals": {
+        "home": 3,
+        "away": 1
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760435",
+      "number": 21,
+      "round": "Group stage",
+      "kickoff": "2026-06-17T17:00Z",
+      "venue": {
+        "name": "NRG Stadium",
+        "city": "Houston, Texas"
+      },
+      "status": {
+        "short": "FT",
+        "long": "Full Time",
+        "elapsed": null
+      },
+      "home": {
+        "id": "482",
+        "name": "Portugal",
+        "code": "POR",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
+        "winner": false
+      },
+      "away": {
+        "id": "2850",
+        "name": "Congo DR",
+        "code": "COD",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
+        "winner": false
+      },
+      "goals": {
+        "home": 1,
+        "away": 1
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760437",
+      "number": 22,
+      "round": "Group stage",
+      "kickoff": "2026-06-17T20:00Z",
+      "venue": {
+        "name": "AT&T Stadium",
+        "city": "Arlington, Texas"
+      },
+      "status": {
+        "short": "FT",
+        "long": "Full Time",
+        "elapsed": null
+      },
+      "home": {
+        "id": "448",
+        "name": "England",
+        "code": "ENG",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+        "winner": true
+      },
+      "away": {
+        "id": "477",
+        "name": "Croatia",
+        "code": "CRO",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
+        "winner": false
+      },
+      "goals": {
+        "home": 4,
+        "away": 2
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760434",
+      "number": 23,
+      "round": "Group stage",
+      "kickoff": "2026-06-17T23:00Z",
+      "venue": {
+        "name": "BMO Field",
+        "city": "Toronto"
+      },
+      "status": {
+        "short": "FT",
+        "long": "Full Time",
+        "elapsed": null
+      },
+      "home": {
+        "id": "4469",
+        "name": "Ghana",
+        "code": "GHA",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/gha.png",
+        "winner": true
+      },
+      "away": {
+        "id": "2659",
+        "name": "Panama",
+        "code": "PAN",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/pan.png",
+        "winner": false
+      },
+      "goals": {
+        "home": 1,
+        "away": 0
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760436",
+      "number": 24,
+      "round": "Group stage",
+      "kickoff": "2026-06-18T02:00Z",
+      "venue": {
+        "name": "Estadio Banorte",
+        "city": "Mexico City"
+      },
+      "status": {
+        "short": "FT",
+        "long": "Full Time",
+        "elapsed": null
+      },
+      "home": {
+        "id": "2570",
+        "name": "Uzbekistan",
+        "code": "UZB",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uzb.png",
+        "winner": false
+      },
+      "away": {
+        "id": "208",
+        "name": "Colombia",
+        "code": "COL",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
+        "winner": true
+      },
+      "goals": {
+        "home": 1,
+        "away": 3
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760438",
+      "number": 25,
+      "round": "Group stage",
+      "kickoff": "2026-06-18T16:00Z",
+      "venue": {
+        "name": "Mercedes-Benz Stadium",
+        "city": "Atlanta, Georgia"
+      },
+      "status": {
+        "short": "FT",
+        "long": "Full Time",
+        "elapsed": null
+      },
+      "home": {
+        "id": "450",
+        "name": "Czechia",
+        "code": "CZE",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
+        "winner": false
+      },
+      "away": {
+        "id": "467",
+        "name": "South Africa",
+        "code": "RSA",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rsa.png",
+        "winner": false
+      },
+      "goals": {
+        "home": 1,
+        "away": 1
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760439",
+      "number": 26,
+      "round": "Group stage",
+      "kickoff": "2026-06-18T19:00Z",
+      "venue": {
+        "name": "SoFi Stadium",
+        "city": "Inglewood, California"
+      },
+      "status": {
+        "short": "FT",
+        "long": "Full Time",
+        "elapsed": null
+      },
+      "home": {
+        "id": "475",
+        "name": "Switzerland",
+        "code": "SUI",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+        "winner": true
+      },
+      "away": {
+        "id": "452",
+        "name": "Bosnia-Herzegovina",
+        "code": "BIH",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bih.png",
+        "winner": false
+      },
+      "goals": {
+        "home": 4,
+        "away": 1
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760440",
+      "number": 27,
+      "round": "Group stage",
+      "kickoff": "2026-06-18T22:00Z",
+      "venue": {
+        "name": "BC Place",
+        "city": "Vancouver"
+      },
+      "status": {
+        "short": "FT",
+        "long": "Full Time",
+        "elapsed": null
+      },
+      "home": {
+        "id": "206",
+        "name": "Canada",
+        "code": "CAN",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
+        "winner": true
+      },
+      "away": {
+        "id": "4398",
+        "name": "Qatar",
+        "code": "QAT",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/qat.png",
+        "winner": false
+      },
+      "goals": {
+        "home": 6,
+        "away": 0
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760441",
+      "number": 28,
+      "round": "Group stage",
+      "kickoff": "2026-06-19T01:00Z",
+      "venue": {
+        "name": "Estadio Akron",
+        "city": "Guadalajara"
+      },
+      "status": {
+        "short": "FT",
+        "long": "Full Time",
+        "elapsed": null
+      },
+      "home": {
+        "id": "203",
+        "name": "Mexico",
+        "code": "MEX",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
+        "winner": true
+      },
+      "away": {
+        "id": "451",
+        "name": "South Korea",
+        "code": "KOR",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/kors.png",
+        "winner": false
+      },
+      "goals": {
+        "home": 1,
+        "away": 0
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760442",
+      "number": 29,
+      "round": "Group stage",
+      "kickoff": "2026-06-19T19:00Z",
+      "venue": {
+        "name": "Lumen Field",
+        "city": "Seattle, Washington"
+      },
+      "status": {
+        "short": "FT",
+        "long": "Full Time",
+        "elapsed": null
+      },
+      "home": {
+        "id": "660",
+        "name": "United States",
+        "code": "USA",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+        "winner": true
+      },
+      "away": {
+        "id": "628",
+        "name": "Australia",
+        "code": "AUS",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
+        "winner": false
+      },
+      "goals": {
+        "home": 2,
+        "away": 0
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760445",
+      "number": 30,
+      "round": "Group stage",
+      "kickoff": "2026-06-19T22:00Z",
+      "venue": {
+        "name": "Gillette Stadium",
+        "city": "Foxborough, Massachusetts"
+      },
+      "status": {
+        "short": "FT",
+        "long": "Full Time",
+        "elapsed": null
+      },
+      "home": {
+        "id": "580",
+        "name": "Scotland",
+        "code": "SCO",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sco.png",
+        "winner": false
+      },
+      "away": {
+        "id": "2869",
+        "name": "Morocco",
+        "code": "MAR",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
+        "winner": true
+      },
+      "goals": {
+        "home": 0,
+        "away": 1
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760444",
+      "number": 31,
+      "round": "Group stage",
+      "kickoff": "2026-06-20T00:30Z",
+      "venue": {
+        "name": "Lincoln Financial Field",
+        "city": "Philadelphia, Pennsylvania"
+      },
+      "status": {
+        "short": "FT",
+        "long": "Full Time",
+        "elapsed": null
+      },
+      "home": {
+        "id": "205",
+        "name": "Brazil",
+        "code": "BRA",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
+        "winner": true
+      },
+      "away": {
+        "id": "2654",
+        "name": "Haiti",
+        "code": "HAI",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/hai.png",
+        "winner": false
+      },
+      "goals": {
+        "home": 3,
+        "away": 0
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760443",
+      "number": 32,
+      "round": "Group stage",
+      "kickoff": "2026-06-20T03:00Z",
+      "venue": {
+        "name": "Levi's Stadium",
+        "city": "Santa Clara, California"
+      },
+      "status": {
+        "short": "FT",
+        "long": "Full Time",
+        "elapsed": null
+      },
+      "home": {
+        "id": "465",
+        "name": "Türkiye",
+        "code": "TUR",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tur.png",
+        "winner": false
+      },
+      "away": {
+        "id": "210",
+        "name": "Paraguay",
+        "code": "PAR",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
+        "winner": true
+      },
+      "goals": {
+        "home": 0,
+        "away": 1
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760447",
+      "number": 33,
+      "round": "Group stage",
+      "kickoff": "2026-06-20T17:00Z",
+      "venue": {
+        "name": "NRG Stadium",
+        "city": "Houston, Texas"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "449",
+        "name": "Netherlands",
+        "code": "NED",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
+        "winner": false
+      },
+      "away": {
+        "id": "466",
+        "name": "Sweden",
+        "code": "SWE",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/swe.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760448",
+      "number": 34,
+      "round": "Group stage",
+      "kickoff": "2026-06-20T20:00Z",
+      "venue": {
+        "name": "BMO Field",
+        "city": "Toronto"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "481",
+        "name": "Germany",
+        "code": "GER",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
+        "winner": false
+      },
+      "away": {
+        "id": "4789",
+        "name": "Ivory Coast",
+        "code": "CIV",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/civ.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760446",
+      "number": 35,
+      "round": "Group stage",
+      "kickoff": "2026-06-21T00:00Z",
+      "venue": {
+        "name": "GEHA Field at Arrowhead Stadium",
+        "city": "Kansas City, Missouri"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "209",
+        "name": "Ecuador",
+        "code": "ECU",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ecu.png",
+        "winner": false
+      },
+      "away": {
+        "id": "11678",
+        "name": "Curaçao",
+        "code": "CUW",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11678.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760449",
+      "number": 36,
+      "round": "Group stage",
+      "kickoff": "2026-06-21T04:00Z",
+      "venue": {
+        "name": "Estadio BBVA",
+        "city": "Guadalupe"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "659",
+        "name": "Tunisia",
+        "code": "TUN",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tun.png",
+        "winner": false
+      },
+      "away": {
+        "id": "627",
+        "name": "Japan",
+        "code": "JPN",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760453",
+      "number": 37,
+      "round": "Group stage",
+      "kickoff": "2026-06-21T16:00Z",
+      "venue": {
+        "name": "Mercedes-Benz Stadium",
+        "city": "Atlanta, Georgia"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "164",
+        "name": "Spain",
+        "code": "ESP",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+        "winner": false
+      },
+      "away": {
+        "id": "655",
+        "name": "Saudi Arabia",
+        "code": "KSA",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ksa.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760451",
+      "number": 38,
+      "round": "Group stage",
+      "kickoff": "2026-06-21T19:00Z",
+      "venue": {
+        "name": "SoFi Stadium",
+        "city": "Inglewood, California"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "459",
+        "name": "Belgium",
+        "code": "BEL",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
+        "winner": false
+      },
+      "away": {
+        "id": "469",
+        "name": "Iran",
+        "code": "IRN",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760450",
+      "number": 39,
+      "round": "Group stage",
+      "kickoff": "2026-06-21T22:00Z",
+      "venue": {
+        "name": "Hard Rock Stadium",
+        "city": "Miami Gardens, Florida"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "212",
+        "name": "Uruguay",
+        "code": "URU",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uru.png",
+        "winner": false
+      },
+      "away": {
+        "id": "2597",
+        "name": "Cape Verde",
+        "code": "CPV",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cpv.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760452",
+      "number": 40,
+      "round": "Group stage",
+      "kickoff": "2026-06-22T01:00Z",
+      "venue": {
+        "name": "BC Place",
+        "city": "Vancouver"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "2666",
+        "name": "New Zealand",
+        "code": "NZL",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nzl.png",
+        "winner": false
+      },
+      "away": {
+        "id": "2620",
+        "name": "Egypt",
+        "code": "EGY",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760456",
+      "number": 41,
+      "round": "Group stage",
+      "kickoff": "2026-06-22T17:00Z",
+      "venue": {
+        "name": "AT&T Stadium",
+        "city": "Arlington, Texas"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "202",
+        "name": "Argentina",
+        "code": "ARG",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+        "winner": false
+      },
+      "away": {
+        "id": "474",
+        "name": "Austria",
+        "code": "AUT",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aut.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760457",
+      "number": 42,
+      "round": "Group stage",
+      "kickoff": "2026-06-22T21:00Z",
+      "venue": {
+        "name": "Lincoln Financial Field",
+        "city": "Philadelphia, Pennsylvania"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "478",
+        "name": "France",
+        "code": "FRA",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
+        "winner": false
+      },
+      "away": {
+        "id": "4375",
+        "name": "Iraq",
+        "code": "IRQ",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irq.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760454",
+      "number": 43,
+      "round": "Group stage",
+      "kickoff": "2026-06-23T00:00Z",
+      "venue": {
+        "name": "MetLife Stadium",
+        "city": "East Rutherford, New Jersey"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "464",
+        "name": "Norway",
+        "code": "NOR",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
+        "winner": false
+      },
+      "away": {
+        "id": "654",
+        "name": "Senegal",
+        "code": "SEN",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760455",
+      "number": 44,
+      "round": "Group stage",
+      "kickoff": "2026-06-23T03:00Z",
+      "venue": {
+        "name": "Levi's Stadium",
+        "city": "Santa Clara, California"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "2917",
+        "name": "Jordan",
+        "code": "JOR",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/jor.png",
+        "winner": false
+      },
+      "away": {
+        "id": "624",
+        "name": "Algeria",
+        "code": "ALG",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760461",
+      "number": 45,
+      "round": "Group stage",
+      "kickoff": "2026-06-23T17:00Z",
+      "venue": {
+        "name": "NRG Stadium",
+        "city": "Houston, Texas"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "482",
+        "name": "Portugal",
+        "code": "POR",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
+        "winner": false
+      },
+      "away": {
+        "id": "2570",
+        "name": "Uzbekistan",
+        "code": "UZB",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uzb.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760458",
+      "number": 46,
+      "round": "Group stage",
+      "kickoff": "2026-06-23T20:00Z",
+      "venue": {
+        "name": "Gillette Stadium",
+        "city": "Foxborough, Massachusetts"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "448",
+        "name": "England",
+        "code": "ENG",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+        "winner": false
+      },
+      "away": {
+        "id": "4469",
+        "name": "Ghana",
+        "code": "GHA",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/gha.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760460",
+      "number": 47,
+      "round": "Group stage",
+      "kickoff": "2026-06-23T23:00Z",
+      "venue": {
+        "name": "BMO Field",
+        "city": "Toronto"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "2659",
+        "name": "Panama",
+        "code": "PAN",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/pan.png",
+        "winner": false
+      },
+      "away": {
+        "id": "477",
+        "name": "Croatia",
+        "code": "CRO",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760459",
+      "number": 48,
+      "round": "Group stage",
+      "kickoff": "2026-06-24T02:00Z",
+      "venue": {
+        "name": "Estadio Akron",
+        "city": "Guadalajara"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "208",
+        "name": "Colombia",
+        "code": "COL",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
+        "winner": false
+      },
+      "away": {
+        "id": "2850",
+        "name": "Congo DR",
+        "code": "COD",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760462",
+      "number": 49,
+      "round": "Group stage",
+      "kickoff": "2026-06-24T19:00Z",
+      "venue": {
+        "name": "Lumen Field",
+        "city": "Seattle, Washington"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "452",
+        "name": "Bosnia-Herzegovina",
+        "code": "BIH",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bih.png",
+        "winner": false
+      },
+      "away": {
+        "id": "4398",
+        "name": "Qatar",
+        "code": "QAT",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/qat.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760463",
+      "number": 50,
+      "round": "Group stage",
+      "kickoff": "2026-06-24T19:00Z",
+      "venue": {
+        "name": "BC Place",
+        "city": "Vancouver"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "475",
+        "name": "Switzerland",
+        "code": "SUI",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+        "winner": false
+      },
+      "away": {
+        "id": "206",
+        "name": "Canada",
+        "code": "CAN",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760464",
+      "number": 51,
+      "round": "Group stage",
+      "kickoff": "2026-06-24T22:00Z",
+      "venue": {
+        "name": "Mercedes-Benz Stadium",
+        "city": "Atlanta, Georgia"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "2869",
+        "name": "Morocco",
+        "code": "MAR",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
+        "winner": false
+      },
+      "away": {
+        "id": "2654",
+        "name": "Haiti",
+        "code": "HAI",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/hai.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760465",
+      "number": 52,
+      "round": "Group stage",
+      "kickoff": "2026-06-24T22:00Z",
+      "venue": {
+        "name": "Hard Rock Stadium",
+        "city": "Miami Gardens, Florida"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "580",
+        "name": "Scotland",
+        "code": "SCO",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sco.png",
+        "winner": false
+      },
+      "away": {
+        "id": "205",
+        "name": "Brazil",
+        "code": "BRA",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760467",
+      "number": 53,
+      "round": "Group stage",
+      "kickoff": "2026-06-25T01:00Z",
+      "venue": {
+        "name": "Estadio Banorte",
+        "city": "Mexico City"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "450",
+        "name": "Czechia",
+        "code": "CZE",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
+        "winner": false
+      },
+      "away": {
+        "id": "203",
+        "name": "Mexico",
+        "code": "MEX",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760466",
+      "number": 54,
+      "round": "Group stage",
+      "kickoff": "2026-06-25T01:00Z",
+      "venue": {
+        "name": "Estadio BBVA",
+        "city": "Guadalupe"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "467",
+        "name": "South Africa",
+        "code": "RSA",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rsa.png",
+        "winner": false
+      },
+      "away": {
+        "id": "451",
+        "name": "South Korea",
+        "code": "KOR",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/kors.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760473",
+      "number": 55,
+      "round": "Group stage",
+      "kickoff": "2026-06-25T20:00Z",
+      "venue": {
+        "name": "Lincoln Financial Field",
+        "city": "Philadelphia, Pennsylvania"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "11678",
+        "name": "Curaçao",
+        "code": "CUW",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11678.png",
+        "winner": false
+      },
+      "away": {
+        "id": "4789",
+        "name": "Ivory Coast",
+        "code": "CIV",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/civ.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760468",
+      "number": 56,
+      "round": "Group stage",
+      "kickoff": "2026-06-25T20:00Z",
+      "venue": {
+        "name": "MetLife Stadium",
+        "city": "East Rutherford, New Jersey"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "209",
+        "name": "Ecuador",
+        "code": "ECU",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ecu.png",
+        "winner": false
+      },
+      "away": {
+        "id": "481",
+        "name": "Germany",
+        "code": "GER",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760471",
+      "number": 57,
+      "round": "Group stage",
+      "kickoff": "2026-06-25T23:00Z",
+      "venue": {
+        "name": "AT&T Stadium",
+        "city": "Arlington, Texas"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "627",
+        "name": "Japan",
+        "code": "JPN",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
+        "winner": false
+      },
+      "away": {
+        "id": "466",
+        "name": "Sweden",
+        "code": "SWE",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/swe.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760472",
+      "number": 58,
+      "round": "Group stage",
+      "kickoff": "2026-06-25T23:00Z",
+      "venue": {
+        "name": "GEHA Field at Arrowhead Stadium",
+        "city": "Kansas City, Missouri"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "659",
+        "name": "Tunisia",
+        "code": "TUN",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tun.png",
+        "winner": false
+      },
+      "away": {
+        "id": "449",
+        "name": "Netherlands",
+        "code": "NED",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760469",
+      "number": 59,
+      "round": "Group stage",
+      "kickoff": "2026-06-26T02:00Z",
+      "venue": {
+        "name": "Levi's Stadium",
+        "city": "Santa Clara, California"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "210",
+        "name": "Paraguay",
+        "code": "PAR",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
+        "winner": false
+      },
+      "away": {
+        "id": "628",
+        "name": "Australia",
+        "code": "AUS",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760470",
+      "number": 60,
+      "round": "Group stage",
+      "kickoff": "2026-06-26T02:00Z",
+      "venue": {
+        "name": "SoFi Stadium",
+        "city": "Inglewood, California"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "465",
+        "name": "Türkiye",
+        "code": "TUR",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tur.png",
+        "winner": false
+      },
+      "away": {
+        "id": "660",
+        "name": "United States",
+        "code": "USA",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760475",
+      "number": 61,
+      "round": "Group stage",
+      "kickoff": "2026-06-26T19:00Z",
+      "venue": {
+        "name": "Gillette Stadium",
+        "city": "Foxborough, Massachusetts"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "464",
+        "name": "Norway",
+        "code": "NOR",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
+        "winner": false
+      },
+      "away": {
+        "id": "478",
+        "name": "France",
+        "code": "FRA",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760474",
+      "number": 62,
+      "round": "Group stage",
+      "kickoff": "2026-06-26T19:00Z",
+      "venue": {
+        "name": "BMO Field",
+        "city": "Toronto"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "654",
+        "name": "Senegal",
+        "code": "SEN",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
+        "winner": false
+      },
+      "away": {
+        "id": "4375",
+        "name": "Iraq",
+        "code": "IRQ",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irq.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760478",
+      "number": 63,
+      "round": "Group stage",
+      "kickoff": "2026-06-27T00:00Z",
+      "venue": {
+        "name": "NRG Stadium",
+        "city": "Houston, Texas"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "2597",
+        "name": "Cape Verde",
+        "code": "CPV",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cpv.png",
+        "winner": false
+      },
+      "away": {
+        "id": "655",
+        "name": "Saudi Arabia",
+        "code": "KSA",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ksa.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760479",
+      "number": 64,
+      "round": "Group stage",
+      "kickoff": "2026-06-27T00:00Z",
+      "venue": {
+        "name": "Estadio Akron",
+        "city": "Guadalajara"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "212",
+        "name": "Uruguay",
+        "code": "URU",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uru.png",
+        "winner": false
+      },
+      "away": {
+        "id": "164",
+        "name": "Spain",
+        "code": "ESP",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760476",
+      "number": 65,
+      "round": "Group stage",
+      "kickoff": "2026-06-27T03:00Z",
+      "venue": {
+        "name": "Lumen Field",
+        "city": "Seattle, Washington"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "2620",
+        "name": "Egypt",
+        "code": "EGY",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
+        "winner": false
+      },
+      "away": {
+        "id": "469",
+        "name": "Iran",
+        "code": "IRN",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760477",
+      "number": 66,
+      "round": "Group stage",
+      "kickoff": "2026-06-27T03:00Z",
+      "venue": {
+        "name": "BC Place",
+        "city": "Vancouver"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "2666",
+        "name": "New Zealand",
+        "code": "NZL",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nzl.png",
+        "winner": false
+      },
+      "away": {
+        "id": "459",
+        "name": "Belgium",
+        "code": "BEL",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760480",
+      "number": 67,
+      "round": "Group stage",
+      "kickoff": "2026-06-27T21:00Z",
+      "venue": {
+        "name": "Lincoln Financial Field",
+        "city": "Philadelphia, Pennsylvania"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "477",
+        "name": "Croatia",
+        "code": "CRO",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
+        "winner": false
+      },
+      "away": {
+        "id": "4469",
+        "name": "Ghana",
+        "code": "GHA",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/gha.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760485",
+      "number": 68,
+      "round": "Group stage",
+      "kickoff": "2026-06-27T21:00Z",
+      "venue": {
+        "name": "MetLife Stadium",
+        "city": "East Rutherford, New Jersey"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "2659",
+        "name": "Panama",
+        "code": "PAN",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/pan.png",
+        "winner": false
+      },
+      "away": {
+        "id": "448",
+        "name": "England",
+        "code": "ENG",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760481",
+      "number": 69,
+      "round": "Group stage",
+      "kickoff": "2026-06-27T23:30Z",
+      "venue": {
+        "name": "Hard Rock Stadium",
+        "city": "Miami Gardens, Florida"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "208",
+        "name": "Colombia",
+        "code": "COL",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
+        "winner": false
+      },
+      "away": {
+        "id": "482",
+        "name": "Portugal",
+        "code": "POR",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760482",
+      "number": 70,
+      "round": "Group stage",
+      "kickoff": "2026-06-27T23:30Z",
+      "venue": {
+        "name": "Mercedes-Benz Stadium",
+        "city": "Atlanta, Georgia"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "2850",
+        "name": "Congo DR",
+        "code": "COD",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
+        "winner": false
+      },
+      "away": {
+        "id": "2570",
+        "name": "Uzbekistan",
+        "code": "UZB",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uzb.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760484",
+      "number": 71,
+      "round": "Group stage",
+      "kickoff": "2026-06-28T02:00Z",
+      "venue": {
+        "name": "GEHA Field at Arrowhead Stadium",
+        "city": "Kansas City, Missouri"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "624",
+        "name": "Algeria",
+        "code": "ALG",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
+        "winner": false
+      },
+      "away": {
+        "id": "474",
+        "name": "Austria",
+        "code": "AUT",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aut.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760483",
+      "number": 72,
+      "round": "Group stage",
+      "kickoff": "2026-06-28T02:00Z",
+      "venue": {
+        "name": "AT&T Stadium",
+        "city": "Arlington, Texas"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "2917",
+        "name": "Jordan",
+        "code": "JOR",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/jor.png",
+        "winner": false
+      },
+      "away": {
+        "id": "202",
+        "name": "Argentina",
+        "code": "ARG",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760486",
+      "number": 73,
+      "round": "Round of 32",
+      "kickoff": "2026-06-28T19:00Z",
+      "venue": {
+        "name": "SoFi Stadium",
+        "city": "Inglewood, California"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "5926",
+        "name": "Group A 2nd Place",
+        "code": "2A",
+        "logo": "",
+        "winner": false
+      },
+      "away": {
+        "id": "5924",
+        "name": "Group B 2nd Place",
+        "code": "2B",
+        "logo": "",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760487",
+      "number": 74,
+      "round": "Round of 32",
+      "kickoff": "2026-06-29T17:00Z",
+      "venue": {
+        "name": "NRG Stadium",
+        "city": "Houston, Texas"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "5927",
+        "name": "Group C Winner",
+        "code": "1C",
+        "logo": "",
+        "winner": false
+      },
+      "away": {
+        "id": "5934",
+        "name": "Group F 2nd Place",
+        "code": "2F",
+        "logo": "",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760489",
+      "number": 75,
+      "round": "Round of 32",
+      "kickoff": "2026-06-29T20:30Z",
+      "venue": {
+        "name": "Gillette Stadium",
+        "city": "Foxborough, Massachusetts"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "5931",
+        "name": "Group E Winner",
+        "code": "1E",
+        "logo": "",
+        "winner": false
+      },
+      "away": {
+        "id": "131541",
+        "name": "Third Place Group A/B/C/D/F",
+        "code": "3RD",
+        "logo": "",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760488",
+      "number": 76,
+      "round": "Round of 32",
+      "kickoff": "2026-06-30T01:00Z",
+      "venue": {
+        "name": "Estadio BBVA",
+        "city": "Guadalupe"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "5933",
+        "name": "Group F Winner",
+        "code": "1F",
+        "logo": "",
+        "winner": false
+      },
+      "away": {
+        "id": "5930",
+        "name": "Group C 2nd Place",
+        "code": "2C",
+        "logo": "",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760490",
+      "number": 77,
+      "round": "Round of 32",
+      "kickoff": "2026-06-30T17:00Z",
+      "venue": {
+        "name": "AT&T Stadium",
+        "city": "Arlington, Texas"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "5932",
+        "name": "Group E 2nd Place",
+        "code": "2E",
+        "logo": "",
+        "winner": false
+      },
+      "away": {
+        "id": "131501",
+        "name": "Group I 2nd Place",
+        "code": "2I",
+        "logo": "",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760492",
+      "number": 78,
+      "round": "Round of 32",
+      "kickoff": "2026-06-30T21:00Z",
+      "venue": {
+        "name": "MetLife Stadium",
+        "city": "East Rutherford, New Jersey"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "131505",
+        "name": "Group I Winner",
+        "code": "1I",
+        "logo": "",
+        "winner": false
+      },
+      "away": {
+        "id": "131544",
+        "name": "Third Place Group C/D/F/G/H",
+        "code": "3RD",
+        "logo": "",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760491",
+      "number": 79,
+      "round": "Round of 32",
+      "kickoff": "2026-07-01T01:00Z",
+      "venue": {
+        "name": "Estadio Banorte",
+        "city": "Mexico City"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "203",
+        "name": "Mexico",
+        "code": "MEX",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
+        "winner": false
+      },
+      "away": {
+        "id": "131545",
+        "name": "Third Place Group C/E/F/H/I",
+        "code": "3RD",
+        "logo": "",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760495",
+      "number": 80,
+      "round": "Round of 32",
+      "kickoff": "2026-07-01T16:00Z",
+      "venue": {
+        "name": "Mercedes-Benz Stadium",
+        "city": "Atlanta, Georgia"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "131508",
+        "name": "Group L Winner",
+        "code": "1L",
+        "logo": "",
+        "winner": false
+      },
+      "away": {
+        "id": "131548",
+        "name": "Third Place Group E/H/I/J/K",
+        "code": "3RD",
+        "logo": "",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760493",
+      "number": 81,
+      "round": "Round of 32",
+      "kickoff": "2026-07-01T20:00Z",
+      "venue": {
+        "name": "Lumen Field",
+        "city": "Seattle, Washington"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "5935",
+        "name": "Group G Winner",
+        "code": "1G",
+        "logo": "",
+        "winner": false
+      },
+      "away": {
+        "id": "131542",
+        "name": "Third Place Group A/E/H/I/J",
+        "code": "3RD",
+        "logo": "",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760494",
+      "number": 82,
+      "round": "Round of 32",
+      "kickoff": "2026-07-02T00:00Z",
+      "venue": {
+        "name": "Levi's Stadium",
+        "city": "Santa Clara, California"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "660",
+        "name": "United States",
+        "code": "USA",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+        "winner": false
+      },
+      "away": {
+        "id": "131543",
+        "name": "Third Place Group B/E/F/I/J",
+        "code": "3RD",
+        "logo": "",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760497",
+      "number": 83,
+      "round": "Round of 32",
+      "kickoff": "2026-07-02T19:00Z",
+      "venue": {
+        "name": "SoFi Stadium",
+        "city": "Inglewood, California"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "5937",
+        "name": "Group H Winner",
+        "code": "1H",
+        "logo": "",
+        "winner": false
+      },
+      "away": {
+        "id": "131502",
+        "name": "Group J 2nd Place",
+        "code": "2J",
+        "logo": "",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760496",
+      "number": 84,
+      "round": "Round of 32",
+      "kickoff": "2026-07-02T23:00Z",
+      "venue": {
+        "name": "BMO Field",
+        "city": "Toronto"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "131503",
+        "name": "Group K 2nd Place",
+        "code": "2K",
+        "logo": "",
+        "winner": false
+      },
+      "away": {
+        "id": "131504",
+        "name": "Group L 2nd Place",
+        "code": "2L",
+        "logo": "",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760498",
+      "number": 85,
+      "round": "Round of 32",
+      "kickoff": "2026-07-03T03:00Z",
+      "venue": {
+        "name": "BC Place",
+        "city": "Vancouver"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "5925",
+        "name": "Group B Winner",
+        "code": "1B",
+        "logo": "",
+        "winner": false
+      },
+      "away": {
+        "id": "131547",
+        "name": "Third Place Group E/F/G/I/J",
+        "code": "3RD",
+        "logo": "",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760499",
+      "number": 86,
+      "round": "Round of 32",
+      "kickoff": "2026-07-03T18:00Z",
+      "venue": {
+        "name": "AT&T Stadium",
+        "city": "Arlington, Texas"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "5928",
+        "name": "Group D 2nd Place",
+        "code": "2D",
+        "logo": "",
+        "winner": false
+      },
+      "away": {
+        "id": "5936",
+        "name": "Group G 2nd Place",
+        "code": "2G",
+        "logo": "",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760500",
+      "number": 87,
+      "round": "Round of 32",
+      "kickoff": "2026-07-03T22:00Z",
+      "venue": {
+        "name": "Hard Rock Stadium",
+        "city": "Miami Gardens, Florida"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "131506",
+        "name": "Group J Winner",
+        "code": "1J",
+        "logo": "",
+        "winner": false
+      },
+      "away": {
+        "id": "5938",
+        "name": "Group H 2nd Place",
+        "code": "2H",
+        "logo": "",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760501",
+      "number": 88,
+      "round": "Round of 32",
+      "kickoff": "2026-07-04T01:30Z",
+      "venue": {
+        "name": "GEHA Field at Arrowhead Stadium",
+        "city": "Kansas City, Missouri"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "131507",
+        "name": "Group K Winner",
+        "code": "1K",
+        "logo": "",
+        "winner": false
+      },
+      "away": {
+        "id": "131546",
+        "name": "Third Place Group D/E/I/J/L",
+        "code": "3RD",
+        "logo": "",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760502",
+      "number": 89,
+      "round": "Round of 16",
+      "kickoff": "2026-07-04T17:00Z",
+      "venue": {
+        "name": "NRG Stadium",
+        "city": "Houston, Texas"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "131525",
+        "name": "Round of 32 1 Winner",
+        "code": "RD32",
+        "logo": "",
+        "winner": false
+      },
+      "away": {
+        "id": "131527",
+        "name": "Round of 32 3 Winner",
+        "code": "RD32",
+        "logo": "",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760503",
+      "number": 90,
+      "round": "Round of 16",
+      "kickoff": "2026-07-04T21:00Z",
+      "venue": {
+        "name": "Lincoln Financial Field",
+        "city": "Philadelphia, Pennsylvania"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "131526",
+        "name": "Round of 32 2 Winner",
+        "code": "RD32",
+        "logo": "",
+        "winner": false
+      },
+      "away": {
+        "id": "131529",
+        "name": "Round of 32 5 Winner",
+        "code": "RD32",
+        "logo": "",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760504",
+      "number": 91,
+      "round": "Round of 16",
+      "kickoff": "2026-07-05T20:00Z",
+      "venue": {
+        "name": "MetLife Stadium",
+        "city": "East Rutherford, New Jersey"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "131528",
+        "name": "Round of 32 4 Winner",
+        "code": "RD32",
+        "logo": "",
+        "winner": false
+      },
+      "away": {
+        "id": "131530",
+        "name": "Round of 32 6 Winner",
+        "code": "RD32",
+        "logo": "",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760505",
+      "number": 92,
+      "round": "Round of 16",
+      "kickoff": "2026-07-06T00:00Z",
+      "venue": {
+        "name": "Estadio Banorte",
+        "city": "Mexico City"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "131531",
+        "name": "Round of 32 7 Winner",
+        "code": "RD32",
+        "logo": "",
+        "winner": false
+      },
+      "away": {
+        "id": "131532",
+        "name": "Round of 32 8 Winner",
+        "code": "RD32",
+        "logo": "",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760506",
+      "number": 93,
+      "round": "Round of 16",
+      "kickoff": "2026-07-06T19:00Z",
+      "venue": {
+        "name": "AT&T Stadium",
+        "city": "Arlington, Texas"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "131535",
+        "name": "Round of 32 11 Winner",
+        "code": "RD32",
+        "logo": "",
+        "winner": false
+      },
+      "away": {
+        "id": "131536",
+        "name": "Round of 32 12 Winner",
+        "code": "RD32",
+        "logo": "",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760507",
+      "number": 94,
+      "round": "Round of 16",
+      "kickoff": "2026-07-07T00:00Z",
+      "venue": {
+        "name": "Lumen Field",
+        "city": "Seattle, Washington"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "131533",
+        "name": "Round of 32 9 Winner",
+        "code": "RD32",
+        "logo": "",
+        "winner": false
+      },
+      "away": {
+        "id": "131534",
+        "name": "Round of 32 10 Winner",
+        "code": "RD32",
+        "logo": "",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760509",
+      "number": 95,
+      "round": "Round of 16",
+      "kickoff": "2026-07-07T16:00Z",
+      "venue": {
+        "name": "Mercedes-Benz Stadium",
+        "city": "Atlanta, Georgia"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "131538",
+        "name": "Round of 32 14 Winner",
+        "code": "RD32",
+        "logo": "",
+        "winner": false
+      },
+      "away": {
+        "id": "131540",
+        "name": "Round of 32 16 Winner",
+        "code": "RD32",
+        "logo": "",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760508",
+      "number": 96,
+      "round": "Round of 16",
+      "kickoff": "2026-07-07T20:00Z",
+      "venue": {
+        "name": "BC Place",
+        "city": "Vancouver"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "131537",
+        "name": "Round of 32 13 Winner",
+        "code": "RD32",
+        "logo": "",
+        "winner": false
+      },
+      "away": {
+        "id": "131539",
+        "name": "Round of 32 15 Winner",
+        "code": "RD32",
+        "logo": "",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760510",
+      "number": 97,
+      "round": "Quarterfinal",
+      "kickoff": "2026-07-09T20:00Z",
+      "venue": {
+        "name": "Gillette Stadium",
+        "city": "Foxborough, Massachusetts"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "19282",
+        "name": "Round of 16 1 Winner",
+        "code": "RD16 W1",
+        "logo": "",
+        "winner": false
+      },
+      "away": {
+        "id": "19283",
+        "name": "Round of 16 2 Winner",
+        "code": "RD16 W2",
+        "logo": "",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760511",
+      "number": 98,
+      "round": "Quarterfinal",
+      "kickoff": "2026-07-10T19:00Z",
+      "venue": {
+        "name": "SoFi Stadium",
+        "city": "Inglewood, California"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "19278",
+        "name": "Round of 16 5 Winner",
+        "code": "RD16 W5",
+        "logo": "",
+        "winner": false
+      },
+      "away": {
+        "id": "19279",
+        "name": "Round of 16 6 Winner",
+        "code": "RD16 W6",
+        "logo": "",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760512",
+      "number": 99,
+      "round": "Quarterfinal",
+      "kickoff": "2026-07-11T21:00Z",
+      "venue": {
+        "name": "Hard Rock Stadium",
+        "city": "Miami Gardens, Florida"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "19284",
+        "name": "Round of 16 3 Winner",
+        "code": "RD16 W3",
+        "logo": "",
+        "winner": false
+      },
+      "away": {
+        "id": "19285",
+        "name": "Round of 16 4 Winner",
+        "code": "RD16 W4",
+        "logo": "",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760513",
+      "number": 100,
+      "round": "Quarterfinal",
+      "kickoff": "2026-07-12T01:00Z",
+      "venue": {
+        "name": "GEHA Field at Arrowhead Stadium",
+        "city": "Kansas City, Missouri"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "19280",
+        "name": "Round of 16 7 Winner",
+        "code": "RD16 W7",
+        "logo": "",
+        "winner": false
+      },
+      "away": {
+        "id": "19281",
+        "name": "Round of 16 8 Winner",
+        "code": "RD16 W8",
+        "logo": "",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760514",
+      "number": 101,
+      "round": "Semifinal",
+      "kickoff": "2026-07-14T19:00Z",
+      "venue": {
+        "name": "AT&T Stadium",
+        "city": "Arlington, Texas"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "17631",
+        "name": "Quarterfinal 1 Winner",
+        "code": "QFW1",
+        "logo": "",
+        "winner": false
+      },
+      "away": {
+        "id": "17629",
+        "name": "Quarterfinal 2 Winner",
+        "code": "QFW2",
+        "logo": "",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760515",
+      "number": 102,
+      "round": "Semifinal",
+      "kickoff": "2026-07-15T19:00Z",
+      "venue": {
+        "name": "Mercedes-Benz Stadium",
+        "city": "Atlanta, Georgia"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "17630",
+        "name": "Quarterfinal 3 Winner",
+        "code": "QFW3",
+        "logo": "",
+        "winner": false
+      },
+      "away": {
+        "id": "17632",
+        "name": "Quarterfinal 4 Winner",
+        "code": "QW4",
+        "logo": "",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760516",
+      "number": 103,
+      "round": "Third place",
+      "kickoff": "2026-07-18T21:00Z",
+      "venue": {
+        "name": "Hard Rock Stadium",
+        "city": "Miami Gardens, Florida"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "5958",
+        "name": "Semifinal 1 Loser",
+        "code": "SF L1",
+        "logo": "",
+        "winner": false
+      },
+      "away": {
+        "id": "5959",
+        "name": "Semifinal 2 Loser",
+        "code": "SF L2",
+        "logo": "",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    },
+    {
+      "id": "760517",
+      "number": 104,
+      "round": "Final",
+      "kickoff": "2026-07-19T19:00Z",
+      "venue": {
+        "name": "MetLife Stadium",
+        "city": "East Rutherford, New Jersey"
+      },
+      "status": {
+        "short": "NS",
+        "long": "Scheduled",
+        "elapsed": null
+      },
+      "home": {
+        "id": "5960",
+        "name": "Semifinal 1 Winner",
+        "code": "SFW1",
+        "logo": "",
+        "winner": false
+      },
+      "away": {
+        "id": "5961",
+        "name": "Semifinal 2 Winner",
+        "code": "SFW2",
+        "logo": "",
+        "winner": false
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "penalties": {
+        "home": null,
+        "away": null
+      }
+    }
+  ],
   "bracket": {
-    "roundOf32": [],
-    "roundOf16": [],
-    "quarterFinals": [],
-    "semiFinals": [],
-    "thirdPlace": [],
-    "final": []
+    "roundOf32": [
+      {
+        "id": "760486",
+        "number": 73,
+        "round": "Round of 32",
+        "kickoff": "2026-06-28T19:00Z",
+        "venue": {
+          "name": "SoFi Stadium",
+          "city": "Inglewood, California"
+        },
+        "status": {
+          "short": "NS",
+          "long": "Scheduled",
+          "elapsed": null
+        },
+        "home": {
+          "id": "5926",
+          "name": "Group A 2nd Place",
+          "code": "2A",
+          "logo": "",
+          "winner": false
+        },
+        "away": {
+          "id": "5924",
+          "name": "Group B 2nd Place",
+          "code": "2B",
+          "logo": "",
+          "winner": false
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "penalties": {
+          "home": null,
+          "away": null
+        }
+      },
+      {
+        "id": "760487",
+        "number": 74,
+        "round": "Round of 32",
+        "kickoff": "2026-06-29T17:00Z",
+        "venue": {
+          "name": "NRG Stadium",
+          "city": "Houston, Texas"
+        },
+        "status": {
+          "short": "NS",
+          "long": "Scheduled",
+          "elapsed": null
+        },
+        "home": {
+          "id": "5927",
+          "name": "Group C Winner",
+          "code": "1C",
+          "logo": "",
+          "winner": false
+        },
+        "away": {
+          "id": "5934",
+          "name": "Group F 2nd Place",
+          "code": "2F",
+          "logo": "",
+          "winner": false
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "penalties": {
+          "home": null,
+          "away": null
+        }
+      },
+      {
+        "id": "760489",
+        "number": 75,
+        "round": "Round of 32",
+        "kickoff": "2026-06-29T20:30Z",
+        "venue": {
+          "name": "Gillette Stadium",
+          "city": "Foxborough, Massachusetts"
+        },
+        "status": {
+          "short": "NS",
+          "long": "Scheduled",
+          "elapsed": null
+        },
+        "home": {
+          "id": "5931",
+          "name": "Group E Winner",
+          "code": "1E",
+          "logo": "",
+          "winner": false
+        },
+        "away": {
+          "id": "131541",
+          "name": "Third Place Group A/B/C/D/F",
+          "code": "3RD",
+          "logo": "",
+          "winner": false
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "penalties": {
+          "home": null,
+          "away": null
+        }
+      },
+      {
+        "id": "760488",
+        "number": 76,
+        "round": "Round of 32",
+        "kickoff": "2026-06-30T01:00Z",
+        "venue": {
+          "name": "Estadio BBVA",
+          "city": "Guadalupe"
+        },
+        "status": {
+          "short": "NS",
+          "long": "Scheduled",
+          "elapsed": null
+        },
+        "home": {
+          "id": "5933",
+          "name": "Group F Winner",
+          "code": "1F",
+          "logo": "",
+          "winner": false
+        },
+        "away": {
+          "id": "5930",
+          "name": "Group C 2nd Place",
+          "code": "2C",
+          "logo": "",
+          "winner": false
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "penalties": {
+          "home": null,
+          "away": null
+        }
+      },
+      {
+        "id": "760490",
+        "number": 77,
+        "round": "Round of 32",
+        "kickoff": "2026-06-30T17:00Z",
+        "venue": {
+          "name": "AT&T Stadium",
+          "city": "Arlington, Texas"
+        },
+        "status": {
+          "short": "NS",
+          "long": "Scheduled",
+          "elapsed": null
+        },
+        "home": {
+          "id": "5932",
+          "name": "Group E 2nd Place",
+          "code": "2E",
+          "logo": "",
+          "winner": false
+        },
+        "away": {
+          "id": "131501",
+          "name": "Group I 2nd Place",
+          "code": "2I",
+          "logo": "",
+          "winner": false
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "penalties": {
+          "home": null,
+          "away": null
+        }
+      },
+      {
+        "id": "760492",
+        "number": 78,
+        "round": "Round of 32",
+        "kickoff": "2026-06-30T21:00Z",
+        "venue": {
+          "name": "MetLife Stadium",
+          "city": "East Rutherford, New Jersey"
+        },
+        "status": {
+          "short": "NS",
+          "long": "Scheduled",
+          "elapsed": null
+        },
+        "home": {
+          "id": "131505",
+          "name": "Group I Winner",
+          "code": "1I",
+          "logo": "",
+          "winner": false
+        },
+        "away": {
+          "id": "131544",
+          "name": "Third Place Group C/D/F/G/H",
+          "code": "3RD",
+          "logo": "",
+          "winner": false
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "penalties": {
+          "home": null,
+          "away": null
+        }
+      },
+      {
+        "id": "760491",
+        "number": 79,
+        "round": "Round of 32",
+        "kickoff": "2026-07-01T01:00Z",
+        "venue": {
+          "name": "Estadio Banorte",
+          "city": "Mexico City"
+        },
+        "status": {
+          "short": "NS",
+          "long": "Scheduled",
+          "elapsed": null
+        },
+        "home": {
+          "id": "203",
+          "name": "Mexico",
+          "code": "MEX",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
+          "winner": false
+        },
+        "away": {
+          "id": "131545",
+          "name": "Third Place Group C/E/F/H/I",
+          "code": "3RD",
+          "logo": "",
+          "winner": false
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "penalties": {
+          "home": null,
+          "away": null
+        }
+      },
+      {
+        "id": "760495",
+        "number": 80,
+        "round": "Round of 32",
+        "kickoff": "2026-07-01T16:00Z",
+        "venue": {
+          "name": "Mercedes-Benz Stadium",
+          "city": "Atlanta, Georgia"
+        },
+        "status": {
+          "short": "NS",
+          "long": "Scheduled",
+          "elapsed": null
+        },
+        "home": {
+          "id": "131508",
+          "name": "Group L Winner",
+          "code": "1L",
+          "logo": "",
+          "winner": false
+        },
+        "away": {
+          "id": "131548",
+          "name": "Third Place Group E/H/I/J/K",
+          "code": "3RD",
+          "logo": "",
+          "winner": false
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "penalties": {
+          "home": null,
+          "away": null
+        }
+      },
+      {
+        "id": "760493",
+        "number": 81,
+        "round": "Round of 32",
+        "kickoff": "2026-07-01T20:00Z",
+        "venue": {
+          "name": "Lumen Field",
+          "city": "Seattle, Washington"
+        },
+        "status": {
+          "short": "NS",
+          "long": "Scheduled",
+          "elapsed": null
+        },
+        "home": {
+          "id": "5935",
+          "name": "Group G Winner",
+          "code": "1G",
+          "logo": "",
+          "winner": false
+        },
+        "away": {
+          "id": "131542",
+          "name": "Third Place Group A/E/H/I/J",
+          "code": "3RD",
+          "logo": "",
+          "winner": false
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "penalties": {
+          "home": null,
+          "away": null
+        }
+      },
+      {
+        "id": "760494",
+        "number": 82,
+        "round": "Round of 32",
+        "kickoff": "2026-07-02T00:00Z",
+        "venue": {
+          "name": "Levi's Stadium",
+          "city": "Santa Clara, California"
+        },
+        "status": {
+          "short": "NS",
+          "long": "Scheduled",
+          "elapsed": null
+        },
+        "home": {
+          "id": "660",
+          "name": "United States",
+          "code": "USA",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+          "winner": false
+        },
+        "away": {
+          "id": "131543",
+          "name": "Third Place Group B/E/F/I/J",
+          "code": "3RD",
+          "logo": "",
+          "winner": false
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "penalties": {
+          "home": null,
+          "away": null
+        }
+      },
+      {
+        "id": "760497",
+        "number": 83,
+        "round": "Round of 32",
+        "kickoff": "2026-07-02T19:00Z",
+        "venue": {
+          "name": "SoFi Stadium",
+          "city": "Inglewood, California"
+        },
+        "status": {
+          "short": "NS",
+          "long": "Scheduled",
+          "elapsed": null
+        },
+        "home": {
+          "id": "5937",
+          "name": "Group H Winner",
+          "code": "1H",
+          "logo": "",
+          "winner": false
+        },
+        "away": {
+          "id": "131502",
+          "name": "Group J 2nd Place",
+          "code": "2J",
+          "logo": "",
+          "winner": false
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "penalties": {
+          "home": null,
+          "away": null
+        }
+      },
+      {
+        "id": "760496",
+        "number": 84,
+        "round": "Round of 32",
+        "kickoff": "2026-07-02T23:00Z",
+        "venue": {
+          "name": "BMO Field",
+          "city": "Toronto"
+        },
+        "status": {
+          "short": "NS",
+          "long": "Scheduled",
+          "elapsed": null
+        },
+        "home": {
+          "id": "131503",
+          "name": "Group K 2nd Place",
+          "code": "2K",
+          "logo": "",
+          "winner": false
+        },
+        "away": {
+          "id": "131504",
+          "name": "Group L 2nd Place",
+          "code": "2L",
+          "logo": "",
+          "winner": false
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "penalties": {
+          "home": null,
+          "away": null
+        }
+      },
+      {
+        "id": "760498",
+        "number": 85,
+        "round": "Round of 32",
+        "kickoff": "2026-07-03T03:00Z",
+        "venue": {
+          "name": "BC Place",
+          "city": "Vancouver"
+        },
+        "status": {
+          "short": "NS",
+          "long": "Scheduled",
+          "elapsed": null
+        },
+        "home": {
+          "id": "5925",
+          "name": "Group B Winner",
+          "code": "1B",
+          "logo": "",
+          "winner": false
+        },
+        "away": {
+          "id": "131547",
+          "name": "Third Place Group E/F/G/I/J",
+          "code": "3RD",
+          "logo": "",
+          "winner": false
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "penalties": {
+          "home": null,
+          "away": null
+        }
+      },
+      {
+        "id": "760499",
+        "number": 86,
+        "round": "Round of 32",
+        "kickoff": "2026-07-03T18:00Z",
+        "venue": {
+          "name": "AT&T Stadium",
+          "city": "Arlington, Texas"
+        },
+        "status": {
+          "short": "NS",
+          "long": "Scheduled",
+          "elapsed": null
+        },
+        "home": {
+          "id": "5928",
+          "name": "Group D 2nd Place",
+          "code": "2D",
+          "logo": "",
+          "winner": false
+        },
+        "away": {
+          "id": "5936",
+          "name": "Group G 2nd Place",
+          "code": "2G",
+          "logo": "",
+          "winner": false
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "penalties": {
+          "home": null,
+          "away": null
+        }
+      },
+      {
+        "id": "760500",
+        "number": 87,
+        "round": "Round of 32",
+        "kickoff": "2026-07-03T22:00Z",
+        "venue": {
+          "name": "Hard Rock Stadium",
+          "city": "Miami Gardens, Florida"
+        },
+        "status": {
+          "short": "NS",
+          "long": "Scheduled",
+          "elapsed": null
+        },
+        "home": {
+          "id": "131506",
+          "name": "Group J Winner",
+          "code": "1J",
+          "logo": "",
+          "winner": false
+        },
+        "away": {
+          "id": "5938",
+          "name": "Group H 2nd Place",
+          "code": "2H",
+          "logo": "",
+          "winner": false
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "penalties": {
+          "home": null,
+          "away": null
+        }
+      },
+      {
+        "id": "760501",
+        "number": 88,
+        "round": "Round of 32",
+        "kickoff": "2026-07-04T01:30Z",
+        "venue": {
+          "name": "GEHA Field at Arrowhead Stadium",
+          "city": "Kansas City, Missouri"
+        },
+        "status": {
+          "short": "NS",
+          "long": "Scheduled",
+          "elapsed": null
+        },
+        "home": {
+          "id": "131507",
+          "name": "Group K Winner",
+          "code": "1K",
+          "logo": "",
+          "winner": false
+        },
+        "away": {
+          "id": "131546",
+          "name": "Third Place Group D/E/I/J/L",
+          "code": "3RD",
+          "logo": "",
+          "winner": false
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "penalties": {
+          "home": null,
+          "away": null
+        }
+      }
+    ],
+    "roundOf16": [
+      {
+        "id": "760502",
+        "number": 89,
+        "round": "Round of 16",
+        "kickoff": "2026-07-04T17:00Z",
+        "venue": {
+          "name": "NRG Stadium",
+          "city": "Houston, Texas"
+        },
+        "status": {
+          "short": "NS",
+          "long": "Scheduled",
+          "elapsed": null
+        },
+        "home": {
+          "id": "131525",
+          "name": "Round of 32 1 Winner",
+          "code": "RD32",
+          "logo": "",
+          "winner": false
+        },
+        "away": {
+          "id": "131527",
+          "name": "Round of 32 3 Winner",
+          "code": "RD32",
+          "logo": "",
+          "winner": false
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "penalties": {
+          "home": null,
+          "away": null
+        }
+      },
+      {
+        "id": "760503",
+        "number": 90,
+        "round": "Round of 16",
+        "kickoff": "2026-07-04T21:00Z",
+        "venue": {
+          "name": "Lincoln Financial Field",
+          "city": "Philadelphia, Pennsylvania"
+        },
+        "status": {
+          "short": "NS",
+          "long": "Scheduled",
+          "elapsed": null
+        },
+        "home": {
+          "id": "131526",
+          "name": "Round of 32 2 Winner",
+          "code": "RD32",
+          "logo": "",
+          "winner": false
+        },
+        "away": {
+          "id": "131529",
+          "name": "Round of 32 5 Winner",
+          "code": "RD32",
+          "logo": "",
+          "winner": false
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "penalties": {
+          "home": null,
+          "away": null
+        }
+      },
+      {
+        "id": "760504",
+        "number": 91,
+        "round": "Round of 16",
+        "kickoff": "2026-07-05T20:00Z",
+        "venue": {
+          "name": "MetLife Stadium",
+          "city": "East Rutherford, New Jersey"
+        },
+        "status": {
+          "short": "NS",
+          "long": "Scheduled",
+          "elapsed": null
+        },
+        "home": {
+          "id": "131528",
+          "name": "Round of 32 4 Winner",
+          "code": "RD32",
+          "logo": "",
+          "winner": false
+        },
+        "away": {
+          "id": "131530",
+          "name": "Round of 32 6 Winner",
+          "code": "RD32",
+          "logo": "",
+          "winner": false
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "penalties": {
+          "home": null,
+          "away": null
+        }
+      },
+      {
+        "id": "760505",
+        "number": 92,
+        "round": "Round of 16",
+        "kickoff": "2026-07-06T00:00Z",
+        "venue": {
+          "name": "Estadio Banorte",
+          "city": "Mexico City"
+        },
+        "status": {
+          "short": "NS",
+          "long": "Scheduled",
+          "elapsed": null
+        },
+        "home": {
+          "id": "131531",
+          "name": "Round of 32 7 Winner",
+          "code": "RD32",
+          "logo": "",
+          "winner": false
+        },
+        "away": {
+          "id": "131532",
+          "name": "Round of 32 8 Winner",
+          "code": "RD32",
+          "logo": "",
+          "winner": false
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "penalties": {
+          "home": null,
+          "away": null
+        }
+      },
+      {
+        "id": "760506",
+        "number": 93,
+        "round": "Round of 16",
+        "kickoff": "2026-07-06T19:00Z",
+        "venue": {
+          "name": "AT&T Stadium",
+          "city": "Arlington, Texas"
+        },
+        "status": {
+          "short": "NS",
+          "long": "Scheduled",
+          "elapsed": null
+        },
+        "home": {
+          "id": "131535",
+          "name": "Round of 32 11 Winner",
+          "code": "RD32",
+          "logo": "",
+          "winner": false
+        },
+        "away": {
+          "id": "131536",
+          "name": "Round of 32 12 Winner",
+          "code": "RD32",
+          "logo": "",
+          "winner": false
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "penalties": {
+          "home": null,
+          "away": null
+        }
+      },
+      {
+        "id": "760507",
+        "number": 94,
+        "round": "Round of 16",
+        "kickoff": "2026-07-07T00:00Z",
+        "venue": {
+          "name": "Lumen Field",
+          "city": "Seattle, Washington"
+        },
+        "status": {
+          "short": "NS",
+          "long": "Scheduled",
+          "elapsed": null
+        },
+        "home": {
+          "id": "131533",
+          "name": "Round of 32 9 Winner",
+          "code": "RD32",
+          "logo": "",
+          "winner": false
+        },
+        "away": {
+          "id": "131534",
+          "name": "Round of 32 10 Winner",
+          "code": "RD32",
+          "logo": "",
+          "winner": false
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "penalties": {
+          "home": null,
+          "away": null
+        }
+      },
+      {
+        "id": "760509",
+        "number": 95,
+        "round": "Round of 16",
+        "kickoff": "2026-07-07T16:00Z",
+        "venue": {
+          "name": "Mercedes-Benz Stadium",
+          "city": "Atlanta, Georgia"
+        },
+        "status": {
+          "short": "NS",
+          "long": "Scheduled",
+          "elapsed": null
+        },
+        "home": {
+          "id": "131538",
+          "name": "Round of 32 14 Winner",
+          "code": "RD32",
+          "logo": "",
+          "winner": false
+        },
+        "away": {
+          "id": "131540",
+          "name": "Round of 32 16 Winner",
+          "code": "RD32",
+          "logo": "",
+          "winner": false
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "penalties": {
+          "home": null,
+          "away": null
+        }
+      },
+      {
+        "id": "760508",
+        "number": 96,
+        "round": "Round of 16",
+        "kickoff": "2026-07-07T20:00Z",
+        "venue": {
+          "name": "BC Place",
+          "city": "Vancouver"
+        },
+        "status": {
+          "short": "NS",
+          "long": "Scheduled",
+          "elapsed": null
+        },
+        "home": {
+          "id": "131537",
+          "name": "Round of 32 13 Winner",
+          "code": "RD32",
+          "logo": "",
+          "winner": false
+        },
+        "away": {
+          "id": "131539",
+          "name": "Round of 32 15 Winner",
+          "code": "RD32",
+          "logo": "",
+          "winner": false
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "penalties": {
+          "home": null,
+          "away": null
+        }
+      }
+    ],
+    "quarterFinals": [
+      {
+        "id": "760510",
+        "number": 97,
+        "round": "Quarterfinal",
+        "kickoff": "2026-07-09T20:00Z",
+        "venue": {
+          "name": "Gillette Stadium",
+          "city": "Foxborough, Massachusetts"
+        },
+        "status": {
+          "short": "NS",
+          "long": "Scheduled",
+          "elapsed": null
+        },
+        "home": {
+          "id": "19282",
+          "name": "Round of 16 1 Winner",
+          "code": "RD16 W1",
+          "logo": "",
+          "winner": false
+        },
+        "away": {
+          "id": "19283",
+          "name": "Round of 16 2 Winner",
+          "code": "RD16 W2",
+          "logo": "",
+          "winner": false
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "penalties": {
+          "home": null,
+          "away": null
+        }
+      },
+      {
+        "id": "760511",
+        "number": 98,
+        "round": "Quarterfinal",
+        "kickoff": "2026-07-10T19:00Z",
+        "venue": {
+          "name": "SoFi Stadium",
+          "city": "Inglewood, California"
+        },
+        "status": {
+          "short": "NS",
+          "long": "Scheduled",
+          "elapsed": null
+        },
+        "home": {
+          "id": "19278",
+          "name": "Round of 16 5 Winner",
+          "code": "RD16 W5",
+          "logo": "",
+          "winner": false
+        },
+        "away": {
+          "id": "19279",
+          "name": "Round of 16 6 Winner",
+          "code": "RD16 W6",
+          "logo": "",
+          "winner": false
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "penalties": {
+          "home": null,
+          "away": null
+        }
+      },
+      {
+        "id": "760512",
+        "number": 99,
+        "round": "Quarterfinal",
+        "kickoff": "2026-07-11T21:00Z",
+        "venue": {
+          "name": "Hard Rock Stadium",
+          "city": "Miami Gardens, Florida"
+        },
+        "status": {
+          "short": "NS",
+          "long": "Scheduled",
+          "elapsed": null
+        },
+        "home": {
+          "id": "19284",
+          "name": "Round of 16 3 Winner",
+          "code": "RD16 W3",
+          "logo": "",
+          "winner": false
+        },
+        "away": {
+          "id": "19285",
+          "name": "Round of 16 4 Winner",
+          "code": "RD16 W4",
+          "logo": "",
+          "winner": false
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "penalties": {
+          "home": null,
+          "away": null
+        }
+      },
+      {
+        "id": "760513",
+        "number": 100,
+        "round": "Quarterfinal",
+        "kickoff": "2026-07-12T01:00Z",
+        "venue": {
+          "name": "GEHA Field at Arrowhead Stadium",
+          "city": "Kansas City, Missouri"
+        },
+        "status": {
+          "short": "NS",
+          "long": "Scheduled",
+          "elapsed": null
+        },
+        "home": {
+          "id": "19280",
+          "name": "Round of 16 7 Winner",
+          "code": "RD16 W7",
+          "logo": "",
+          "winner": false
+        },
+        "away": {
+          "id": "19281",
+          "name": "Round of 16 8 Winner",
+          "code": "RD16 W8",
+          "logo": "",
+          "winner": false
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "penalties": {
+          "home": null,
+          "away": null
+        }
+      }
+    ],
+    "semiFinals": [
+      {
+        "id": "760514",
+        "number": 101,
+        "round": "Semifinal",
+        "kickoff": "2026-07-14T19:00Z",
+        "venue": {
+          "name": "AT&T Stadium",
+          "city": "Arlington, Texas"
+        },
+        "status": {
+          "short": "NS",
+          "long": "Scheduled",
+          "elapsed": null
+        },
+        "home": {
+          "id": "17631",
+          "name": "Quarterfinal 1 Winner",
+          "code": "QFW1",
+          "logo": "",
+          "winner": false
+        },
+        "away": {
+          "id": "17629",
+          "name": "Quarterfinal 2 Winner",
+          "code": "QFW2",
+          "logo": "",
+          "winner": false
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "penalties": {
+          "home": null,
+          "away": null
+        }
+      },
+      {
+        "id": "760515",
+        "number": 102,
+        "round": "Semifinal",
+        "kickoff": "2026-07-15T19:00Z",
+        "venue": {
+          "name": "Mercedes-Benz Stadium",
+          "city": "Atlanta, Georgia"
+        },
+        "status": {
+          "short": "NS",
+          "long": "Scheduled",
+          "elapsed": null
+        },
+        "home": {
+          "id": "17630",
+          "name": "Quarterfinal 3 Winner",
+          "code": "QFW3",
+          "logo": "",
+          "winner": false
+        },
+        "away": {
+          "id": "17632",
+          "name": "Quarterfinal 4 Winner",
+          "code": "QW4",
+          "logo": "",
+          "winner": false
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "penalties": {
+          "home": null,
+          "away": null
+        }
+      }
+    ],
+    "thirdPlace": [
+      {
+        "id": "760516",
+        "number": 103,
+        "round": "Third place",
+        "kickoff": "2026-07-18T21:00Z",
+        "venue": {
+          "name": "Hard Rock Stadium",
+          "city": "Miami Gardens, Florida"
+        },
+        "status": {
+          "short": "NS",
+          "long": "Scheduled",
+          "elapsed": null
+        },
+        "home": {
+          "id": "5958",
+          "name": "Semifinal 1 Loser",
+          "code": "SF L1",
+          "logo": "",
+          "winner": false
+        },
+        "away": {
+          "id": "5959",
+          "name": "Semifinal 2 Loser",
+          "code": "SF L2",
+          "logo": "",
+          "winner": false
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "penalties": {
+          "home": null,
+          "away": null
+        }
+      }
+    ],
+    "final": [
+      {
+        "id": "760517",
+        "number": 104,
+        "round": "Final",
+        "kickoff": "2026-07-19T19:00Z",
+        "venue": {
+          "name": "MetLife Stadium",
+          "city": "East Rutherford, New Jersey"
+        },
+        "status": {
+          "short": "NS",
+          "long": "Scheduled",
+          "elapsed": null
+        },
+        "home": {
+          "id": "5960",
+          "name": "Semifinal 1 Winner",
+          "code": "SFW1",
+          "logo": "",
+          "winner": false
+        },
+        "away": {
+          "id": "5961",
+          "name": "Semifinal 2 Winner",
+          "code": "SFW2",
+          "logo": "",
+          "winner": false
+        },
+        "goals": {
+          "home": null,
+          "away": null
+        },
+        "penalties": {
+          "home": null,
+          "away": null
+        }
+      }
+    ]
   }
 }

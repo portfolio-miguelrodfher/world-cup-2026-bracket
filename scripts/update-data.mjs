@@ -1,77 +1,147 @@
 import fs from "node:fs/promises";
 import path from "node:path";
-import process from "node:process";
 import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "..");
 const dataPath = path.join(root, "data", "world-cup.json");
-const API_BASE = "https://v3.football.api-sports.io";
-const key = process.env.API_FOOTBALL_KEY;
+const SCOREBOARD_URL =
+  "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?limit=200&dates=2026";
+const STANDINGS_URL =
+  "https://site.api.espn.com/apis/v2/sports/soccer/fifa.world/standings?region=us&lang=en&contentorigin=espn&isqualified=true&type=0&level=0&sort=rank:asc";
 
-if (!key) {
-  throw new Error("API_FOOTBALL_KEY is required. Add it as a GitHub Actions repository secret.");
-}
-
-async function apiGet(endpoint) {
-  const response = await fetch(`${API_BASE}${endpoint}`, {
-    headers: { "x-apisports-key": key },
+async function fetchJson(url) {
+  const response = await fetch(url, {
+    headers: {
+      Accept: "application/json",
+      "User-Agent": "world-cup-2026-bracket/1.0",
+    },
   });
-  if (!response.ok) throw new Error(`API-Football returned ${response.status} for ${endpoint}`);
-  const payload = await response.json();
-  if (payload.errors && Object.keys(payload.errors).length) {
-    throw new Error(`API-Football error: ${JSON.stringify(payload.errors)}`);
-  }
-  return payload.response || [];
+  if (!response.ok) throw new Error(`Data provider returned ${response.status} for ${url}`);
+  return response.json();
 }
 
-function normalizeTeam(team, winner = false) {
+function statValue(entry, name) {
+  return entry.stats?.find((stat) => stat.name === name)?.value ?? 0;
+}
+
+function normalizeStandingTeam(entry, rank) {
   return {
-    id: team?.id ?? null,
-    name: team?.name || "TBD",
-    code: team?.code || "",
-    logo: team?.logo || "",
-    winner: winner === true,
+    id: entry.team?.id ?? null,
+    name: entry.team?.displayName || "TBD",
+    code: entry.team?.abbreviation || "",
+    logo: entry.team?.logos?.[0]?.href || "",
+    winner: false,
+    rank,
+    points: statValue(entry, "points"),
+    goalsDiff: statValue(entry, "pointDifferential"),
+    played: statValue(entry, "gamesPlayed"),
+    won: statValue(entry, "wins"),
+    drawn: statValue(entry, "ties"),
+    lost: statValue(entry, "losses"),
+    goalsFor: statValue(entry, "pointsFor"),
+    goalsAgainst: statValue(entry, "pointsAgainst"),
+    description: entry.note?.description || "",
   };
 }
 
-function normalizeFixture(item, index) {
+function normalizeGroups(payload) {
+  return (payload.children || [])
+    .map((group) => ({
+      name: group.name,
+      teams: (group.standings?.entries || []).map((entry, index) =>
+        normalizeStandingTeam(entry, index + 1),
+      ),
+    }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
+
+function statusShort(event) {
+  const type = event.status?.type;
+  if (type?.completed) return type.name?.includes("PENALT") ? "PEN" : "FT";
+  if (type?.state === "pre") return "NS";
+  if (event.status?.period === 1) return "1H";
+  if (event.status?.period === 2) return "2H";
+  if (event.status?.period > 2) return "ET";
+  return "LIVE";
+}
+
+function normalizeCompetitor(competitor) {
+  const hasStarted = competitor.score !== undefined && competitor.score !== null;
   return {
-    id: item.fixture.id,
+    id: competitor.team?.id ?? null,
+    name: competitor.team?.displayName || "TBD",
+    code: competitor.team?.abbreviation || "",
+    logo: competitor.team?.logo || "",
+    winner: competitor.winner === true,
+    score: hasStarted ? Number(competitor.score) : null,
+  };
+}
+
+function roundLabel(slug = "") {
+  const labels = {
+    "group-stage": "Group stage",
+    "round-of-32": "Round of 32",
+    "round-of-16": "Round of 16",
+    quarterfinals: "Quarterfinal",
+    semifinals: "Semifinal",
+    "3rd-place-match": "Third place",
+    final: "Final",
+  };
+  return labels[slug] || slug;
+}
+
+function normalizeMatch(event, index) {
+  const competition = event.competitions?.[0] || {};
+  const competitors = competition.competitors || [];
+  const home = normalizeCompetitor(
+    competitors.find((team) => team.homeAway === "home") || competitors[0] || {},
+  );
+  const away = normalizeCompetitor(
+    competitors.find((team) => team.homeAway === "away") || competitors[1] || {},
+  );
+  const started = event.status?.type?.state !== "pre";
+
+  return {
+    id: event.id,
     number: index + 1,
-    round: item.league.round,
-    kickoff: item.fixture.date,
+    round: roundLabel(event.season?.slug),
+    kickoff: event.date,
     venue: {
-      name: item.fixture.venue?.name || "",
-      city: item.fixture.venue?.city || "",
+      name: competition.venue?.fullName || "",
+      city: competition.venue?.address?.city || "",
     },
     status: {
-      short: item.fixture.status?.short || "NS",
-      long: item.fixture.status?.long || "Not started",
-      elapsed: item.fixture.status?.elapsed ?? null,
+      short: statusShort(event),
+      long: event.status?.type?.description || "Scheduled",
+      elapsed:
+        event.status?.type?.state === "in"
+          ? Number.parseInt(event.status?.displayClock, 10) || null
+          : null,
     },
-    home: normalizeTeam(item.teams.home, item.teams.home?.winner),
-    away: normalizeTeam(item.teams.away, item.teams.away?.winner),
+    home: {
+      id: home.id,
+      name: home.name,
+      code: home.code,
+      logo: home.logo,
+      winner: home.winner,
+    },
+    away: {
+      id: away.id,
+      name: away.name,
+      code: away.code,
+      logo: away.logo,
+      winner: away.winner,
+    },
     goals: {
-      home: item.goals?.home ?? null,
-      away: item.goals?.away ?? null,
+      home: started ? home.score : null,
+      away: started ? away.score : null,
     },
     penalties: {
-      home: item.score?.penalty?.home ?? null,
-      away: item.score?.penalty?.away ?? null,
+      home: null,
+      away: null,
     },
   };
-}
-
-function normalizeRound(round = "") {
-  const value = round.toLowerCase();
-  if (value.includes("round of 32") || value.includes("1/16")) return "roundOf32";
-  if (value.includes("round of 16") || value.includes("1/8")) return "roundOf16";
-  if (value.includes("quarter")) return "quarterFinals";
-  if (value.includes("semi")) return "semiFinals";
-  if (value.includes("third") || value.includes("3rd")) return "thirdPlace";
-  if (value.includes("final")) return "final";
-  return null;
 }
 
 function bracketFromMatches(matches) {
@@ -83,58 +153,45 @@ function bracketFromMatches(matches) {
     thirdPlace: [],
     final: [],
   };
+  const keys = {
+    "Round of 32": "roundOf32",
+    "Round of 16": "roundOf16",
+    Quarterfinal: "quarterFinals",
+    Semifinal: "semiFinals",
+    "Third place": "thirdPlace",
+    Final: "final",
+  };
 
   matches.forEach((match) => {
-    const key = normalizeRound(match.round);
+    const key = keys[match.round];
     if (key) bracket[key].push(match);
-  });
-
-  Object.values(bracket).forEach((round) => {
-    round.sort((a, b) => new Date(a.kickoff) - new Date(b.kickoff));
   });
   return bracket;
 }
 
-function normalizeStandings(response) {
-  const rawGroups = response[0]?.league?.standings || [];
-  return rawGroups
-    .map((rows, index) => ({
-      name: rows[0]?.group || `Group ${String.fromCharCode(65 + index)}`,
-      teams: rows.map((row) => ({
-        ...normalizeTeam(row.team),
-        rank: row.rank,
-        points: row.points,
-        goalsDiff: row.goalsDiff,
-        form: row.form || "",
-        status: row.status || "same",
-        description: row.description || "",
-        played: row.all?.played ?? 0,
-        won: row.all?.win ?? 0,
-        drawn: row.all?.draw ?? 0,
-        lost: row.all?.lose ?? 0,
-        goalsFor: row.all?.goals?.for ?? 0,
-        goalsAgainst: row.all?.goals?.against ?? 0,
-      })),
-    }))
-    .sort((a, b) => a.name.localeCompare(b.name));
-}
-
-const [fixtureResponse, standingsResponse] = await Promise.all([
-  apiGet("/fixtures?league=1&season=2026"),
-  apiGet("/standings?league=1&season=2026"),
+const [scoreboard, standings] = await Promise.all([
+  fetchJson(SCOREBOARD_URL),
+  fetchJson(STANDINGS_URL),
 ]);
 
-const matches = fixtureResponse
-  .sort((a, b) => new Date(a.fixture.date) - new Date(b.fixture.date))
-  .map(normalizeFixture);
-const groups = normalizeStandings(standingsResponse);
+const matches = (scoreboard.events || [])
+  .sort((a, b) => new Date(a.date) - new Date(b.date))
+  .map(normalizeMatch);
+const groups = normalizeGroups(standings);
+
+if (matches.length !== 104) {
+  throw new Error(`Expected 104 World Cup matches, received ${matches.length}.`);
+}
+if (groups.length !== 12 || groups.some((group) => group.teams.length !== 4)) {
+  throw new Error("Standings response did not contain twelve complete groups.");
+}
 
 const output = {
   meta: {
     competition: "FIFA World Cup",
     season: 2026,
     mode: "live",
-    provider: "API-Football",
+    provider: "ESPN",
     updatedAt: new Date().toISOString(),
   },
   groups,

@@ -4,18 +4,14 @@ An installable, responsive World Cup dashboard with group standings, match score
 and a full knockout bracket. The site is hosted on GitHub Pages and its data is
 updated automatically by GitHub Actions.
 
-## Enable automatic data
+## Automatic data
 
-1. Create an API-Football account and copy your API key.
-2. In this GitHub repository, open **Settings → Secrets and variables → Actions**.
-3. Create a repository secret named `API_FOOTBALL_KEY`.
-4. Open **Actions → Update World Cup data → Run workflow**.
+The site uses ESPN's public World Cup feeds for the group tables, schedule, match
+status, scores, and knockout participants. No API key is required.
 
-The key remains encrypted in GitHub Actions and is never included in the public
-website.
-
-The scheduled updater checks scores and standings every 30 minutes. This cadence
-keeps the two-request refresh within API-Football's typical free daily allowance.
+GitHub Actions refreshes the checked-in data every 15 minutes. You can also run
+**Actions → Update World Cup data → Run workflow** whenever you want an immediate
+refresh.
 
 ## Enable GitHub Pages
 

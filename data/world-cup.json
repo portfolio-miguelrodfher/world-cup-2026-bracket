@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "competition": "FIFA World Cup",
+    "season": 2026,
+    "mode": "preview",
+    "provider": "API-Football",
+    "updatedAt": null
+  },
+  "groups": [
+    { "name": "Group A", "teams": [] },
+    { "name": "Group B", "teams": [] },
+    { "name": "Group C", "teams": [] },
+    { "name": "Group D", "teams": [] },
+    { "name": "Group E", "teams": [] },
+    { "name": "Group F", "teams": [] },
+    { "name": "Group G", "teams": [] },
+    { "name": "Group H", "teams": [] },
+    { "name": "Group I", "teams": [] },
+    { "name": "Group J", "teams": [] },
+    { "name": "Group K", "teams": [] },
+    { "name": "Group L", "teams": [] }
+  ],
+  "matches": [],
+  "bracket": {
+    "roundOf32": [],
+    "roundOf16": [],
+    "quarterFinals": [],
+    "semiFinals": [],
+    "thirdPlace": [],
+    "final": []
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "world-cup-2026-bracket",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "serve": "npx serve .",
+    "update-data": "node scripts/update-data.mjs",
+    "check": "node --check app.js && node --check scripts/update-data.mjs"
+  }
+}

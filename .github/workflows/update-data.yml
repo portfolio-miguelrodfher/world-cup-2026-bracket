@@ -1,0 +1,44 @@
+name: Update World Cup data
+
+on:
+  schedule:
+    # Two API requests per run keeps the updater within the provider's
+    # typical 100-request daily free allowance.
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: world-cup-data
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Fetch fixtures and standings
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+        run: node scripts/update-data.mjs
+
+      - name: Publish changed data
+        run: |
+          if git diff --quiet -- data/world-cup.json; then
+            echo "Tournament data is unchanged."
+            exit 0
+          fi
+          git config user.name "world-cup-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/world-cup.json
+          git commit -m "Update tournament data"
+          git push

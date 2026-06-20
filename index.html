@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080a0d" />
+    <meta
+      name="description"
+      content="An automatically updated 2026 World Cup standings and knockout bracket."
+    />
+    <title>World Cup 2026 — Live Bracket</title>
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./assets/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div>
+        <p class="eyebrow">United States · Canada · Mexico</p>
+        <h1>World Cup <span>2026</span></h1>
+      </div>
+      <div class="status-cluster">
+        <span class="live-dot" aria-hidden="true"></span>
+        <div>
+          <strong id="data-status">Loading tournament data…</strong>
+          <small id="last-updated"></small>
+        </div>
+      </div>
+    </header>
+
+    <nav class="view-tabs" aria-label="Dashboard views">
+      <button class="tab is-active" data-view="bracket">Knockout bracket</button>
+      <button class="tab" data-view="standings">Group standings</button>
+      <button class="tab" data-view="matches">Match center</button>
+    </nav>
+
+    <main>
+      <section id="bracket-view" class="view is-active" aria-labelledby="bracket-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Road to the final</p>
+            <h2 id="bracket-title">The knockout stage</h2>
+          </div>
+          <p class="mobile-hint">Swipe sideways to explore the full bracket →</p>
+        </div>
+
+        <div class="board-scroll">
+          <div class="bracket-board">
+            <aside id="groups-left" class="group-rail" aria-label="Groups A through F"></aside>
+
+            <section class="bracket-wing bracket-wing--left" aria-label="Left side of bracket">
+              <div class="round-column" data-round="roundOf32" data-side="left">
+                <h3>Round of 32</h3>
+                <div class="round-matches"></div>
+              </div>
+              <div class="round-column" data-round="roundOf16" data-side="left">
+                <h3>Round of 16</h3>
+                <div class="round-matches"></div>
+              </div>
+              <div class="round-column" data-round="quarterFinals" data-side="left">
+                <h3>Quarterfinals</h3>
+                <div class="round-matches"></div>
+              </div>
+              <div class="round-column" data-round="semiFinals" data-side="left">
+                <h3>Semifinal</h3>
+                <div class="round-matches"></div>
+              </div>
+            </section>
+
+            <section class="final-stage" aria-label="Final and third-place matches">
+              <div>
+                <p class="eyebrow">New York New Jersey</p>
+                <h2>Final</h2>
+              </div>
+              <div id="final-match"></div>
+              <div class="trophy" aria-hidden="true">
+                <svg viewBox="0 0 160 250" role="img">
+                  <defs>
+                    <linearGradient id="gold" x1="0" x2="1" y1="0" y2="1">
+                      <stop offset="0" stop-color="#fff1a8" />
+                      <stop offset=".3" stop-color="#e4b53d" />
+                      <stop offset=".58" stop-color="#8f5b0b" />
+                      <stop offset=".82" stop-color="#f2cb5b" />
+                      <stop offset="1" stop-color="#704208" />
+                    </linearGradient>
+                  </defs>
+                  <circle cx="80" cy="51" r="38" fill="url(#gold)" />
+                  <path d="M56 70c8 20 12 38 8 61-4 24-18 41-24 66h80c-6-25-20-42-24-66-4-23 0-41 8-61-15 11-33 17-48 0Z" fill="url(#gold)" />
+                  <path d="M42 197h76l13 33H29l13-33Z" fill="url(#gold)" />
+                  <path d="M52 212h56" stroke="#fff2ad" stroke-width="4" opacity=".7" />
+                  <path d="M64 18c-16 23-10 48 14 64M98 22c8 20 0 42-21 58" fill="none" stroke="#fff6c9" stroke-width="6" stroke-linecap="round" opacity=".7" />
+                </svg>
+              </div>
+              <div class="third-place">
+                <p class="eyebrow">Third place</p>
+                <div id="third-place-match"></div>
+              </div>
+            </section>
+
+            <section class="bracket-wing bracket-wing--right" aria-label="Right side of bracket">
+              <div class="round-column" data-round="semiFinals" data-side="right">
+                <h3>Semifinal</h3>
+                <div class="round-matches"></div>
+              </div>
+              <div class="round-column" data-round="quarterFinals" data-side="right">
+                <h3>Quarterfinals</h3>
+                <div class="round-matches"></div>
+              </div>
+              <div class="round-column" data-round="roundOf16" data-side="right">
+                <h3>Round of 16</h3>
+                <div class="round-matches"></div>
+              </div>
+              <div class="round-column" data-round="roundOf32" data-side="right">
+                <h3>Round of 32</h3>
+                <div class="round-matches"></div>
+              </div>
+            </section>
+
+            <aside id="groups-right" class="group-rail" aria-label="Groups G through L"></aside>
+          </div>
+        </div>
+      </section>
+
+      <section id="standings-view" class="view" aria-labelledby="standings-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Twelve groups · Forty-eight nations</p>
+            <h2 id="standings-title">Group standings</h2>
+          </div>
+          <p>Top two teams and the eight best third-place teams advance.</p>
+        </div>
+        <div id="standings-grid" class="standings-grid"></div>
+      </section>
+
+      <section id="matches-view" class="view" aria-labelledby="matches-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Scores and schedule</p>
+            <h2 id="matches-title">Match center</h2>
+          </div>
+          <select id="match-filter" aria-label="Filter matches">
+            <option value="all">All matches</option>
+            <option value="live">Live now</option>
+            <option value="upcoming">Upcoming</option>
+            <option value="finished">Finished</option>
+          </select>
+        </div>
+        <div id="match-list" class="match-list"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Unofficial tournament tracker · Times shown in Eastern Time</p>
+      <button id="refresh-button">Refresh data</button>
+    </footer>
+
+    <template id="match-card-template">
+      <article class="match-card">
+        <div class="match-meta">
+          <span class="match-number"></span>
+          <span class="match-state"></span>
+        </div>
+        <div class="team-row team-row--home">
+          <span class="team-mark"></span>
+          <span class="team-name"></span>
+          <strong class="team-score"></strong>
+        </div>
+        <div class="team-row team-row--away">
+          <span class="team-mark"></span>
+          <span class="team-name"></span>
+          <strong class="team-score"></strong>
+        </div>
+      </article>
+    </template>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>

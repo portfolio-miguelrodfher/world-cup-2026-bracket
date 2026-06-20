@@ -4,7 +4,7 @@
     "season": 2026,
     "mode": "live",
     "provider": "ESPN",
-    "updatedAt": "2026-06-20T17:51:25.469Z"
+    "updatedAt": "2026-06-20T18:39:51.598Z"
   },
   "groups": [
     {
@@ -2303,9 +2303,9 @@
         "city": "Houston, Texas"
       },
       "status": {
-        "short": "1H",
-        "long": "Halftime",
-        "elapsed": 45
+        "short": "2H",
+        "long": "Second Half",
+        "elapsed": 77
       },
       "home": {
         "id": "449",
@@ -2322,8 +2322,8 @@
         "winner": false
       },
       "goals": {
-        "home": 2,
-        "away": 0
+        "home": 4,
+        "away": 1
       },
       "penalties": {
         "home": null,
@@ -6441,7 +6441,7 @@
       "model": "Elo + tournament form + Poisson goals",
       "simulations": 5000,
       "ratingSource": "World Football Elo Ratings",
-      "generatedAt": "2026-06-20T17:51:25.469Z",
+      "generatedAt": "2026-06-20T18:39:51.598Z",
       "disclaimer": "Statistical model estimate — not betting odds."
     },
     "teams": [

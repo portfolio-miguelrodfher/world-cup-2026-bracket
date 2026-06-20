@@ -158,6 +158,9 @@ function renderGroupRails() {
     const card = document.createElement("article");
     card.className = "group-card";
     card.style.setProperty("--group-color", GROUP_COLORS[index]);
+    card.tabIndex = 0;
+    card.setAttribute("role", "button");
+    card.setAttribute("aria-label", `Open ${group.name} matches and scores`);
 
     const teamGrid = document.createElement("div");
     teamGrid.className = "group-flags";
@@ -176,12 +179,73 @@ function renderGroupRails() {
 
     const title = document.createElement("strong");
     title.textContent = group.name || `Group ${String.fromCharCode(65 + index)}`;
-    card.append(teamGrid, title);
+    const prompt = document.createElement("span");
+    prompt.className = "group-card__prompt";
+    prompt.textContent = "View matches →";
+    card.append(teamGrid, title, prompt);
+    card.addEventListener("click", () => openGroupDialog(group, index));
+    card.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        openGroupDialog(group, index);
+      }
+    });
     return card;
   });
 
   document.querySelector("#groups-left").replaceChildren(...cards.slice(0, 6));
   document.querySelector("#groups-right").replaceChildren(...cards.slice(6));
+}
+
+function groupMatches(group) {
+  const teamIds = new Set((group.teams || []).map((team) => String(team.id)));
+  return (state.data?.matches || [])
+    .filter(
+      (match) =>
+        match.round === "Group stage" &&
+        teamIds.has(String(match.home?.id)) &&
+        teamIds.has(String(match.away?.id)),
+    )
+    .sort((a, b) => new Date(a.kickoff || 0) - new Date(b.kickoff || 0));
+}
+
+function openGroupDialog(group, colorIndex) {
+  const dialog = document.querySelector("#group-dialog");
+  dialog.style.setProperty("--group-color", GROUP_COLORS[colorIndex]);
+  document.querySelector("#group-dialog-title").textContent = `${group.name} matches`;
+
+  const standings = document.querySelector("#group-dialog-standings");
+  standings.replaceChildren(
+    ...(group.teams || []).map((team, index) => {
+      const row = document.createElement("div");
+      row.className = "dialog-standing-row";
+
+      const rank = document.createElement("strong");
+      rank.textContent = String(team.rank || index + 1);
+      const identity = document.createElement("span");
+      identity.className = "dialog-standing-team";
+      identity.append(teamMark(team), document.createTextNode(team.name));
+      const record = document.createElement("span");
+      record.textContent = `${team.played ?? 0} PL · ${team.goalsDiff > 0 ? "+" : ""}${team.goalsDiff ?? 0} GD`;
+      const points = document.createElement("strong");
+      points.textContent = `${team.points ?? 0} PTS`;
+
+      row.append(rank, identity, record, points);
+      return row;
+    }),
+  );
+
+  const matches = groupMatches(group);
+  const matchContainer = document.querySelector("#group-dialog-matches");
+  if (matches.length) {
+    matchContainer.replaceChildren(
+      ...matches.map((match) => buildMatchCard(match, { compact: false })),
+    );
+  } else {
+    matchContainer.innerHTML = `<div class="empty-state">The group schedule is not available yet.</div>`;
+  }
+
+  dialog.showModal();
 }
 
 function renderStandings() {
@@ -279,6 +343,14 @@ document.querySelectorAll(".tab").forEach((tab) => {
 document.querySelector("#match-filter").addEventListener("change", (event) => {
   state.filter = event.target.value;
   renderMatches();
+});
+
+document.querySelector("#group-dialog-close").addEventListener("click", () => {
+  document.querySelector("#group-dialog").close();
+});
+
+document.querySelector("#group-dialog").addEventListener("click", (event) => {
+  if (event.target === event.currentTarget) event.currentTarget.close();
 });
 
 document.querySelector("#refresh-button").addEventListener("click", async (event) => {

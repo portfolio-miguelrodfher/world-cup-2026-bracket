@@ -149,6 +149,23 @@
       </section>
     </main>
 
+    <dialog id="group-dialog" class="group-dialog" aria-labelledby="group-dialog-title">
+      <div class="group-dialog__header">
+        <div>
+          <p class="eyebrow">Group schedule</p>
+          <h2 id="group-dialog-title">Group matches</h2>
+        </div>
+        <button id="group-dialog-close" class="dialog-close" aria-label="Close group matches">
+          ×
+        </button>
+      </div>
+      <p class="group-dialog__note">
+        Teams in the bracket tiles are ordered by the current standings—not by matchup.
+      </p>
+      <div id="group-dialog-standings" class="dialog-standings"></div>
+      <div id="group-dialog-matches" class="dialog-matches"></div>
+    </dialog>
+
     <footer>
       <p>Unofficial tournament tracker · Times shown in Eastern Time</p>
       <button id="refresh-button">Refresh data</button>

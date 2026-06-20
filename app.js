@@ -89,6 +89,49 @@ function teamMark(team) {
   return placeholder;
 }
 
+function enableTeamOutlook(element, team) {
+  if (!team?.id || !state.data?.forecast?.teams) return;
+  element.classList.add("team-outlook-trigger");
+  element.tabIndex = 0;
+  element.setAttribute("role", "button");
+  element.setAttribute("aria-label", `Open ${team.name} forecast`);
+  element.addEventListener("click", (event) => {
+    event.stopPropagation();
+    openTeamDialog(team.id);
+  });
+  element.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      event.stopPropagation();
+      openTeamDialog(team.id);
+    }
+  });
+}
+
+function renderMatchForecast(container, match, compact) {
+  const forecast = match.forecast;
+  const finished = ["FT", "AET", "PEN"].includes(match.status?.short);
+  if (!forecast || finished || !match.home?.id || !match.away?.id) {
+    container.remove();
+    return;
+  }
+
+  container.classList.toggle("match-forecast--compact", compact);
+  if (match.round === "Group stage") {
+    container.innerHTML = `
+      <span><b>${match.home.code}</b> ${forecast.home}%</span>
+      <span><b>Draw</b> ${forecast.draw}%</span>
+      <span><b>${match.away.code}</b> ${forecast.away}%</span>
+    `;
+  } else {
+    container.innerHTML = `
+      <span><b>${match.home.code}</b> ${forecast.homeAdvance}%</span>
+      <small>chance to advance</small>
+      <span><b>${match.away.code}</b> ${forecast.awayAdvance}%</span>
+    `;
+  }
+}
+
 function buildMatchCard(match, { compact = true } = {}) {
   const fragment = document.querySelector("#match-card-template").content.cloneNode(true);
   const card = fragment.querySelector(".match-card");
@@ -108,7 +151,9 @@ function buildMatchCard(match, { compact = true } = {}) {
   rows.forEach((row, index) => {
     const team = teams[index];
     row.querySelector(".team-mark").replaceChildren(teamMark(team));
-    row.querySelector(".team-name").textContent = team?.name || "TBD";
+    const name = row.querySelector(".team-name");
+    name.textContent = team?.name || "TBD";
+    enableTeamOutlook(name, team);
     const hasScore = goals[index] !== null && goals[index] !== undefined;
     const hasPens = penalties[index] !== null && penalties[index] !== undefined;
     row.querySelector(".team-score").textContent = hasScore
@@ -117,6 +162,7 @@ function buildMatchCard(match, { compact = true } = {}) {
     row.classList.toggle("is-winner", team?.winner === true);
   });
 
+  renderMatchForecast(fragment.querySelector(".match-forecast"), match, compact);
   card.classList.toggle("is-compact", compact);
   return fragment;
 }
@@ -277,6 +323,7 @@ function renderStandings() {
       const teamCell = document.createElement("span");
       teamCell.className = "standings-team";
       teamCell.append(teamMark(team), document.createTextNode(team.name));
+      enableTeamOutlook(teamCell, team);
       row.append(
         document.createTextNode(String(team.rank || index + 1)),
         teamCell,
@@ -288,6 +335,83 @@ function renderStandings() {
     });
     return card;
   }));
+}
+
+function openTeamDialog(teamId) {
+  const team = state.data?.forecast?.teams?.find((item) => String(item.id) === String(teamId));
+  if (!team) return;
+  document.querySelector("#team-dialog-title").textContent = team.name;
+  document.querySelector("#team-dialog-mark").replaceChildren(teamMark(team));
+  document.querySelector("#team-strength").textContent = `${team.strength}/100`;
+  document.querySelector("#team-elo").textContent = String(team.effectiveRating);
+
+  const stages = [
+    ["Reach Round of 32", "roundOf32"],
+    ["Reach Round of 16", "roundOf16"],
+    ["Reach quarterfinal", "quarterFinal"],
+    ["Reach semifinal", "semiFinal"],
+    ["Reach final", "final"],
+    ["Win World Cup", "champion"],
+  ];
+  const bars = document.querySelector("#team-outlook-bars");
+  bars.replaceChildren(
+    ...stages.map(([label, key]) => {
+      const row = document.createElement("div");
+      row.className = "outlook-row";
+      row.innerHTML = `
+        <div><span>${label}</span><strong>${team.outlook[key]}%</strong></div>
+        <div class="outlook-track"><span style="width: ${team.outlook[key]}%"></span></div>
+      `;
+      return row;
+    }),
+  );
+
+  const reasons = document.querySelector("#team-reasons");
+  reasons.replaceChildren(
+    ...(team.reasons.length ? team.reasons : ["Results and rating are near the tournament average"]).map(
+      (reason) => {
+        const item = document.createElement("li");
+        item.textContent = reason;
+        return item;
+      },
+    ),
+  );
+  document.querySelector("#team-dialog").showModal();
+}
+
+function renderForecast() {
+  const body = document.querySelector("#forecast-table-body");
+  const teams = state.data?.forecast?.teams || [];
+  body.replaceChildren(
+    ...teams.map((team, index) => {
+      const row = document.createElement("tr");
+      const identity = document.createElement("td");
+      const teamButton = document.createElement("button");
+      teamButton.type = "button";
+      teamButton.className = "forecast-team";
+      teamButton.append(teamMark(team), document.createTextNode(team.name));
+      teamButton.addEventListener("click", () => openTeamDialog(team.id));
+      identity.append(teamButton);
+
+      const values = [
+        team.strength,
+        team.outlook.roundOf32,
+        team.outlook.roundOf16,
+        team.outlook.quarterFinal,
+        team.outlook.semiFinal,
+        team.outlook.final,
+        team.outlook.champion,
+      ];
+      row.append(identity);
+      values.forEach((value, valueIndex) => {
+        const cell = document.createElement("td");
+        cell.textContent = valueIndex === 0 ? `${value}` : `${value}%`;
+        if (valueIndex === values.length - 1 && index < 5) cell.className = "champion-contender";
+        row.append(cell);
+      });
+      return row;
+    }),
+  );
 }
 
 function matchCategory(match) {
@@ -329,16 +453,29 @@ async function loadData({ cache = true } = {}) {
   renderBracket();
   renderStandings();
   renderMatches();
+  renderForecast();
+}
+
+function activateView(viewName, updateHash = true) {
+  const tab = document.querySelector(`.tab[data-view="${viewName}"]`);
+  const view = document.querySelector(`#${viewName}-view`);
+  if (!tab || !view) return;
+  document.querySelectorAll(".tab").forEach((item) => item.classList.remove("is-active"));
+  document.querySelectorAll(".view").forEach((item) => item.classList.remove("is-active"));
+  tab.classList.add("is-active");
+  view.classList.add("is-active");
+  if (updateHash) history.replaceState(null, "", `#${viewName}`);
 }
 
 document.querySelectorAll(".tab").forEach((tab) => {
-  tab.addEventListener("click", () => {
-    document.querySelectorAll(".tab").forEach((item) => item.classList.remove("is-active"));
-    document.querySelectorAll(".view").forEach((view) => view.classList.remove("is-active"));
-    tab.classList.add("is-active");
-    document.querySelector(`#${tab.dataset.view}-view`).classList.add("is-active");
-  });
+  tab.addEventListener("click", () => activateView(tab.dataset.view));
 });
+
+window.addEventListener("hashchange", () => {
+  activateView(location.hash.slice(1), false);
+});
+
+activateView(location.hash.slice(1), false);
 
 document.querySelector("#match-filter").addEventListener("change", (event) => {
   state.filter = event.target.value;
@@ -350,6 +487,14 @@ document.querySelector("#group-dialog-close").addEventListener("click", () => {
 });
 
 document.querySelector("#group-dialog").addEventListener("click", (event) => {
+  if (event.target === event.currentTarget) event.currentTarget.close();
+});
+
+document.querySelector("#team-dialog-close").addEventListener("click", () => {
+  document.querySelector("#team-dialog").close();
+});
+
+document.querySelector("#team-dialog").addEventListener("click", (event) => {
   if (event.target === event.currentTarget) event.currentTarget.close();
 });
 

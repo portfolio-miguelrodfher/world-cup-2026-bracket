@@ -30,3 +30,13 @@ it with the latest available tournament data.
 The photographic trophy cutout is sourced from
 [StickPNG](https://www.stickpng.com/img/sports/soccer-football/fifa-world-cup)
 for personal use.
+
+## Forecast model
+
+The forecast is an educational strength model, not a betting product. It combines
+[World Football Elo Ratings](https://www.eloratings.net/) with current tournament
+points and scoring margin, estimates match outcomes through a Poisson goal model,
+and runs 5,000 deterministic tournament simulations on every data update.
+
+The future knockout path is a projection while exact qualifiers are unknown, so
+round-by-round percentages should be read as estimates rather than certainties.

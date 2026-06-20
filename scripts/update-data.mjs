@@ -1,6 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { buildForecast } from "./forecast-model.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "..");
@@ -186,6 +187,8 @@ if (groups.length !== 12 || groups.some((group) => group.teams.length !== 4)) {
   throw new Error("Standings response did not contain twelve complete groups.");
 }
 
+const forecast = await buildForecast(groups, matches);
+
 const output = {
   meta: {
     competition: "FIFA World Cup",
@@ -197,12 +200,21 @@ const output = {
   groups,
   matches,
   bracket: bracketFromMatches(matches),
+  forecast,
 };
 
 try {
   const previous = JSON.parse(await fs.readFile(dataPath, "utf8"));
-  const previousComparable = { ...previous, meta: { ...previous.meta, updatedAt: null } };
-  const nextComparable = { ...output, meta: { ...output.meta, updatedAt: null } };
+  const comparable = (value) => ({
+    ...value,
+    meta: { ...value.meta, updatedAt: null },
+    forecast: {
+      ...value.forecast,
+      meta: { ...value.forecast?.meta, generatedAt: null },
+    },
+  });
+  const previousComparable = comparable(previous);
+  const nextComparable = comparable(output);
   if (JSON.stringify(previousComparable) === JSON.stringify(nextComparable)) {
     console.log("Tournament data is unchanged.");
     process.exit(0);

@@ -1,17 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#080a0d">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080a0d" />
     <meta
       name="description"
       content="An automatically updated 2026 World Cup standings and knockout bracket."
-    >
+    />
     <title>World Cup 2026 — Live Bracket</title>
-    <link rel="manifest" href="./manifest.webmanifest">
-    <link rel="icon" href="./assets/icon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png" />
+    <link rel="icon" href="./assets/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="site-header">
@@ -29,26 +30,46 @@
     </header>
 
     <nav class="view-tabs" aria-label="Dashboard views">
-      <button type="button" class="tab is-active" data-view="bracket">Knockout bracket</button>
-      <button type="button" class="tab" data-view="standings">Group standings</button>
-      <button type="button" class="tab" data-view="matches">Match center</button>
+      <button type="button" class="tab is-active" data-view="bracket">
+        Knockout bracket
+      </button>
+      <button type="button" class="tab" data-view="standings">
+        Group standings
+      </button>
+      <button type="button" class="tab" data-view="matches">
+        Match center
+      </button>
+      <button type="button" class="tab" data-view="forecast">Forecast</button>
     </nav>
 
     <main>
-      <section id="bracket-view" class="view is-active" aria-labelledby="bracket-title">
+      <section
+        id="bracket-view"
+        class="view is-active"
+        aria-labelledby="bracket-title"
+      >
         <div class="section-heading">
           <div>
             <p class="eyebrow">Road to the final</p>
             <h2 id="bracket-title">The knockout stage</h2>
           </div>
-          <p class="mobile-hint">Swipe sideways to explore the full bracket →</p>
+          <p class="mobile-hint">
+            Swipe sideways to explore the full bracket →
+          </p>
         </div>
 
         <div class="board-scroll">
           <div class="bracket-board">
-            <aside id="groups-left" class="group-rail" aria-label="Groups A through F"></aside>
+            <aside
+              id="groups-left"
+              class="group-rail"
+              aria-label="Groups A through F"
+            ></aside>
 
-            <section class="bracket-wing bracket-wing--left" aria-label="Left side of bracket">
+            <section
+              class="bracket-wing bracket-wing--left"
+              aria-label="Left side of bracket"
+            >
               <div class="round-column" data-round="roundOf32" data-side="left">
                 <h3>Round of 32</h3>
                 <div class="round-matches"></div>
@@ -57,17 +78,28 @@
                 <h3>Round of 16</h3>
                 <div class="round-matches"></div>
               </div>
-              <div class="round-column" data-round="quarterFinals" data-side="left">
+              <div
+                class="round-column"
+                data-round="quarterFinals"
+                data-side="left"
+              >
                 <h3>Quarterfinals</h3>
                 <div class="round-matches"></div>
               </div>
-              <div class="round-column" data-round="semiFinals" data-side="left">
+              <div
+                class="round-column"
+                data-round="semiFinals"
+                data-side="left"
+              >
                 <h3>Semifinal</h3>
                 <div class="round-matches"></div>
               </div>
             </section>
 
-            <section class="final-stage" aria-label="Final and third-place matches">
+            <section
+              class="final-stage"
+              aria-label="Final and third-place matches"
+            >
               <div>
                 <p class="eyebrow">New York New Jersey</p>
                 <h2>Final</h2>
@@ -79,7 +111,7 @@
                   alt="FIFA World Cup trophy"
                   width="420"
                   height="800"
-                >
+                />
               </div>
               <div class="third-place">
                 <p class="eyebrow">Third place</p>
@@ -87,31 +119,58 @@
               </div>
             </section>
 
-            <section class="bracket-wing bracket-wing--right" aria-label="Right side of bracket">
-              <div class="round-column" data-round="semiFinals" data-side="right">
+            <section
+              class="bracket-wing bracket-wing--right"
+              aria-label="Right side of bracket"
+            >
+              <div
+                class="round-column"
+                data-round="semiFinals"
+                data-side="right"
+              >
                 <h3>Semifinal</h3>
                 <div class="round-matches"></div>
               </div>
-              <div class="round-column" data-round="quarterFinals" data-side="right">
+              <div
+                class="round-column"
+                data-round="quarterFinals"
+                data-side="right"
+              >
                 <h3>Quarterfinals</h3>
                 <div class="round-matches"></div>
               </div>
-              <div class="round-column" data-round="roundOf16" data-side="right">
+              <div
+                class="round-column"
+                data-round="roundOf16"
+                data-side="right"
+              >
                 <h3>Round of 16</h3>
                 <div class="round-matches"></div>
               </div>
-              <div class="round-column" data-round="roundOf32" data-side="right">
+              <div
+                class="round-column"
+                data-round="roundOf32"
+                data-side="right"
+              >
                 <h3>Round of 32</h3>
                 <div class="round-matches"></div>
               </div>
             </section>
 
-            <aside id="groups-right" class="group-rail" aria-label="Groups G through L"></aside>
+            <aside
+              id="groups-right"
+              class="group-rail"
+              aria-label="Groups G through L"
+            ></aside>
           </div>
         </div>
       </section>
 
-      <section id="standings-view" class="view" aria-labelledby="standings-title">
+      <section
+        id="standings-view"
+        class="view"
+        aria-labelledby="standings-title"
+      >
         <div class="section-heading">
           <div>
             <p class="eyebrow">Twelve groups · Forty-eight nations</p>
@@ -119,7 +178,10 @@
           </div>
           <p>Top two teams and the eight best third-place teams advance.</p>
         </div>
-        <aside class="standings-legend" aria-label="Standings abbreviations and colors">
+        <aside
+          class="standings-legend"
+          aria-label="Standings abbreviations and colors"
+        >
           <span><strong>PL</strong> Played</span>
           <span><strong>GD</strong> Goal difference</span>
           <span><strong>PTS</strong> Points</span>
@@ -144,9 +206,59 @@
         </div>
         <div id="match-list" class="match-list"></div>
       </section>
+
+      <section id="forecast-view" class="view" aria-labelledby="forecast-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Five thousand tournament simulations</p>
+            <h2 id="forecast-title">Tournament forecast</h2>
+          </div>
+          <p>
+            Statistical model estimates based on team strength and current
+            tournament form.
+          </p>
+        </div>
+        <aside class="forecast-notice" aria-label="Forecast disclaimer">
+          <strong>Not betting odds.</strong>
+          These percentages are an educational model projection and will change
+          as matches finish.
+        </aside>
+        <div class="forecast-table-wrap">
+          <table class="forecast-table">
+            <thead>
+              <tr>
+                <th scope="col">Team</th>
+                <th scope="col">Strength</th>
+                <th scope="col"><abbr title="Reach Round of 32">R32</abbr></th>
+                <th scope="col"><abbr title="Reach Round of 16">R16</abbr></th>
+                <th scope="col"><abbr title="Reach quarterfinal">QF</abbr></th>
+                <th scope="col"><abbr title="Reach semifinal">SF</abbr></th>
+                <th scope="col">Final</th>
+                <th scope="col">Champion</th>
+              </tr>
+            </thead>
+            <tbody id="forecast-table-body"></tbody>
+          </table>
+        </div>
+        <p class="forecast-scroll-hint">
+          Swipe the table sideways to see every stage →
+        </p>
+        <div class="forecast-method">
+          <h3>How the model works</h3>
+          <p>
+            International Elo strength is adjusted for current points and
+            scoring margin. A Poisson goal model estimates each matchup, then
+            the tournament is simulated 5,000 times.
+          </p>
+        </div>
+      </section>
     </main>
 
-    <dialog id="group-dialog" class="group-dialog" aria-labelledby="group-dialog-title">
+    <dialog
+      id="group-dialog"
+      class="group-dialog"
+      aria-labelledby="group-dialog-title"
+    >
       <div class="group-dialog__header">
         <div>
           <p class="eyebrow">Group schedule</p>
@@ -162,14 +274,59 @@
         </button>
       </div>
       <p class="group-dialog__note">
-        Teams in the bracket tiles are ordered by the current standings—not by matchup.
+        Teams in the bracket tiles are ordered by the current standings—not by
+        matchup.
       </p>
       <div id="group-dialog-standings" class="dialog-standings"></div>
       <div id="group-dialog-matches" class="dialog-matches"></div>
     </dialog>
 
+    <dialog
+      id="team-dialog"
+      class="team-dialog"
+      aria-labelledby="team-dialog-title"
+    >
+      <div class="group-dialog__header">
+        <div class="team-dialog__identity">
+          <span id="team-dialog-mark"></span>
+          <div>
+            <p class="eyebrow">Team outlook</p>
+            <h2 id="team-dialog-title">Team</h2>
+          </div>
+        </div>
+        <button
+          type="button"
+          id="team-dialog-close"
+          class="dialog-close"
+          aria-label="Close team outlook"
+        >
+          ×
+        </button>
+      </div>
+      <div class="strength-summary">
+        <div>
+          <span>Model strength</span>
+          <strong id="team-strength">—</strong>
+        </div>
+        <div>
+          <span>International Elo</span>
+          <strong id="team-elo">—</strong>
+        </div>
+      </div>
+      <div id="team-outlook-bars" class="outlook-bars"></div>
+      <div class="team-factors">
+        <h3>What is shaping the forecast</h3>
+        <ul id="team-reasons"></ul>
+      </div>
+      <p class="model-disclaimer">
+        Statistical model estimate — not betting odds.
+      </p>
+    </dialog>
+
     <footer>
-      <p class="footer-copy">Unofficial tournament tracker · Times shown in Eastern Time</p>
+      <p class="footer-copy">
+        Unofficial tournament tracker · Times shown in Eastern Time
+      </p>
       <button type="button" id="refresh-button">Refresh data</button>
     </footer>
 
@@ -189,6 +346,7 @@
           <span class="team-name"></span>
           <strong class="team-score"></strong>
         </div>
+        <div class="match-forecast"></div>
       </article>
     </template>
 

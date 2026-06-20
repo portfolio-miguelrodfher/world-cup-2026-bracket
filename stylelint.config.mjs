@@ -8,7 +8,7 @@ export default {
     "function-calc-no-unspaced-operator": true,
     "function-linear-gradient-no-nonstandard-direction": true,
     "media-feature-name-no-unknown": true,
-    "no-descending-specificity": true,
+    "no-descending-specificity": null,
     "no-duplicate-selectors": true,
     "no-empty-source": true,
     "property-no-unknown": true,

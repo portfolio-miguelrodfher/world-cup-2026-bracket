@@ -6,6 +6,6 @@
   "scripts": {
     "serve": "npx serve .",
     "update-data": "node scripts/update-data.mjs",
-    "check": "node --check app.js && node --check scripts/update-data.mjs"
+    "check": "node --check app.js && node --check scripts/update-data.mjs && node --check scripts/forecast-model.mjs"
   }
 }

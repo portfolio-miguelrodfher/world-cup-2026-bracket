@@ -199,5 +199,17 @@ const output = {
   bracket: bracketFromMatches(matches),
 };
 
+try {
+  const previous = JSON.parse(await fs.readFile(dataPath, "utf8"));
+  const previousComparable = { ...previous, meta: { ...previous.meta, updatedAt: null } };
+  const nextComparable = { ...output, meta: { ...output.meta, updatedAt: null } };
+  if (JSON.stringify(previousComparable) === JSON.stringify(nextComparable)) {
+    console.log("Tournament data is unchanged.");
+    process.exit(0);
+  }
+} catch (error) {
+  if (error.code !== "ENOENT") throw error;
+}
+
 await fs.writeFile(dataPath, `${JSON.stringify(output, null, 2)}\n`);
 console.log(`Updated ${matches.length} matches and ${groups.length} groups.`);

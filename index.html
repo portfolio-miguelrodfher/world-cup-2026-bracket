@@ -1,17 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#080a0d" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080a0d">
     <meta
       name="description"
       content="An automatically updated 2026 World Cup standings and knockout bracket."
-    />
+    >
     <title>World Cup 2026 — Live Bracket</title>
-    <link rel="manifest" href="./manifest.webmanifest" />
-    <link rel="icon" href="./assets/icon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="icon" href="./assets/icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
     <header class="site-header">
@@ -29,9 +29,9 @@
     </header>
 
     <nav class="view-tabs" aria-label="Dashboard views">
-      <button class="tab is-active" data-view="bracket">Knockout bracket</button>
-      <button class="tab" data-view="standings">Group standings</button>
-      <button class="tab" data-view="matches">Match center</button>
+      <button type="button" class="tab is-active" data-view="bracket">Knockout bracket</button>
+      <button type="button" class="tab" data-view="standings">Group standings</button>
+      <button type="button" class="tab" data-view="matches">Match center</button>
     </nav>
 
     <main>
@@ -79,7 +79,7 @@
                   alt="FIFA World Cup trophy"
                   width="420"
                   height="800"
-                />
+                >
               </div>
               <div class="third-place">
                 <p class="eyebrow">Third place</p>
@@ -119,13 +119,13 @@
           </div>
           <p>Top two teams and the eight best third-place teams advance.</p>
         </div>
-        <div class="standings-legend" aria-label="Standings abbreviations and colors">
+        <aside class="standings-legend" aria-label="Standings abbreviations and colors">
           <span><strong>PL</strong> Played</span>
           <span><strong>GD</strong> Goal difference</span>
           <span><strong>PTS</strong> Points</span>
           <span class="legend-status legend-status--qualified">Top two</span>
           <span class="legend-status legend-status--third">Third place</span>
-        </div>
+        </aside>
         <div id="standings-grid" class="standings-grid"></div>
       </section>
 
@@ -152,7 +152,12 @@
           <p class="eyebrow">Group schedule</p>
           <h2 id="group-dialog-title">Group matches</h2>
         </div>
-        <button id="group-dialog-close" class="dialog-close" aria-label="Close group matches">
+        <button
+          type="button"
+          id="group-dialog-close"
+          class="dialog-close"
+          aria-label="Close group matches"
+        >
           ×
         </button>
       </div>
@@ -164,8 +169,8 @@
     </dialog>
 
     <footer>
-      <p>Unofficial tournament tracker · Times shown in Eastern Time</p>
-      <button id="refresh-button">Refresh data</button>
+      <p class="footer-copy">Unofficial tournament tracker · Times shown in Eastern Time</p>
+      <button type="button" id="refresh-button">Refresh data</button>
     </footer>
 
     <template id="match-card-template">

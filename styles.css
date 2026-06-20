@@ -416,14 +416,30 @@ main {
 }
 
 .trophy {
-  width: 125px;
-  margin: 14px auto;
-  filter: drop-shadow(0 12px 24px rgba(225, 184, 74, 0.22));
+  position: relative;
+  width: 142px;
+  height: 337px;
+  margin: 8px auto;
 }
 
-.trophy svg {
+.trophy::after {
+  position: absolute;
+  inset: auto 6% 1% 6%;
+  height: 24px;
+  border-radius: 50%;
+  content: "";
+  background: rgba(225, 184, 74, 0.2);
+  filter: blur(13px);
+}
+
+.trophy img {
+  position: relative;
+  z-index: 1;
   display: block;
   width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 15px 28px rgba(0, 0, 0, 0.55));
 }
 
 .third-place {

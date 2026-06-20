@@ -24,6 +24,9 @@ Open **Settings → Pages** and choose **GitHub Actions** as the source. The
 npm run serve
 ```
 
-The checked-in preview data intentionally contains no fabricated scores. Once the
-API secret is configured, the scheduled workflow replaces it with live tournament
-data.
+The checked-in data contains no fabricated scores. The scheduled workflow replaces
+it with the latest available tournament data.
+
+The photographic trophy cutout is sourced from
+[StickPNG](https://www.stickpng.com/img/sports/soccer-football/fifa-world-cup)
+for personal use.

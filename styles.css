@@ -416,9 +416,10 @@ main {
 }
 
 .trophy {
-  width: 145px;
-  height: 348px;
+  width: 160px;
+  height: 305px;
   margin: 8px auto;
+  background: transparent;
 }
 
 .trophy img {
@@ -426,6 +427,7 @@ main {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  background: transparent;
 }
 
 .third-place {

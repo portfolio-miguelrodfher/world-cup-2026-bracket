@@ -1,4 +1,4 @@
-const CACHE_NAME = "world-cup-2026-v5";
+const CACHE_NAME = "world-cup-2026-v6";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -6,7 +6,7 @@ const APP_SHELL = [
   "./app.js",
   "./manifest.webmanifest",
   "./assets/icon.svg",
-  "./assets/world-cup-trophy.png",
+  "./assets/world-cup-trophy-transparent.png",
 ];
 
 self.addEventListener("install", (event) => {

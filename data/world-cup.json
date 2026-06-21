@@ -4,7 +4,7 @@
     "season": 2026,
     "mode": "live",
     "provider": "ESPN",
-    "updatedAt": "2026-06-21T00:16:38.683Z"
+    "updatedAt": "2026-06-21T01:37:30.274Z"
   },
   "groups": [
     {
@@ -2391,9 +2391,9 @@
         "city": "Kansas City, Missouri"
       },
       "status": {
-        "short": "1H",
-        "long": "In Progress",
-        "elapsed": 16
+        "short": "2H",
+        "long": "Second Half",
+        "elapsed": 77
       },
       "home": {
         "id": "209",
@@ -6441,7 +6441,7 @@
       "model": "Elo + tournament form + Poisson goals",
       "simulations": 5000,
       "ratingSource": "World Football Elo Ratings",
-      "generatedAt": "2026-06-21T00:16:38.683Z",
+      "generatedAt": "2026-06-21T01:37:30.273Z",
       "disclaimer": "Statistical model estimate — not betting odds."
     },
     "teams": [

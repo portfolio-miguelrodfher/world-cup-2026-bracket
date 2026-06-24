@@ -4,7 +4,7 @@
     "season": 2026,
     "mode": "live",
     "provider": "ESPN",
-    "updatedAt": "2026-06-24T23:10:36.961Z"
+    "updatedAt": "2026-06-24T23:42:32.890Z"
   },
   "groups": [
     {
@@ -3097,7 +3097,7 @@
       "status": {
         "short": "2H",
         "long": "Second Half",
-        "elapsed": 48
+        "elapsed": 79
       },
       "home": {
         "id": "2869",
@@ -3114,7 +3114,7 @@
         "winner": false
       },
       "goals": {
-        "home": 2,
+        "home": 3,
         "away": 2
       },
       "penalties": {
@@ -3139,9 +3139,9 @@
         "city": "Miami Gardens, Florida"
       },
       "status": {
-        "short": "1H",
-        "long": "Halftime",
-        "elapsed": 45
+        "short": "2H",
+        "long": "Second Half",
+        "elapsed": 76
       },
       "home": {
         "id": "580",
@@ -3159,7 +3159,7 @@
       },
       "goals": {
         "home": 0,
-        "away": 2
+        "away": 3
       },
       "penalties": {
         "home": null,
@@ -6441,7 +6441,7 @@
       "model": "Elo + tournament form + Poisson goals",
       "simulations": 5000,
       "ratingSource": "World Football Elo Ratings",
-      "generatedAt": "2026-06-24T23:10:36.960Z",
+      "generatedAt": "2026-06-24T23:42:32.890Z",
       "disclaimer": "Statistical model estimate — not betting odds."
     },
     "teams": [

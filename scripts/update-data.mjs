@@ -170,58 +170,85 @@ function bracketFromMatches(matches) {
   return bracket;
 }
 
-const [scoreboard, standings] = await Promise.all([
-  fetchJson(SCOREBOARD_URL),
-  fetchJson(STANDINGS_URL),
-]);
-
-const matches = (scoreboard.events || [])
-  .sort((a, b) => new Date(a.date) - new Date(b.date))
-  .map(normalizeMatch);
-const groups = normalizeGroups(standings);
-
-if (matches.length !== 104) {
-  throw new Error(`Expected 104 World Cup matches, received ${matches.length}.`);
-}
-if (groups.length !== 12 || groups.some((group) => group.teams.length !== 4)) {
-  throw new Error("Standings response did not contain twelve complete groups.");
+function isRecoverableProviderError(error) {
+  return (
+    error instanceof TypeError ||
+    error.message?.startsWith("Data provider returned") ||
+    error.message?.startsWith("Expected 104 World Cup matches") ||
+    error.message === "Standings response did not contain twelve complete groups."
+  );
 }
 
-const forecast = await buildForecast(groups, matches);
-
-const output = {
-  meta: {
-    competition: "FIFA World Cup",
-    season: 2026,
-    mode: "live",
-    provider: "ESPN",
-    updatedAt: new Date().toISOString(),
-  },
-  groups,
-  matches,
-  bracket: bracketFromMatches(matches),
-  forecast,
-};
+async function hasExistingData() {
+  try {
+    await fs.access(dataPath);
+    return true;
+  } catch (error) {
+    if (error.code === "ENOENT") return false;
+    throw error;
+  }
+}
 
 try {
-  const previous = JSON.parse(await fs.readFile(dataPath, "utf8"));
-  const comparable = (value) => ({
-    ...value,
-    meta: { ...value.meta, updatedAt: null },
-    forecast: {
-      ...value.forecast,
-      meta: { ...value.forecast?.meta, generatedAt: null },
+  const [scoreboard, standings] = await Promise.all([
+    fetchJson(SCOREBOARD_URL),
+    fetchJson(STANDINGS_URL),
+  ]);
+
+  const matches = (scoreboard.events || [])
+    .sort((a, b) => new Date(a.date) - new Date(b.date))
+    .map(normalizeMatch);
+  const groups = normalizeGroups(standings);
+
+  if (matches.length !== 104) {
+    throw new Error(`Expected 104 World Cup matches, received ${matches.length}.`);
+  }
+  if (groups.length !== 12 || groups.some((group) => group.teams.length !== 4)) {
+    throw new Error("Standings response did not contain twelve complete groups.");
+  }
+
+  const forecast = await buildForecast(groups, matches);
+
+  const output = {
+    meta: {
+      competition: "FIFA World Cup",
+      season: 2026,
+      mode: "live",
+      provider: "ESPN",
+      updatedAt: new Date().toISOString(),
     },
-  });
-  const previousComparable = comparable(previous);
-  const nextComparable = comparable(output);
-  if (JSON.stringify(previousComparable) === JSON.stringify(nextComparable)) {
-    console.log("Tournament data is unchanged.");
+    groups,
+    matches,
+    bracket: bracketFromMatches(matches),
+    forecast,
+  };
+
+  try {
+    const previous = JSON.parse(await fs.readFile(dataPath, "utf8"));
+    const comparable = (value) => ({
+      ...value,
+      meta: { ...value.meta, updatedAt: null },
+      forecast: {
+        ...value.forecast,
+        meta: { ...value.forecast?.meta, generatedAt: null },
+      },
+    });
+    const previousComparable = comparable(previous);
+    const nextComparable = comparable(output);
+    if (JSON.stringify(previousComparable) === JSON.stringify(nextComparable)) {
+      console.log("Tournament data is unchanged.");
+      process.exit(0);
+    }
+  } catch (error) {
+    if (error.code !== "ENOENT") throw error;
+  }
+
+  await fs.writeFile(dataPath, `${JSON.stringify(output, null, 2)}\n`);
+  console.log(`Updated ${matches.length} matches and ${groups.length} groups.`);
+} catch (error) {
+  if (isRecoverableProviderError(error) && (await hasExistingData())) {
+    console.warn(`Skipping update because ESPN data is unavailable or incomplete: ${error.message}`);
     process.exit(0);
   }
-} catch (error) {
-  if (error.code !== "ENOENT") throw error;
+  throw error;
 }
-
-await fs.writeFile(dataPath, `${JSON.stringify(output, null, 2)}\n`);
-console.log(`Updated ${matches.length} matches and ${groups.length} groups.`);

@@ -327,8 +327,7 @@ try {
     const previousComparable = comparable(previous);
     const nextComparable = comparable(output);
     if (JSON.stringify(previousComparable) === JSON.stringify(nextComparable)) {
-      console.log("Tournament data is unchanged.");
-      process.exit(0);
+      console.log("Tournament data is unchanged; refreshing timestamp.");
     }
   } catch (error) {
     if (error.code !== "ENOENT") throw error;

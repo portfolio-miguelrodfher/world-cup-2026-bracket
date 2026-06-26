@@ -272,7 +272,7 @@ function openGroupDialog(group, colorIndex) {
       identity.className = "dialog-standing-team";
       identity.append(teamMark(team), document.createTextNode(team.name));
       const record = document.createElement("span");
-      record.textContent = `${team.played ?? 0} PL · ${team.goalsDiff > 0 ? "+" : ""}${team.goalsDiff ?? 0} GD`;
+      record.textContent = `${team.won ?? 0}-${team.drawn ?? 0}-${team.lost ?? 0} · ${team.goalsDiff > 0 ? "+" : ""}${team.goalsDiff ?? 0} GD`;
       const points = document.createElement("strong");
       points.textContent = `${team.points ?? 0} PTS`;
 
@@ -312,7 +312,7 @@ function renderStandings() {
 
     const labels = document.createElement("div");
     labels.className = "standings-row table-labels";
-    labels.innerHTML = "<span>#</span><span>Team</span><span>PL</span><span>GD</span><span>PTS</span>";
+    labels.innerHTML = "<span>#</span><span>Team</span><span>GD</span><span>PTS</span>";
     card.append(labels);
 
     group.teams.forEach((team, index) => {
@@ -327,7 +327,6 @@ function renderStandings() {
       row.append(
         document.createTextNode(String(team.rank || index + 1)),
         teamCell,
-        document.createTextNode(String(team.played ?? 0)),
         document.createTextNode(String(team.goalsDiff ?? 0)),
         document.createTextNode(String(team.points ?? 0)),
       );
@@ -445,7 +444,12 @@ function renderStatus() {
 
 async function loadData({ cache = true } = {}) {
   const suffix = cache ? "" : `?refresh=${Date.now()}`;
-  const response = await fetch(`${DATA_URL}${suffix}`);
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 10000);
+  const response = await fetch(`${DATA_URL}${suffix}`, {
+    cache: cache ? "default" : "no-store",
+    signal: controller.signal,
+  }).finally(() => clearTimeout(timeout));
   if (!response.ok) throw new Error(`Data request failed: ${response.status}`);
   state.data = await response.json();
   renderStatus();
@@ -499,13 +503,24 @@ document.querySelector("#team-dialog").addEventListener("click", (event) => {
 });
 
 document.querySelector("#refresh-button").addEventListener("click", async (event) => {
-  event.currentTarget.disabled = true;
-  event.currentTarget.textContent = "Refreshing…";
+  const button = event.currentTarget;
+  const previousUpdatedAt = state.data?.meta?.updatedAt;
+  button.disabled = true;
+  button.textContent = "Refreshing...";
   try {
     await loadData({ cache: false });
+    button.textContent =
+      state.data?.meta?.updatedAt && state.data.meta.updatedAt !== previousUpdatedAt
+        ? "Updated"
+        : "No newer data";
+  } catch (error) {
+    console.error(error);
+    button.textContent = "Refresh failed";
   } finally {
-    event.currentTarget.disabled = false;
-    event.currentTarget.textContent = "Refresh data";
+    window.setTimeout(() => {
+      button.disabled = false;
+      button.textContent = "Refresh data";
+    }, 1600);
   }
 });
 

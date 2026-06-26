@@ -57,6 +57,97 @@ function normalizeGroups(payload) {
     .sort((a, b) => a.name.localeCompare(b.name));
 }
 
+function hasScore(match) {
+  return Number.isFinite(match.goals?.home) && Number.isFinite(match.goals?.away);
+}
+
+function descriptionForRank(rank) {
+  if (rank <= 2) return "Advance to Round of 32";
+  if (rank === 3) return "Best 8 advance";
+  return "Eliminated";
+}
+
+function applyMatchDerivedGroupRecords(groups, matches) {
+  const groupMatches = matches.filter((match) => match.round === "Group stage" && hasScore(match));
+
+  return groups.map((group) => {
+    const teamIds = new Set(group.teams.map((team) => String(team.id)));
+    const records = new Map(
+      group.teams.map((team) => [
+        String(team.id),
+        {
+          played: 0,
+          won: 0,
+          drawn: 0,
+          lost: 0,
+          goalsFor: 0,
+          goalsAgainst: 0,
+          goalsDiff: 0,
+          points: 0,
+        },
+      ]),
+    );
+
+    groupMatches
+      .filter(
+        (match) =>
+          teamIds.has(String(match.home?.id)) &&
+          teamIds.has(String(match.away?.id)),
+      )
+      .forEach((match) => {
+        const home = records.get(String(match.home.id));
+        const away = records.get(String(match.away.id));
+        if (!home || !away) return;
+
+        home.played += 1;
+        away.played += 1;
+        home.goalsFor += match.goals.home;
+        home.goalsAgainst += match.goals.away;
+        away.goalsFor += match.goals.away;
+        away.goalsAgainst += match.goals.home;
+
+        if (match.goals.home > match.goals.away) {
+          home.won += 1;
+          home.points += 3;
+          away.lost += 1;
+        } else if (match.goals.home < match.goals.away) {
+          away.won += 1;
+          away.points += 3;
+          home.lost += 1;
+        } else {
+          home.drawn += 1;
+          away.drawn += 1;
+          home.points += 1;
+          away.points += 1;
+        }
+      });
+
+    const teams = group.teams
+      .map((team) => {
+        const record = records.get(String(team.id));
+        return {
+          ...team,
+          ...record,
+          goalsDiff: record.goalsFor - record.goalsAgainst,
+        };
+      })
+      .sort(
+        (a, b) =>
+          b.points - a.points ||
+          b.goalsDiff - a.goalsDiff ||
+          b.goalsFor - a.goalsFor ||
+          a.name.localeCompare(b.name),
+      )
+      .map((team, index) => ({
+        ...team,
+        rank: index + 1,
+        description: descriptionForRank(index + 1),
+      }));
+
+    return { ...group, teams };
+  });
+}
+
 function statusShort(event) {
   const type = event.status?.type;
   if (type?.completed) return type.name?.includes("PENALT") ? "PEN" : "FT";
@@ -198,7 +289,7 @@ try {
   const matches = (scoreboard.events || [])
     .sort((a, b) => new Date(a.date) - new Date(b.date))
     .map(normalizeMatch);
-  const groups = normalizeGroups(standings);
+  const groups = applyMatchDerivedGroupRecords(normalizeGroups(standings), matches);
 
   if (matches.length !== 104) {
     throw new Error(`Expected 104 World Cup matches, received ${matches.length}.`);

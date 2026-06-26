@@ -4,7 +4,7 @@
     "season": 2026,
     "mode": "live",
     "provider": "ESPN",
-    "updatedAt": "2026-06-26T05:35:26.522Z"
+    "updatedAt": "2026-06-26T07:03:51.421Z"
   },
   "groups": [
     {
@@ -237,13 +237,13 @@
           "winner": false,
           "rank": 1,
           "points": 6,
-          "goalsDiff": 5,
-          "played": 2,
+          "goalsDiff": 4,
+          "played": 3,
           "won": 2,
           "drawn": 0,
-          "lost": 0,
-          "goalsFor": 6,
-          "goalsAgainst": 1,
+          "lost": 1,
+          "goalsFor": 8,
+          "goalsAgainst": 4,
           "description": "Advance to Round of 32"
         },
         {
@@ -253,11 +253,11 @@
           "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
           "winner": false,
           "rank": 2,
-          "points": 3,
+          "points": 4,
           "goalsDiff": 0,
-          "played": 2,
+          "played": 3,
           "won": 1,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 1,
           "goalsFor": 2,
           "goalsAgainst": 2,
@@ -270,11 +270,11 @@
           "logo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
           "winner": false,
           "rank": 3,
-          "points": 3,
+          "points": 4,
           "goalsDiff": -2,
-          "played": 2,
+          "played": 3,
           "won": 1,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 1,
           "goalsFor": 2,
           "goalsAgainst": 4,
@@ -287,14 +287,14 @@
           "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tur.png",
           "winner": false,
           "rank": 4,
-          "points": 0,
-          "goalsDiff": -3,
-          "played": 2,
-          "won": 0,
+          "points": 3,
+          "goalsDiff": -2,
+          "played": 3,
+          "won": 1,
           "drawn": 0,
           "lost": 2,
-          "goalsFor": 0,
-          "goalsAgainst": 3,
+          "goalsFor": 3,
+          "goalsAgainst": 5,
           "description": "Eliminated"
         }
       ]
@@ -1054,11 +1054,11 @@
         "away": null
       },
       "forecast": {
-        "home": 44.9,
-        "draw": 22.4,
-        "away": 32.7,
-        "homeAdvance": 57.9,
-        "awayAdvance": 42.1
+        "home": 42.3,
+        "draw": 22.5,
+        "away": 35.2,
+        "homeAdvance": 54.6,
+        "awayAdvance": 45.4
       }
     },
     {
@@ -1230,11 +1230,11 @@
         "away": null
       },
       "forecast": {
-        "home": 40.5,
+        "home": 38.4,
         "draw": 22.6,
-        "away": 36.9,
-        "homeAdvance": 52.3,
-        "awayAdvance": 47.7
+        "away": 39,
+        "homeAdvance": 49.6,
+        "awayAdvance": 50.4
       }
     },
     {
@@ -2154,11 +2154,11 @@
         "away": null
       },
       "forecast": {
-        "home": 45.4,
-        "draw": 22.3,
-        "away": 32.2,
-        "homeAdvance": 58.5,
-        "awayAdvance": 41.5
+        "home": 43.2,
+        "draw": 22.5,
+        "away": 34.3,
+        "homeAdvance": 55.8,
+        "awayAdvance": 44.2
       }
     },
     {
@@ -2286,11 +2286,11 @@
         "away": null
       },
       "forecast": {
-        "home": 36.4,
+        "home": 38.1,
         "draw": 22.6,
-        "away": 41,
-        "homeAdvance": 47,
-        "awayAdvance": 53
+        "away": 39.3,
+        "homeAdvance": 49.2,
+        "awayAdvance": 50.8
       }
     },
     {
@@ -3474,11 +3474,11 @@
         "away": null
       },
       "forecast": {
-        "home": 39.2,
+        "home": 39.6,
         "draw": 22.6,
-        "away": 38.2,
-        "homeAdvance": 50.7,
-        "awayAdvance": 49.3
+        "away": 37.7,
+        "homeAdvance": 51.2,
+        "awayAdvance": 48.8
       }
     },
     {
@@ -3518,11 +3518,11 @@
         "away": null
       },
       "forecast": {
-        "home": 30.6,
-        "draw": 22.2,
-        "away": 47.2,
-        "homeAdvance": 39.3,
-        "awayAdvance": 60.7
+        "home": 34.6,
+        "draw": 22.5,
+        "away": 42.9,
+        "homeAdvance": 44.6,
+        "awayAdvance": 55.4
       }
     },
     {
@@ -4444,11 +4444,11 @@
         "away": null
       },
       "forecast": {
-        "home": 61.5,
-        "draw": 19.6,
-        "away": 18.9,
-        "homeAdvance": 76.5,
-        "awayAdvance": 23.5
+        "home": 60,
+        "draw": 20,
+        "away": 20,
+        "homeAdvance": 75,
+        "awayAdvance": 25
       }
     },
     {
@@ -5659,11 +5659,11 @@
           "away": null
         },
         "forecast": {
-          "home": 61.5,
-          "draw": 19.6,
-          "away": 18.9,
-          "homeAdvance": 76.5,
-          "awayAdvance": 23.5
+          "home": 60,
+          "draw": 20,
+          "away": 20,
+          "homeAdvance": 75,
+          "awayAdvance": 25
         }
       },
       {
@@ -6497,7 +6497,7 @@
       "model": "Elo + tournament form + Poisson goals",
       "simulations": 5000,
       "ratingSource": "World Football Elo Ratings",
-      "generatedAt": "2026-06-26T05:35:26.521Z",
+      "generatedAt": "2026-06-26T07:03:51.421Z",
       "disclaimer": "Statistical model estimate — not betting odds."
     },
     "teams": [
@@ -6516,11 +6516,11 @@
         ],
         "outlook": {
           "roundOf32": 100,
-          "roundOf16": 83.9,
-          "quarterFinal": 63.4,
-          "semiFinal": 45.8,
-          "final": 32.4,
-          "champion": 22.2
+          "roundOf16": 82.8,
+          "quarterFinal": 62.7,
+          "semiFinal": 46.6,
+          "final": 32.8,
+          "champion": 21.8
         }
       },
       {
@@ -6538,11 +6538,11 @@
         ],
         "outlook": {
           "roundOf32": 100,
-          "roundOf16": 81.8,
-          "quarterFinal": 59.8,
-          "semiFinal": 42.4,
-          "final": 28.7,
-          "champion": 18.7
+          "roundOf16": 81.6,
+          "quarterFinal": 59.4,
+          "semiFinal": 42.2,
+          "final": 29.2,
+          "champion": 19
         }
       },
       {
@@ -6560,33 +6560,11 @@
         ],
         "outlook": {
           "roundOf32": 100,
-          "roundOf16": 79.7,
-          "quarterFinal": 55.9,
-          "semiFinal": 36.6,
-          "final": 23.3,
-          "champion": 14.2
-        }
-      },
-      {
-        "id": "448",
-        "name": "England",
-        "code": "ENG",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
-        "elo": 2028,
-        "effectiveRating": 2047,
-        "strength": 95,
-        "reasons": [
-          "Elite international rating",
-          "Strong tournament form",
-          "Positive scoring margin"
-        ],
-        "outlook": {
-          "roundOf32": 100,
-          "roundOf16": 73.6,
-          "quarterFinal": 46.3,
-          "semiFinal": 26,
-          "final": 13.5,
-          "champion": 6.6
+          "roundOf16": 79.6,
+          "quarterFinal": 56.4,
+          "semiFinal": 37.1,
+          "final": 23.1,
+          "champion": 13.3
         }
       },
       {
@@ -6604,10 +6582,10 @@
         ],
         "outlook": {
           "roundOf32": 100,
-          "roundOf16": 77.2,
-          "quarterFinal": 48.2,
-          "semiFinal": 27,
-          "final": 14.1,
+          "roundOf16": 75.8,
+          "quarterFinal": 46.7,
+          "semiFinal": 26.2,
+          "final": 13.9,
           "champion": 6.3
         }
       },
@@ -6626,21 +6604,21 @@
         ],
         "outlook": {
           "roundOf32": 100,
-          "roundOf16": 74.1,
-          "quarterFinal": 44.3,
-          "semiFinal": 24.2,
-          "final": 12.6,
-          "champion": 5.8
+          "roundOf16": 72.3,
+          "quarterFinal": 44,
+          "semiFinal": 24.5,
+          "final": 12.5,
+          "champion": 6.3
         }
       },
       {
-        "id": "482",
-        "name": "Portugal",
-        "code": "POR",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
-        "elo": 1988,
-        "effectiveRating": 2025,
-        "strength": 93,
+        "id": "448",
+        "name": "England",
+        "code": "ENG",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+        "elo": 2028,
+        "effectiveRating": 2047,
+        "strength": 95,
         "reasons": [
           "Elite international rating",
           "Strong tournament form",
@@ -6648,11 +6626,11 @@
         ],
         "outlook": {
           "roundOf32": 100,
-          "roundOf16": 68.9,
-          "quarterFinal": 40.8,
-          "semiFinal": 22.4,
-          "final": 10.8,
-          "champion": 4.7
+          "roundOf16": 74.8,
+          "quarterFinal": 45.2,
+          "semiFinal": 25.6,
+          "final": 13.1,
+          "champion": 6.1
         }
       },
       {
@@ -6670,11 +6648,33 @@
         ],
         "outlook": {
           "roundOf32": 100,
-          "roundOf16": 73.2,
-          "quarterFinal": 43.2,
-          "semiFinal": 23.3,
-          "final": 11,
-          "champion": 4.5
+          "roundOf16": 74.8,
+          "quarterFinal": 43.7,
+          "semiFinal": 23.1,
+          "final": 11.5,
+          "champion": 4.9
+        }
+      },
+      {
+        "id": "482",
+        "name": "Portugal",
+        "code": "POR",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
+        "elo": 1988,
+        "effectiveRating": 2025,
+        "strength": 93,
+        "reasons": [
+          "Elite international rating",
+          "Strong tournament form",
+          "Positive scoring margin"
+        ],
+        "outlook": {
+          "roundOf32": 100,
+          "roundOf16": 67.3,
+          "quarterFinal": 39.9,
+          "semiFinal": 22.6,
+          "final": 10.7,
+          "champion": 4.8
         }
       },
       {
@@ -6692,55 +6692,11 @@
         ],
         "outlook": {
           "roundOf32": 100,
-          "roundOf16": 64.8,
-          "quarterFinal": 36.8,
-          "semiFinal": 18.2,
-          "final": 8.3,
-          "champion": 3.4
-        }
-      },
-      {
-        "id": "481",
-        "name": "Germany",
-        "code": "GER",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
-        "elo": 1916,
-        "effectiveRating": 1947,
-        "strength": 86,
-        "reasons": [
-          "Elite international rating",
-          "Strong tournament form",
-          "Positive scoring margin"
-        ],
-        "outlook": {
-          "roundOf32": 100,
-          "roundOf16": 69.3,
-          "quarterFinal": 34.6,
-          "semiFinal": 15.9,
-          "final": 6.3,
-          "champion": 2.4
-        }
-      },
-      {
-        "id": "203",
-        "name": "Mexico",
-        "code": "MEX",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
-        "elo": 1912,
-        "effectiveRating": 1952,
-        "strength": 87,
-        "reasons": [
-          "Elite international rating",
-          "Strong tournament form",
-          "Positive scoring margin"
-        ],
-        "outlook": {
-          "roundOf32": 100,
-          "roundOf16": 68.4,
+          "roundOf16": 65,
           "quarterFinal": 35.8,
-          "semiFinal": 16.3,
-          "final": 6.4,
-          "champion": 2.3
+          "semiFinal": 18.4,
+          "final": 8,
+          "champion": 3.3
         }
       },
       {
@@ -6758,11 +6714,55 @@
         ],
         "outlook": {
           "roundOf32": 100,
-          "roundOf16": 68.1,
-          "quarterFinal": 33.8,
-          "semiFinal": 14.9,
-          "final": 6.1,
-          "champion": 2
+          "roundOf16": 68.9,
+          "quarterFinal": 34.6,
+          "semiFinal": 15.8,
+          "final": 6.5,
+          "champion": 2.6
+        }
+      },
+      {
+        "id": "203",
+        "name": "Mexico",
+        "code": "MEX",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
+        "elo": 1912,
+        "effectiveRating": 1952,
+        "strength": 87,
+        "reasons": [
+          "Elite international rating",
+          "Strong tournament form",
+          "Positive scoring margin"
+        ],
+        "outlook": {
+          "roundOf32": 100,
+          "roundOf16": 68.8,
+          "quarterFinal": 35.6,
+          "semiFinal": 16.2,
+          "final": 6.4,
+          "champion": 2.2
+        }
+      },
+      {
+        "id": "481",
+        "name": "Germany",
+        "code": "GER",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
+        "elo": 1916,
+        "effectiveRating": 1947,
+        "strength": 86,
+        "reasons": [
+          "Elite international rating",
+          "Strong tournament form",
+          "Positive scoring margin"
+        ],
+        "outlook": {
+          "roundOf32": 100,
+          "roundOf16": 68.5,
+          "quarterFinal": 35,
+          "semiFinal": 15.7,
+          "final": 5.9,
+          "champion": 1.9
         }
       },
       {
@@ -6779,11 +6779,11 @@
         ],
         "outlook": {
           "roundOf32": 100,
-          "roundOf16": 54.9,
-          "quarterFinal": 26.8,
-          "semiFinal": 11.6,
+          "roundOf16": 56.5,
+          "quarterFinal": 28.7,
+          "semiFinal": 12.5,
           "final": 4.5,
-          "champion": 1.3
+          "champion": 1.7
         }
       },
       {
@@ -6801,33 +6801,11 @@
         ],
         "outlook": {
           "roundOf32": 100,
-          "roundOf16": 53.1,
-          "quarterFinal": 23.7,
-          "semiFinal": 9.6,
+          "roundOf16": 52.8,
+          "quarterFinal": 23.9,
+          "semiFinal": 10.3,
           "final": 3.5,
-          "champion": 1
-        }
-      },
-      {
-        "id": "660",
-        "name": "United States",
-        "code": "USA",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
-        "elo": 1820,
-        "effectiveRating": 1865,
-        "strength": 79,
-        "reasons": [
-          "Above-average international rating",
-          "Strong tournament form",
-          "Positive scoring margin"
-        ],
-        "outlook": {
-          "roundOf32": 100,
-          "roundOf16": 60.6,
-          "quarterFinal": 25.3,
-          "semiFinal": 8.9,
-          "final": 2.8,
-          "champion": 0.8
+          "champion": 1.1
         }
       },
       {
@@ -6843,9 +6821,29 @@
         ],
         "outlook": {
           "roundOf32": 100,
-          "roundOf16": 38.5,
-          "quarterFinal": 18.7,
-          "semiFinal": 7.2,
+          "roundOf16": 37.9,
+          "quarterFinal": 17.6,
+          "semiFinal": 7.1,
+          "final": 2.6,
+          "champion": 0.8
+        }
+      },
+      {
+        "id": "477",
+        "name": "Croatia",
+        "code": "CRO",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
+        "elo": 1896,
+        "effectiveRating": 1892,
+        "strength": 81,
+        "reasons": [
+          "Above-average international rating"
+        ],
+        "outlook": {
+          "roundOf32": 90,
+          "roundOf16": 45.1,
+          "quarterFinal": 19.9,
+          "semiFinal": 7.5,
           "final": 2.7,
           "champion": 0.8
         }
@@ -6862,32 +6860,34 @@
           "Above-average international rating"
         ],
         "outlook": {
-          "roundOf32": 84.8,
-          "roundOf16": 42.5,
-          "quarterFinal": 17.2,
-          "semiFinal": 6.5,
-          "final": 2,
-          "champion": 0.7
+          "roundOf32": 84.2,
+          "roundOf16": 42.7,
+          "quarterFinal": 17.5,
+          "semiFinal": 6.2,
+          "final": 2.1,
+          "champion": 0.6
         }
       },
       {
-        "id": "477",
-        "name": "Croatia",
-        "code": "CRO",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
-        "elo": 1896,
-        "effectiveRating": 1892,
-        "strength": 81,
+        "id": "660",
+        "name": "United States",
+        "code": "USA",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+        "elo": 1820,
+        "effectiveRating": 1843,
+        "strength": 77,
         "reasons": [
-          "Above-average international rating"
+          "Above-average international rating",
+          "Strong tournament form",
+          "Positive scoring margin"
         ],
         "outlook": {
-          "roundOf32": 93.3,
-          "roundOf16": 47.3,
-          "quarterFinal": 20.9,
-          "semiFinal": 8.7,
-          "final": 2.8,
-          "champion": 0.7
+          "roundOf32": 100,
+          "roundOf16": 58.7,
+          "quarterFinal": 23.3,
+          "semiFinal": 7.9,
+          "final": 2.4,
+          "champion": 0.5
         }
       },
       {
@@ -6902,32 +6902,12 @@
           "Above-average international rating"
         ],
         "outlook": {
-          "roundOf32": 91.9,
-          "roundOf16": 39.1,
-          "quarterFinal": 15.3,
-          "semiFinal": 5.5,
-          "final": 1.5,
+          "roundOf32": 87.1,
+          "roundOf16": 37.1,
+          "quarterFinal": 14.9,
+          "semiFinal": 5.3,
+          "final": 1.7,
           "champion": 0.4
-        }
-      },
-      {
-        "id": "212",
-        "name": "Uruguay",
-        "code": "URU",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uru.png",
-        "elo": 1851,
-        "effectiveRating": 1849,
-        "strength": 77,
-        "reasons": [
-          "Above-average international rating"
-        ],
-        "outlook": {
-          "roundOf32": 34.3,
-          "roundOf16": 15.5,
-          "quarterFinal": 6.1,
-          "semiFinal": 2.4,
-          "final": 0.8,
-          "champion": 0.3
         }
       },
       {
@@ -6943,10 +6923,10 @@
         ],
         "outlook": {
           "roundOf32": 100,
-          "roundOf16": 36.2,
-          "quarterFinal": 11.2,
-          "semiFinal": 3.3,
-          "final": 0.8,
+          "roundOf16": 36.9,
+          "quarterFinal": 12.3,
+          "semiFinal": 3.4,
+          "final": 0.7,
           "champion": 0.2
         }
       },
@@ -6956,36 +6936,15 @@
         "code": "AUS",
         "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
         "elo": 1799,
-        "effectiveRating": 1801,
+        "effectiveRating": 1800,
         "strength": 73,
         "reasons": [],
         "outlook": {
           "roundOf32": 100,
-          "roundOf16": 39.4,
-          "quarterFinal": 13.1,
-          "semiFinal": 3.9,
+          "roundOf16": 40.9,
+          "quarterFinal": 14,
+          "semiFinal": 4,
           "final": 1,
-          "champion": 0.2
-        }
-      },
-      {
-        "id": "2620",
-        "name": "Egypt",
-        "code": "EGY",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
-        "elo": 1740,
-        "effectiveRating": 1759,
-        "strength": 69,
-        "reasons": [
-          "Strong tournament form",
-          "Positive scoring margin"
-        ],
-        "outlook": {
-          "roundOf32": 100,
-          "roundOf16": 41.8,
-          "quarterFinal": 13,
-          "semiFinal": 3.2,
-          "final": 0.7,
           "champion": 0.2
         }
       },
@@ -6995,15 +6954,53 @@
         "code": "PAR",
         "logo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
         "elo": 1816,
-        "effectiveRating": 1806,
-        "strength": 73,
+        "effectiveRating": 1809,
+        "strength": 74,
         "reasons": [],
         "outlook": {
-          "roundOf32": 51,
-          "roundOf16": 14.1,
-          "quarterFinal": 4.9,
-          "semiFinal": 1.5,
-          "final": 0.4,
+          "roundOf32": 99.9,
+          "roundOf16": 29.5,
+          "quarterFinal": 11.1,
+          "semiFinal": 3.1,
+          "final": 0.9,
+          "champion": 0.2
+        }
+      },
+      {
+        "id": "212",
+        "name": "Uruguay",
+        "code": "URU",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uru.png",
+        "elo": 1851,
+        "effectiveRating": 1849,
+        "strength": 77,
+        "reasons": [
+          "Above-average international rating"
+        ],
+        "outlook": {
+          "roundOf32": 32.9,
+          "roundOf16": 15.6,
+          "quarterFinal": 6,
+          "semiFinal": 2,
+          "final": 0.7,
+          "champion": 0.2
+        }
+      },
+      {
+        "id": "451",
+        "name": "South Korea",
+        "code": "KOR",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/kors.png",
+        "elo": 1723,
+        "effectiveRating": 1717,
+        "strength": 65,
+        "reasons": [],
+        "outlook": {
+          "roundOf32": 66.9,
+          "roundOf16": 15.1,
+          "quarterFinal": 4.2,
+          "semiFinal": 1,
+          "final": 0.2,
           "champion": 0.1
         }
       },
@@ -7020,27 +7017,86 @@
         ],
         "outlook": {
           "roundOf32": 100,
-          "roundOf16": 35.9,
+          "roundOf16": 36.7,
           "quarterFinal": 11.1,
-          "semiFinal": 3.1,
-          "final": 0.5,
+          "semiFinal": 2.9,
+          "final": 0.6,
           "champion": 0.1
         }
       },
       {
-        "id": "469",
-        "name": "Iran",
-        "code": "IRN",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
-        "elo": 1766,
-        "effectiveRating": 1764,
-        "strength": 69,
+        "id": "466",
+        "name": "Sweden",
+        "code": "SWE",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/swe.png",
+        "elo": 1742,
+        "effectiveRating": 1743,
+        "strength": 68,
         "reasons": [],
         "outlook": {
-          "roundOf32": 61.6,
-          "roundOf16": 23.7,
-          "quarterFinal": 6.7,
+          "roundOf32": 100,
+          "roundOf16": 25.5,
+          "quarterFinal": 7.8,
           "semiFinal": 1.7,
+          "final": 0.3,
+          "champion": 0.1
+        }
+      },
+      {
+        "id": "2620",
+        "name": "Egypt",
+        "code": "EGY",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
+        "elo": 1740,
+        "effectiveRating": 1759,
+        "strength": 69,
+        "reasons": [
+          "Strong tournament form",
+          "Positive scoring margin"
+        ],
+        "outlook": {
+          "roundOf32": 100,
+          "roundOf16": 39.8,
+          "quarterFinal": 12.8,
+          "semiFinal": 3.1,
+          "final": 0.6,
+          "champion": 0.1
+        }
+      },
+      {
+        "id": "654",
+        "name": "Senegal",
+        "code": "SEN",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
+        "elo": 1817,
+        "effectiveRating": 1788,
+        "strength": 72,
+        "reasons": [
+          "Current results are a drag"
+        ],
+        "outlook": {
+          "roundOf32": 45.7,
+          "roundOf16": 13.3,
+          "quarterFinal": 4.4,
+          "semiFinal": 1.5,
+          "final": 0.4,
+          "champion": 0.1
+        }
+      },
+      {
+        "id": "624",
+        "name": "Algeria",
+        "code": "ALG",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
+        "elo": 1780,
+        "effectiveRating": 1770,
+        "strength": 70,
+        "reasons": [],
+        "outlook": {
+          "roundOf32": 60.5,
+          "roundOf16": 18.9,
+          "quarterFinal": 6,
+          "semiFinal": 1.5,
           "final": 0.4,
           "champion": 0.1
         }
@@ -7058,28 +7114,10 @@
         ],
         "outlook": {
           "roundOf32": 100,
-          "roundOf16": 19.8,
-          "quarterFinal": 4.1,
-          "semiFinal": 0.8,
+          "roundOf16": 20.1,
+          "quarterFinal": 3.8,
+          "semiFinal": 0.6,
           "final": 0.1,
-          "champion": 0
-        }
-      },
-      {
-        "id": "451",
-        "name": "South Korea",
-        "code": "KOR",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/kors.png",
-        "elo": 1723,
-        "effectiveRating": 1717,
-        "strength": 65,
-        "reasons": [],
-        "outlook": {
-          "roundOf32": 90.3,
-          "roundOf16": 20,
-          "quarterFinal": 5.2,
-          "semiFinal": 1.3,
-          "final": 0.2,
           "champion": 0
         }
       },
@@ -7116,8 +7154,8 @@
         ],
         "outlook": {
           "roundOf32": 100,
-          "roundOf16": 17.6,
-          "quarterFinal": 3.4,
+          "roundOf16": 17.8,
+          "quarterFinal": 3.8,
           "semiFinal": 0.6,
           "final": 0.1,
           "champion": 0
@@ -7156,9 +7194,9 @@
           "Rating trails the tournament field"
         ],
         "outlook": {
-          "roundOf32": 11.5,
-          "roundOf16": 1.4,
-          "quarterFinal": 0.2,
+          "roundOf32": 12,
+          "roundOf16": 1.1,
+          "quarterFinal": 0.1,
           "semiFinal": 0,
           "final": 0,
           "champion": 0
@@ -7191,11 +7229,9 @@
         "code": "TUR",
         "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tur.png",
         "elo": 1813,
-        "effectiveRating": 1784,
-        "strength": 71,
-        "reasons": [
-          "Current results are a drag"
-        ],
+        "effectiveRating": 1803,
+        "strength": 73,
+        "reasons": [],
         "outlook": {
           "roundOf32": 0,
           "roundOf16": 0,
@@ -7227,24 +7263,6 @@
         }
       },
       {
-        "id": "466",
-        "name": "Sweden",
-        "code": "SWE",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/swe.png",
-        "elo": 1742,
-        "effectiveRating": 1743,
-        "strength": 68,
-        "reasons": [],
-        "outlook": {
-          "roundOf32": 100,
-          "roundOf16": 24.7,
-          "quarterFinal": 7.5,
-          "semiFinal": 1.6,
-          "final": 0.3,
-          "champion": 0
-        }
-      },
-      {
         "id": "659",
         "name": "Tunisia",
         "code": "TUN",
@@ -7266,6 +7284,24 @@
         }
       },
       {
+        "id": "469",
+        "name": "Iran",
+        "code": "IRN",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
+        "elo": 1766,
+        "effectiveRating": 1764,
+        "strength": 69,
+        "reasons": [],
+        "outlook": {
+          "roundOf32": 60.4,
+          "roundOf16": 22.5,
+          "quarterFinal": 6.8,
+          "semiFinal": 1.8,
+          "final": 0.4,
+          "champion": 0
+        }
+      },
+      {
         "id": "2666",
         "name": "New Zealand",
         "code": "NZL",
@@ -7278,10 +7314,10 @@
           "Current results are a drag"
         ],
         "outlook": {
-          "roundOf32": 15.1,
+          "roundOf32": 15.2,
           "roundOf16": 3,
-          "quarterFinal": 0.4,
-          "semiFinal": 0.1,
+          "quarterFinal": 0.5,
+          "semiFinal": 0,
           "final": 0,
           "champion": 0
         }
@@ -7298,10 +7334,10 @@
           "Rating trails the tournament field"
         ],
         "outlook": {
-          "roundOf32": 68.2,
-          "roundOf16": 17.2,
-          "quarterFinal": 3.9,
-          "semiFinal": 0.7,
+          "roundOf32": 68,
+          "roundOf16": 16.7,
+          "quarterFinal": 3.3,
+          "semiFinal": 0.6,
           "final": 0.2,
           "champion": 0
         }
@@ -7319,31 +7355,11 @@
           "Current results are a drag"
         ],
         "outlook": {
-          "roundOf32": 31.8,
-          "roundOf16": 6.4,
-          "quarterFinal": 1,
-          "semiFinal": 0.3,
+          "roundOf32": 31.2,
+          "roundOf16": 6.5,
+          "quarterFinal": 0.9,
+          "semiFinal": 0.1,
           "final": 0,
-          "champion": 0
-        }
-      },
-      {
-        "id": "654",
-        "name": "Senegal",
-        "code": "SEN",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
-        "elo": 1817,
-        "effectiveRating": 1788,
-        "strength": 72,
-        "reasons": [
-          "Current results are a drag"
-        ],
-        "outlook": {
-          "roundOf32": 56,
-          "roundOf16": 15.7,
-          "quarterFinal": 5.3,
-          "semiFinal": 1.3,
-          "final": 0.3,
           "champion": 0
         }
       },
@@ -7360,29 +7376,11 @@
           "Current results are a drag"
         ],
         "outlook": {
-          "roundOf32": 1.3,
+          "roundOf32": 0.9,
           "roundOf16": 0.1,
           "quarterFinal": 0,
           "semiFinal": 0,
           "final": 0,
-          "champion": 0
-        }
-      },
-      {
-        "id": "624",
-        "name": "Algeria",
-        "code": "ALG",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
-        "elo": 1780,
-        "effectiveRating": 1770,
-        "strength": 70,
-        "reasons": [],
-        "outlook": {
-          "roundOf32": 59.2,
-          "roundOf16": 19.3,
-          "quarterFinal": 6,
-          "semiFinal": 2,
-          "final": 0.5,
           "champion": 0
         }
       },
@@ -7399,10 +7397,10 @@
           "Current results are a drag"
         ],
         "outlook": {
-          "roundOf32": 5.1,
-          "roundOf16": 0.9,
+          "roundOf32": 3.2,
+          "roundOf16": 0.8,
           "quarterFinal": 0.2,
-          "semiFinal": 0,
+          "semiFinal": 0.1,
           "final": 0,
           "champion": 0
         }
@@ -7419,11 +7417,11 @@
           "Current results are a drag"
         ],
         "outlook": {
-          "roundOf32": 40.9,
-          "roundOf16": 7.3,
-          "quarterFinal": 1.4,
-          "semiFinal": 0.4,
-          "final": 0.1,
+          "roundOf32": 38.7,
+          "roundOf16": 7.5,
+          "quarterFinal": 1.6,
+          "semiFinal": 0.2,
+          "final": 0,
           "champion": 0
         }
       },
@@ -7440,7 +7438,7 @@
           "Current results are a drag"
         ],
         "outlook": {
-          "roundOf32": 1.6,
+          "roundOf32": 1.2,
           "roundOf16": 0.2,
           "quarterFinal": 0.1,
           "semiFinal": 0,
@@ -7461,10 +7459,10 @@
           "Strong tournament form"
         ],
         "outlook": {
-          "roundOf32": 100,
-          "roundOf16": 20.2,
-          "quarterFinal": 4.1,
-          "semiFinal": 0.8,
+          "roundOf32": 99.9,
+          "roundOf16": 20.1,
+          "quarterFinal": 4.3,
+          "semiFinal": 0.9,
           "final": 0.1,
           "champion": 0
         }
@@ -7481,9 +7479,9 @@
           "Current results are a drag"
         ],
         "outlook": {
-          "roundOf32": 2.1,
-          "roundOf16": 0.4,
-          "quarterFinal": 0.2,
+          "roundOf32": 2,
+          "roundOf16": 0.5,
+          "quarterFinal": 0.1,
           "semiFinal": 0,
           "final": 0,
           "champion": 0

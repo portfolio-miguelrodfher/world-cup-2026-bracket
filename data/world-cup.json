@@ -4,7 +4,7 @@
     "season": 2026,
     "mode": "live",
     "provider": "ESPN",
-    "updatedAt": "2026-06-27T21:40:15.726Z"
+    "updatedAt": "2026-06-27T22:10:25.962Z"
   },
   "groups": [
     {
@@ -3799,9 +3799,9 @@
         "city": "Philadelphia, Pennsylvania"
       },
       "status": {
-        "short": "1H",
-        "long": "First Half",
-        "elapsed": 39
+        "short": "2H",
+        "long": "In Progress",
+        "elapsed": 49
       },
       "home": {
         "id": "477",
@@ -3843,9 +3843,9 @@
         "city": "East Rutherford, New Jersey"
       },
       "status": {
-        "short": "1H",
-        "long": "First Half",
-        "elapsed": 39
+        "short": "2H",
+        "long": "In Progress",
+        "elapsed": 51
       },
       "home": {
         "id": "2659",
@@ -6567,7 +6567,7 @@
       "model": "Elo + tournament form + Poisson goals",
       "simulations": 5000,
       "ratingSource": "World Football Elo Ratings",
-      "generatedAt": "2026-06-27T21:40:15.725Z",
+      "generatedAt": "2026-06-27T22:10:25.962Z",
       "disclaimer": "Statistical model estimate — not betting odds."
     },
     "teams": [

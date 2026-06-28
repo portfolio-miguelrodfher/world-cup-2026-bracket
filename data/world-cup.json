@@ -4,7 +4,7 @@
     "season": 2026,
     "mode": "live",
     "provider": "ESPN",
-    "updatedAt": "2026-06-28T19:58:12.822Z"
+    "updatedAt": "2026-06-28T20:35:34.013Z"
   },
   "groups": [
     {
@@ -4063,9 +4063,9 @@
         "city": "Inglewood, California"
       },
       "status": {
-        "short": "1H",
-        "long": "Halftime",
-        "elapsed": 45
+        "short": "2H",
+        "long": "Second Half",
+        "elapsed": 75
       },
       "home": {
         "id": "467",
@@ -5362,9 +5362,9 @@
           "city": "Inglewood, California"
         },
         "status": {
-          "short": "1H",
-          "long": "Halftime",
-          "elapsed": 45
+          "short": "2H",
+          "long": "Second Half",
+          "elapsed": 75
         },
         "home": {
           "id": "467",
@@ -6665,7 +6665,7 @@
       "model": "Elo + tournament form + Poisson goals",
       "simulations": 5000,
       "ratingSource": "World Football Elo Ratings",
-      "generatedAt": "2026-06-28T19:58:12.822Z",
+      "generatedAt": "2026-06-28T20:35:34.012Z",
       "disclaimer": "Statistical model estimate — not betting odds."
     },
     "teams": [

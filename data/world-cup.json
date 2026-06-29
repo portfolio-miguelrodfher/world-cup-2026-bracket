@@ -4,7 +4,7 @@
     "season": 2026,
     "mode": "live",
     "provider": "ESPN",
-    "updatedAt": "2026-06-29T22:11:03.318Z"
+    "updatedAt": "2026-06-29T22:39:12.741Z"
   },
   "groups": [
     {
@@ -4151,9 +4151,9 @@
         "city": "Foxborough, Massachusetts"
       },
       "status": {
-        "short": "2H",
-        "long": "Second Half",
-        "elapsed": 77
+        "short": "ET",
+        "long": "In Progress",
+        "elapsed": 96
       },
       "home": {
         "id": "481",
@@ -5450,9 +5450,9 @@
           "city": "Foxborough, Massachusetts"
         },
         "status": {
-          "short": "2H",
-          "long": "Second Half",
-          "elapsed": 77
+          "short": "ET",
+          "long": "In Progress",
+          "elapsed": 96
         },
         "home": {
           "id": "481",
@@ -6665,7 +6665,7 @@
       "model": "Elo + tournament form + Poisson goals",
       "simulations": 5000,
       "ratingSource": "World Football Elo Ratings",
-      "generatedAt": "2026-06-29T22:11:03.318Z",
+      "generatedAt": "2026-06-29T22:39:12.740Z",
       "disclaimer": "Statistical model estimate — not betting odds."
     },
     "teams": [

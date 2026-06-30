@@ -4,7 +4,7 @@
     "season": 2026,
     "mode": "live",
     "provider": "ESPN",
-    "updatedAt": "2026-06-30T21:37:56.118Z"
+    "updatedAt": "2026-06-30T22:47:26.268Z"
   },
   "groups": [
     {
@@ -4283,9 +4283,9 @@
         "city": "East Rutherford, New Jersey"
       },
       "status": {
-        "short": "1H",
-        "long": "In Progress",
-        "elapsed": 37
+        "short": "2H",
+        "long": "Second Half",
+        "elapsed": 87
       },
       "home": {
         "id": "478",
@@ -4302,7 +4302,7 @@
         "winner": false
       },
       "goals": {
-        "home": 0,
+        "home": 3,
         "away": 0
       },
       "penalties": {
@@ -5596,9 +5596,9 @@
           "city": "East Rutherford, New Jersey"
         },
         "status": {
-          "short": "1H",
-          "long": "In Progress",
-          "elapsed": 37
+          "short": "2H",
+          "long": "Second Half",
+          "elapsed": 87
         },
         "home": {
           "id": "478",
@@ -5615,7 +5615,7 @@
           "winner": false
         },
         "goals": {
-          "home": 0,
+          "home": 3,
           "away": 0
         },
         "penalties": {
@@ -6693,7 +6693,7 @@
       "model": "Elo + tournament form + Poisson goals",
       "simulations": 5000,
       "ratingSource": "World Football Elo Ratings",
-      "generatedAt": "2026-06-30T21:37:56.118Z",
+      "generatedAt": "2026-06-30T22:47:26.268Z",
       "disclaimer": "Statistical model estimate — not betting odds."
     },
     "teams": [

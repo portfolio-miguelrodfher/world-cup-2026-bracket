@@ -4,7 +4,7 @@
     "season": 2026,
     "mode": "live",
     "provider": "ESPN",
-    "updatedAt": "2026-06-30T02:25:30.243Z"
+    "updatedAt": "2026-06-30T03:49:28.544Z"
   },
   "groups": [
     {
@@ -4195,9 +4195,9 @@
         "city": "Guadalupe"
       },
       "status": {
-        "short": "2H",
-        "long": "Second Half",
-        "elapsed": 64
+        "short": "ET",
+        "long": "Shootout",
+        "elapsed": 120
       },
       "home": {
         "id": "449",
@@ -4214,8 +4214,8 @@
         "winner": false
       },
       "goals": {
-        "home": 0,
-        "away": 0
+        "home": 1,
+        "away": 1
       },
       "penalties": {
         "home": null,
@@ -5494,9 +5494,9 @@
           "city": "Guadalupe"
         },
         "status": {
-          "short": "2H",
-          "long": "Second Half",
-          "elapsed": 64
+          "short": "ET",
+          "long": "Shootout",
+          "elapsed": 120
         },
         "home": {
           "id": "449",
@@ -5513,8 +5513,8 @@
           "winner": false
         },
         "goals": {
-          "home": 0,
-          "away": 0
+          "home": 1,
+          "away": 1
         },
         "penalties": {
           "home": null,
@@ -6665,7 +6665,7 @@
       "model": "Elo + tournament form + Poisson goals",
       "simulations": 5000,
       "ratingSource": "World Football Elo Ratings",
-      "generatedAt": "2026-06-30T02:25:30.243Z",
+      "generatedAt": "2026-06-30T03:49:28.544Z",
       "disclaimer": "Statistical model estimate — not betting odds."
     },
     "teams": [

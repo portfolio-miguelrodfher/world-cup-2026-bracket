@@ -4,7 +4,7 @@
     "season": 2026,
     "mode": "live",
     "provider": "ESPN",
-    "updatedAt": "2026-06-30T17:44:01.074Z"
+    "updatedAt": "2026-06-30T18:24:52.253Z"
   },
   "groups": [
     {
@@ -4239,9 +4239,9 @@
         "city": "Arlington, Texas"
       },
       "status": {
-        "short": "1H",
-        "long": "First Half",
-        "elapsed": 44
+        "short": "2H",
+        "long": "In Progress",
+        "elapsed": 65
       },
       "home": {
         "id": "4789",
@@ -5545,9 +5545,9 @@
           "city": "Arlington, Texas"
         },
         "status": {
-          "short": "1H",
-          "long": "First Half",
-          "elapsed": 44
+          "short": "2H",
+          "long": "In Progress",
+          "elapsed": 65
         },
         "home": {
           "id": "4789",
@@ -6679,7 +6679,7 @@
       "model": "Elo + tournament form + Poisson goals",
       "simulations": 5000,
       "ratingSource": "World Football Elo Ratings",
-      "generatedAt": "2026-06-30T17:44:01.074Z",
+      "generatedAt": "2026-06-30T18:24:52.253Z",
       "disclaimer": "Statistical model estimate — not betting odds."
     },
     "teams": [

@@ -4,7 +4,7 @@
     "season": 2026,
     "mode": "live",
     "provider": "ESPN",
-    "updatedAt": "2026-07-01T00:10:55.996Z"
+    "updatedAt": "2026-07-01T01:25:06.144Z"
   },
   "groups": [
     {
@@ -4321,7 +4321,7 @@
       "id": "760491",
       "number": 79,
       "round": "Round of 32",
-      "kickoff": "2026-07-01T01:00Z",
+      "kickoff": "2026-07-01T02:00Z",
       "venue": {
         "name": "Estadio Banorte",
         "city": "Mexico City"
@@ -5641,7 +5641,7 @@
         "id": "760491",
         "number": 79,
         "round": "Round of 32",
-        "kickoff": "2026-07-01T01:00Z",
+        "kickoff": "2026-07-01T02:00Z",
         "venue": {
           "name": "Estadio Banorte",
           "city": "Mexico City"
@@ -6707,7 +6707,7 @@
       "model": "Elo + tournament form + Poisson goals",
       "simulations": 5000,
       "ratingSource": "World Football Elo Ratings",
-      "generatedAt": "2026-07-01T00:10:55.996Z",
+      "generatedAt": "2026-07-01T01:25:06.144Z",
       "disclaimer": "Statistical model estimate — not betting odds."
     },
     "teams": [

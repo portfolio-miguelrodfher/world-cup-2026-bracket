@@ -4,7 +4,7 @@
     "season": 2026,
     "mode": "live",
     "provider": "ESPN",
-    "updatedAt": "2026-07-01T01:25:06.144Z"
+    "updatedAt": "2026-07-01T02:25:50.098Z"
   },
   "groups": [
     {
@@ -4327,9 +4327,9 @@
         "city": "Mexico City"
       },
       "status": {
-        "short": "NS",
-        "long": "Scheduled",
-        "elapsed": null
+        "short": "1H",
+        "long": "First Half",
+        "elapsed": 25
       },
       "home": {
         "id": "203",
@@ -4346,8 +4346,8 @@
         "winner": false
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
       "penalties": {
         "home": null,
@@ -5647,9 +5647,9 @@
           "city": "Mexico City"
         },
         "status": {
-          "short": "NS",
-          "long": "Scheduled",
-          "elapsed": null
+          "short": "1H",
+          "long": "First Half",
+          "elapsed": 25
         },
         "home": {
           "id": "203",
@@ -5666,8 +5666,8 @@
           "winner": false
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "penalties": {
           "home": null,
@@ -6707,7 +6707,7 @@
       "model": "Elo + tournament form + Poisson goals",
       "simulations": 5000,
       "ratingSource": "World Football Elo Ratings",
-      "generatedAt": "2026-07-01T01:25:06.144Z",
+      "generatedAt": "2026-07-01T02:25:50.098Z",
       "disclaimer": "Statistical model estimate — not betting odds."
     },
     "teams": [

@@ -4,7 +4,7 @@
     "season": 2026,
     "mode": "live",
     "provider": "ESPN",
-    "updatedAt": "2026-07-01T16:24:31.370Z"
+    "updatedAt": "2026-07-01T17:18:59.927Z"
   },
   "groups": [
     {
@@ -4371,9 +4371,9 @@
         "city": "Atlanta, Georgia"
       },
       "status": {
-        "short": "1H",
-        "long": "First Half",
-        "elapsed": 24
+        "short": "2H",
+        "long": "Second Half",
+        "elapsed": 55
       },
       "home": {
         "id": "448",
@@ -5691,9 +5691,9 @@
           "city": "Atlanta, Georgia"
         },
         "status": {
-          "short": "1H",
-          "long": "First Half",
-          "elapsed": 24
+          "short": "2H",
+          "long": "Second Half",
+          "elapsed": 55
         },
         "home": {
           "id": "448",
@@ -6707,7 +6707,7 @@
       "model": "Elo + tournament form + Poisson goals",
       "simulations": 5000,
       "ratingSource": "World Football Elo Ratings",
-      "generatedAt": "2026-07-01T16:24:31.370Z",
+      "generatedAt": "2026-07-01T17:18:59.927Z",
       "disclaimer": "Statistical model estimate — not betting odds."
     },
     "teams": [

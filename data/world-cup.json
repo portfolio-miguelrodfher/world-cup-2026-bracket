@@ -4,7 +4,7 @@
     "season": 2026,
     "mode": "live",
     "provider": "ESPN",
-    "updatedAt": "2026-07-01T21:17:15.594Z"
+    "updatedAt": "2026-07-01T22:03:38.726Z"
   },
   "groups": [
     {
@@ -4416,8 +4416,8 @@
       },
       "status": {
         "short": "2H",
-        "long": "In Progress",
-        "elapsed": 55
+        "long": "End of Regulation",
+        "elapsed": 90
       },
       "home": {
         "id": "459",
@@ -4434,7 +4434,7 @@
         "winner": false
       },
       "goals": {
-        "home": 0,
+        "home": 2,
         "away": 2
       },
       "penalties": {
@@ -5743,8 +5743,8 @@
         },
         "status": {
           "short": "2H",
-          "long": "In Progress",
-          "elapsed": 55
+          "long": "End of Regulation",
+          "elapsed": 90
         },
         "home": {
           "id": "459",
@@ -5761,7 +5761,7 @@
           "winner": false
         },
         "goals": {
-          "home": 0,
+          "home": 2,
           "away": 2
         },
         "penalties": {
@@ -6721,7 +6721,7 @@
       "model": "Elo + tournament form + Poisson goals",
       "simulations": 5000,
       "ratingSource": "World Football Elo Ratings",
-      "generatedAt": "2026-07-01T21:17:15.594Z",
+      "generatedAt": "2026-07-01T22:03:38.726Z",
       "disclaimer": "Statistical model estimate — not betting odds."
     },
     "teams": [

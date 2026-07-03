@@ -4,7 +4,7 @@
     "season": 2026,
     "mode": "live",
     "provider": "ESPN",
-    "updatedAt": "2026-07-03T04:59:00.933Z"
+    "updatedAt": "2026-07-03T08:20:26.204Z"
   },
   "groups": [
     {
@@ -5073,10 +5073,10 @@
         "elapsed": null
       },
       "home": {
-        "id": "131537",
-        "name": "Round of 32 13 Winner",
-        "code": "RD32",
-        "logo": "",
+        "id": "475",
+        "name": "Switzerland",
+        "code": "SUI",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
         "winner": false
       },
       "away": {
@@ -6416,10 +6416,10 @@
           "elapsed": null
         },
         "home": {
-          "id": "131537",
-          "name": "Round of 32 13 Winner",
-          "code": "RD32",
-          "logo": "",
+          "id": "475",
+          "name": "Switzerland",
+          "code": "SUI",
+          "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
           "winner": false
         },
         "away": {
@@ -6749,7 +6749,7 @@
       "model": "Elo + tournament form + Poisson goals",
       "simulations": 5000,
       "ratingSource": "World Football Elo Ratings",
-      "generatedAt": "2026-07-03T04:59:00.932Z",
+      "generatedAt": "2026-07-03T08:20:26.204Z",
       "disclaimer": "Statistical model estimate — not betting odds."
     },
     "teams": [

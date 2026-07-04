@@ -4,7 +4,7 @@
     "season": 2026,
     "mode": "live",
     "provider": "ESPN",
-    "updatedAt": "2026-07-04T21:41:56.143Z"
+    "updatedAt": "2026-07-04T22:41:37.412Z"
   },
   "groups": [
     {
@@ -4811,9 +4811,9 @@
         "city": "Philadelphia, Pennsylvania"
       },
       "status": {
-        "short": "1H",
-        "long": "First Half",
-        "elapsed": 37
+        "short": "2H",
+        "long": "Second Half",
+        "elapsed": 77
       },
       "home": {
         "id": "210",
@@ -4831,7 +4831,7 @@
       },
       "goals": {
         "home": 0,
-        "away": 0
+        "away": 1
       },
       "penalties": {
         "home": null,
@@ -6168,9 +6168,9 @@
           "city": "Philadelphia, Pennsylvania"
         },
         "status": {
-          "short": "1H",
-          "long": "First Half",
-          "elapsed": 37
+          "short": "2H",
+          "long": "Second Half",
+          "elapsed": 77
         },
         "home": {
           "id": "210",
@@ -6188,7 +6188,7 @@
         },
         "goals": {
           "home": 0,
-          "away": 0
+          "away": 1
         },
         "penalties": {
           "home": null,
@@ -6777,7 +6777,7 @@
       "model": "Elo + tournament form + Poisson goals",
       "simulations": 5000,
       "ratingSource": "World Football Elo Ratings",
-      "generatedAt": "2026-07-04T21:41:56.143Z",
+      "generatedAt": "2026-07-04T22:41:37.412Z",
       "disclaimer": "Statistical model estimate — not betting odds."
     },
     "teams": [

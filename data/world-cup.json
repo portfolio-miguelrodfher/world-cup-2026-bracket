@@ -4,7 +4,7 @@
     "season": 2026,
     "mode": "live",
     "provider": "ESPN",
-    "updatedAt": "2026-07-09T18:28:34.480Z"
+    "updatedAt": "2026-07-09T20:25:25.915Z"
   },
   "groups": [
     {
@@ -5119,9 +5119,9 @@
         "city": "Foxborough, Massachusetts"
       },
       "status": {
-        "short": "NS",
-        "long": "Scheduled",
-        "elapsed": null
+        "short": "1H",
+        "long": "First Half",
+        "elapsed": 24
       },
       "home": {
         "id": "478",
@@ -5138,8 +5138,8 @@
         "winner": false
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "penalties": {
         "home": null,
@@ -6506,9 +6506,9 @@
           "city": "Foxborough, Massachusetts"
         },
         "status": {
-          "short": "NS",
-          "long": "Scheduled",
-          "elapsed": null
+          "short": "1H",
+          "long": "First Half",
+          "elapsed": 24
         },
         "home": {
           "id": "478",
@@ -6525,8 +6525,8 @@
           "winner": false
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "penalties": {
           "home": null,
@@ -6833,7 +6833,7 @@
       "model": "Elo + tournament form + Poisson goals",
       "simulations": 5000,
       "ratingSource": "World Football Elo Ratings",
-      "generatedAt": "2026-07-09T18:28:34.480Z",
+      "generatedAt": "2026-07-09T20:25:25.915Z",
       "disclaimer": "Statistical model estimate — not betting odds."
     },
     "teams": [

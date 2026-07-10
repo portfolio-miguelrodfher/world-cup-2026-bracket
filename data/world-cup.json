@@ -4,7 +4,7 @@
     "season": 2026,
     "mode": "live",
     "provider": "ESPN",
-    "updatedAt": "2026-07-10T18:47:41.823Z"
+    "updatedAt": "2026-07-10T20:37:13.327Z"
   },
   "groups": [
     {
@@ -5163,9 +5163,9 @@
         "city": "Inglewood, California"
       },
       "status": {
-        "short": "NS",
-        "long": "Scheduled",
-        "elapsed": null
+        "short": "2H",
+        "long": "Second Half",
+        "elapsed": 75
       },
       "home": {
         "id": "164",
@@ -5182,8 +5182,8 @@
         "winner": false
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 1
       },
       "penalties": {
         "home": null,
@@ -6550,9 +6550,9 @@
           "city": "Inglewood, California"
         },
         "status": {
-          "short": "NS",
-          "long": "Scheduled",
-          "elapsed": null
+          "short": "2H",
+          "long": "Second Half",
+          "elapsed": 75
         },
         "home": {
           "id": "164",
@@ -6569,8 +6569,8 @@
           "winner": false
         },
         "goals": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "penalties": {
           "home": null,
@@ -6833,7 +6833,7 @@
       "model": "Elo + tournament form + Poisson goals",
       "simulations": 5000,
       "ratingSource": "World Football Elo Ratings",
-      "generatedAt": "2026-07-10T18:47:41.823Z",
+      "generatedAt": "2026-07-10T20:37:13.326Z",
       "disclaimer": "Statistical model estimate — not betting odds."
     },
     "teams": [

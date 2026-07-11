@@ -4,7 +4,7 @@
     "season": 2026,
     "mode": "live",
     "provider": "ESPN",
-    "updatedAt": "2026-07-11T21:59:32.454Z"
+    "updatedAt": "2026-07-11T23:03:25.297Z"
   },
   "groups": [
     {
@@ -5207,9 +5207,9 @@
         "city": "Miami Gardens, Florida"
       },
       "status": {
-        "short": "1H",
-        "long": "Halftime",
-        "elapsed": 45
+        "short": "2H",
+        "long": "End of Regulation",
+        "elapsed": 90
       },
       "home": {
         "id": "464",
@@ -6601,9 +6601,9 @@
           "city": "Miami Gardens, Florida"
         },
         "status": {
-          "short": "1H",
-          "long": "Halftime",
-          "elapsed": 45
+          "short": "2H",
+          "long": "End of Regulation",
+          "elapsed": 90
         },
         "home": {
           "id": "464",
@@ -6847,7 +6847,7 @@
       "model": "Elo + tournament form + Poisson goals",
       "simulations": 5000,
       "ratingSource": "World Football Elo Ratings",
-      "generatedAt": "2026-07-11T21:59:32.453Z",
+      "generatedAt": "2026-07-11T23:03:25.297Z",
       "disclaimer": "Statistical model estimate — not betting odds."
     },
     "teams": [

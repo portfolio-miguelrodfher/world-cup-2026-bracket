@@ -4,7 +4,7 @@
     "season": 2026,
     "mode": "live",
     "provider": "ESPN",
-    "updatedAt": "2026-07-24T11:49:37.241Z"
+    "updatedAt": "2026-07-24T13:58:47.112Z"
   },
   "groups": [
     {
@@ -6889,7 +6889,7 @@
       "model": "Elo + tournament form + Poisson goals",
       "simulations": 5000,
       "ratingSource": "World Football Elo Ratings",
-      "generatedAt": "2026-07-24T11:49:37.241Z",
+      "generatedAt": "2026-07-24T13:58:47.112Z",
       "disclaimer": "Statistical model estimate — not betting odds."
     },
     "teams": [
